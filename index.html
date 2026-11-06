@@ -1,0 +1,915 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"></head><body>
+<title>Grade 9 Revision HQ</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Layout: one-column phone app, sticky tab bar at bottom, cards only where a thing is a separate object. Exam-paper ink + highlighter. */
+:root{
+  --paper:#f6f7fb; --sheet:#ffffff; --ink:#16203a; --ink-2:#4a5470; --rule:#dde1ec;
+  --accent:#2440b8; --accent-ink:#ffffff; --hl:#fff07a; --hl-ink:#16203a;
+  --good:#1e7a4c; --warn:#b06a00; --bad:#b4232c; --good-bg:#e3f4ea; --bad-bg:#fbe6e7; --warn-bg:#fdf1dc;
+  --c-maths:#2440b8; --c-science:#1e7a4c; --c-englang:#7b3fa0; --c-englit:#b4232c; --c-geography:#0b7a85;
+  --f-display:"Bricolage Grotesque", "Arial Narrow", system-ui, sans-serif;
+  --f-body:"Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono:"JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  --r:10px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0f1424; --sheet:#171e33; --ink:#e8ecf7; --ink-2:#a3acc6; --rule:#2a3350;
+  --accent:#8fa6ff; --accent-ink:#0f1424; --hl:#e8d84a; --hl-ink:#151515;
+  --good:#5fd39a; --warn:#f0b04a; --bad:#ff7f86; --good-bg:#16352a; --bad-bg:#3a1c22; --warn-bg:#3a2c14;
+  --c-maths:#8fa6ff; --c-science:#5fd39a; --c-englang:#c99af0; --c-englit:#ff8a90; --c-geography:#5ccfd9;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0f1424; --sheet:#171e33; --ink:#e8ecf7; --ink-2:#a3acc6; --rule:#2a3350;
+  --accent:#8fa6ff; --accent-ink:#0f1424; --hl:#e8d84a; --hl-ink:#151515;
+  --good:#5fd39a; --warn:#f0b04a; --bad:#ff7f86; --good-bg:#16352a; --bad-bg:#3a1c22; --warn-bg:#3a2c14;
+  --c-maths:#8fa6ff; --c-science:#5fd39a; --c-englang:#c99af0; --c-englit:#ff8a90; --c-geography:#5ccfd9;
+  color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 96px}
+.wrap{max-width:760px;margin:0 auto}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;line-height:1.15}
+h1{font-size:1.9rem;font-weight:800;letter-spacing:-.01em}
+h2{font-size:1.3rem;font-weight:800}
+h3{font-size:1.05rem;font-weight:600}
+p{margin:0}
+a{color:var(--accent)}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.muted{color:var(--ink-2)}
+.small{font-size:.86rem}
+.eyebrow{font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);font-weight:700}
+header.top{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;padding-block:20px 12px;flex-wrap:wrap}
+.hl{background:linear-gradient(transparent 55%,var(--hl) 55%);color:inherit;padding:0 2px}
+.stack{display:flex;flex-direction:column;gap:14px}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.sheet{background:var(--sheet);border:1px solid var(--rule);border-radius:var(--r);padding:16px}
+.btn{font:inherit;font-weight:700;border:1px solid var(--rule);background:var(--sheet);color:var(--ink);border-radius:8px;padding:10px 14px;cursor:pointer;min-height:44px}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn.ghost{background:transparent}
+.btn:disabled{opacity:.45;cursor:default}
+.btn:focus-visible,.opt:focus-visible,.tab:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--hl);outline-offset:2px}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:.78rem;font-weight:700;padding:3px 9px;border-radius:999px;border:1px solid var(--rule);background:var(--sheet);color:var(--ink-2);cursor:pointer;font-family:inherit}
+.chip.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block;flex:none}
+.subjtag{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:.85rem}
+.banner{border-radius:8px;padding:10px 12px;font-size:.9rem;background:var(--warn-bg);color:var(--ink)}
+nav.tabs{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--sheet);border-top:1px solid var(--rule);display:flex;justify-content:center;
+  padding-bottom:env(safe-area-inset-bottom,0px);padding-left:max(4px,env(safe-area-inset-left,0px));padding-right:max(4px,env(safe-area-inset-right,0px))}
+.tab{flex:1;max-width:130px;background:none;border:0;color:var(--ink-2);font:inherit;font-size:.74rem;font-weight:700;padding:8px 2px 10px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:3px}
+.tab svg{width:22px;height:22px}
+.tab.on{color:var(--accent)}
+/* grade strip */
+.grades{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}
+.gcard{background:var(--sheet);border:1px solid var(--rule);border-radius:var(--r);padding:12px;display:flex;flex-direction:column;gap:6px;border-top:4px solid var(--sc)}
+.gbig{font-family:var(--f-display);font-weight:800;font-size:2rem;line-height:1}
+.bar{height:8px;background:var(--rule);border-radius:4px;position:relative;overflow:visible}
+.bar>i{position:absolute;left:0;top:0;bottom:0;border-radius:4px;background:var(--sc,var(--accent))}
+.bar>b{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--ink)}
+.bar>u{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--ink-2);opacity:.6}
+/* task list */
+.task{display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--rule)}
+.task:last-child{border-bottom:0}
+.task .tx{flex:1;min-width:0}
+.cq .tick{display:none}
+.cq > .btn{width:100%;justify-content:center}
+.tick{width:24px;height:24px;border-radius:50%;border:2px solid var(--rule);display:grid;place-items:center;flex:none;color:var(--accent-ink)}
+.tick.done{background:var(--good);border-color:var(--good)}
+/* question */
+.qtext{white-space:pre-wrap;font-size:1.05rem;overflow-wrap:anywhere}
+.opts{display:flex;flex-direction:column;gap:8px}
+.opt{text-align:left;font:inherit;padding:12px 14px;border-radius:8px;border:1px solid var(--rule);background:var(--sheet);color:var(--ink);cursor:pointer;white-space:pre-wrap;min-height:44px}
+.opt.right{background:var(--good-bg);border-color:var(--good)}
+.opt.wrong{background:var(--bad-bg);border-color:var(--bad)}
+.ms{display:flex;flex-direction:column;gap:6px;margin:0;padding:0;list-style:none}
+.ms label{display:flex;gap:10px;align-items:flex-start;cursor:pointer}
+.ms input{width:22px;height:22px;flex:none;margin-top:1px}
+.model{white-space:pre-wrap;background:var(--paper);border-left:3px solid var(--hl);padding:10px 12px;border-radius:0 6px 6px 0;overflow-wrap:anywhere}
+.tip{font-size:.92rem;background:var(--hl);color:var(--hl-ink);padding:8px 10px;border-radius:6px}
+textarea,input[type=text],input[type=number],input[type=date],select{font:inherit;width:100%;padding:10px;border:1px solid var(--rule);border-radius:8px;background:var(--sheet);color:var(--ink)}
+textarea{min-height:140px;resize:vertical}
+.lvl{font-family:var(--f-mono);font-size:.72rem;font-weight:700;padding:2px 6px;border-radius:4px;border:1px solid currentColor}
+.progress{height:6px;background:var(--rule);border-radius:3px;overflow:hidden}
+.progress>i{display:block;height:100%;background:var(--accent)}
+/* topic list */
+.topic{display:grid;grid-template-columns:1fr auto;gap:4px 12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--rule)}
+.topic .nm{min-width:0;font-weight:700}
+.topic .bar{grid-column:1/2}
+/* flashcard */
+.fcard{min-height:240px;display:flex;flex-direction:column;justify-content:center;gap:12px;text-align:center;cursor:pointer;padding:24px;font-size:1.15rem;white-space:pre-wrap;overflow-wrap:anywhere}
+.fcard .back{border-top:2px dashed var(--rule);padding-top:12px}
+table{border-collapse:collapse;width:100%;font-size:.9rem}
+th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--rule)}
+th{font-size:.74rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2)}
+.tablewrap{overflow-x:auto}
+.week{display:grid;grid-template-columns:64px 1fr;gap:10px;padding:12px 0;border-bottom:1px solid var(--rule)}
+.week.now{background:linear-gradient(90deg,var(--hl) 0 6px,transparent 6px)}
+.week .wk{font-family:var(--f-mono);font-weight:700;font-size:.85rem;padding-left:12px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+details summary{cursor:pointer;font-weight:700}
+.spark{width:100%;height:56px;display:block}
+.empty{padding:20px;text-align:center;color:var(--ink-2)}
+@media (prefers-reduced-motion:no-preference){.opt,.btn,.tab{transition:background .15s,border-color .15s}}
+</style>
+
+<div class="wrap" id="app"><p class="empty">Loading the question bank…</p></div>
+<nav class="tabs" id="tabs" aria-label="Sections"></nav>
+
+<script>
+"use strict";
+/* ===== Subject config: boundaries are the official June 2026 (and 2025 where known) minimum raw marks ===== */
+const SUBJ=[
+ {id:"maths",name:"Maths",short:"Maths",board:"Edexcel 1MA1 Higher",max:240,papers:"3 papers × 80 marks, 1h30 each. Paper 1 is non-calculator.",
+  b26:[[9,208],[8,177],[7,146],[6,114],[5,82],[4,50]],b25:[[9,217],[8,186],[7,156]],
+  what9:"A 9 needed 208/240 (87%) in 2026 and 217/240 (90%) in 2025. That means almost no dropped marks in the first two thirds of each paper, plus most of the hard final questions: algebraic proof, vectors, circle theorems with reasons, iteration, functions, histograms and the multi-step problems. Accuracy and full working matter as much as knowing the topics.",
+  links:[["Official past papers + mark schemes (Pearson)","https://qualifications.pearson.com/en/support/support-topics/exams/past-papers.html"],["All Higher papers with mark schemes (Maths Genie)","https://www.mathsgenie.co.uk/papers.php"],["Past paper questions by topic (Maths Genie)","https://www.mathsgenie.co.uk/gcse.html"],["Past papers (Save My Exams)","https://www.savemyexams.com/gcse/maths/edexcel/past-papers/"]]},
+ {id:"science",name:"Combined Science",short:"Science",board:"AQA Trilogy 8464 Higher",max:420,double:true,papers:"6 papers (2 each of Biology, Chemistry, Physics), 70 marks each, 1h15.",
+  b26:[["9-9",298],["9-8",280],["8-8",262],["8-7",245],["7-7",228],["7-6",208],["6-6",188],["6-5",168],["5-5",149],["5-4",130],["4-4",111]],b25:[["9-9",299],["8-8",263],["7-7",228]],
+  what9:"Combined Science gives two grades from one total out of 420. 9-9 needed 298 (71%) in 2026. The marks that separate 9-9 from 8-8 are the Higher-only content, the 6-mark extended answers, required practical questions, and calculations (about 20% of marks are maths skills).",
+  links:[["Official past papers + mark schemes (AQA)","https://www.aqa.org.uk/find-past-papers-and-mark-schemes"],["Trilogy past papers by paper (Save My Exams)","https://www.savemyexams.com/gcse/science/aqa/combined-science-trilogy/past-papers/"],["Biology questions by topic (PMT)","https://www.physicsandmathstutor.com/biology-revision/gcse-aqa/"],["Chemistry questions by topic (PMT)","https://www.physicsandmathstutor.com/chemistry-revision/gcse-aqa/"],["Physics questions by topic (PMT)","https://www.physicsandmathstutor.com/physics-revision/gcse-aqa/"]]},
+ {id:"englang",name:"English Language",short:"Eng Lang",board:"AQA 8700",max:160,papers:"2 papers × 80 marks, 1h45 each. Half the marks are writing (Q5 on each paper, 40 marks).",
+  b26:[[9,122],[8,112],[7,103],[6,93],[5,84],[4,75]],b25:[],
+  what9:"A 9 needed 122/160 (76%) in 2026. The two Q5 writing tasks are 80 of the 160 marks, so crafted, controlled writing with accurate spelling and punctuation is the single biggest lever. In reading, Paper 1 Q4 (20 marks) and Paper 2 Q4 (16 marks) reward a perceptive, critical argument backed by precise quotes.",
+  links:[["Official past papers + mark schemes (AQA)","https://www.aqa.org.uk/find-past-papers-and-mark-schemes"],["Past papers (Save My Exams)","https://www.savemyexams.com/gcse/english-language/aqa/past-papers/"]]},
+ {id:"englit",name:"English Literature",short:"Eng Lit",board:"AQA 8702",max:160,papers:"Paper 1: Macbeth + A Christmas Carol (64 marks, 1h45). Paper 2: An Inspector Calls + Power and Conflict + Unseen (96 marks, 2h15).",
+  b26:[[9,142],[8,127],[7,113],[6,97],[5,81],[4,66]],b25:[[9,136],[8,122],[7,108]],
+  what9:"The highest bar of your subjects: a 9 needed 142/160 (89%) in 2026. Every essay has to sit in the top level: a conceptual argument about the writer's purpose, short embedded quotes analysed closely, methods named and explained, and context woven into the argument rather than bolted on. Quotes must be memorised.",
+  links:[["Official past papers + mark schemes (AQA)","https://www.aqa.org.uk/find-past-papers-and-mark-schemes"],["Past papers (Save My Exams)","https://www.savemyexams.com/gcse/english-literature/aqa/past-papers/"]]},
+ {id:"geography",name:"Geography",short:"Geog",board:"AQA 8035",max:252,papers:"Paper 1 physical (88), Paper 2 human (88), Paper 3 issue evaluation + fieldwork (76). Options: coasts, glacial, rainforests, hot deserts, food, Brazil.",
+  b26:[[9,204],[8,185],[7,166],[6,148],[5,130],[4,112]],b25:[],
+  what9:"A 9 needed 204/252 (81%) in 2026. The 9-mark questions need Level 3 answers: named case study facts and figures, every point linked back to the question, and a clear supported judgement. Skills questions (maps, graphs, calculations) are quick marks that must not be dropped.",
+  links:[["Official past papers + mark schemes (AQA)","https://www.aqa.org.uk/find-past-papers-and-mark-schemes"],["Past papers (Save My Exams)","https://www.savemyexams.com/gcse/geography/aqa/past-papers/"]]}
+];
+const GOAL_PCT=90; const TARGET_GRADE=9;
+// exam pace (seconds per mark) and fallback pages of real past-paper questions sorted by topic
+const PACE={maths:68,science:64,englang:79,englit:98,geography:61};
+const TQ={maths:{_:"https://www.mathsgenie.co.uk/gcse.html"},
+ science:{Biology:"https://www.physicsandmathstutor.com/biology-revision/gcse-aqa/",Chemistry:"https://www.physicsandmathstutor.com/chemistry-revision/gcse-aqa/",Physics:"https://www.physicsandmathstutor.com/physics-revision/gcse-aqa/",_:"https://www.savemyexams.com/gcse/science/aqa/combined-science-trilogy/past-papers/"},
+ englang:{_:"https://www.savemyexams.com/gcse/english-language/aqa/17/topic-questions/"},
+ englit:{_:"https://www.savemyexams.com/gcse/english-literature/aqa/17/topic-questions/"},
+ geography:{_:"https://www.savemyexams.com/gcse/geography/aqa/18/topic-questions/"}};
+function realUrl(sid,t){return (t&&RLINKS[t.id]&&RLINKS[t.id].url)||(t&&t.realUrl)||(t&&TQ[sid][t.area])||TQ[sid]._}
+const pkey=k=>{const [y,m,d]=k.split("-").map(Number);return new Date(y,m-1,d)};
+const SMAP=Object.fromEntries(SUBJ.map(s=>[s.id,s]));
+const START=new Date(2026,10,9); // Mon 9 Nov 2026
+/* Phases run by week, but progress is judged by checkpoints: each has a deadline and a test the app checks itself. */
+const PLAN=[
+ {w:1,t:"Baseline",d:"All five baselines, flashcards started. Every topic gets a starting score."},
+ {w:2,t:"Pass 1: cover everything",d:"Topic targets on your weakest, highest-mark topics. Real paper every Saturday."},
+ {w:3,t:"Pass 1: cover everything",d:"Keep hitting topic targets. Mistakes redone from memory on Sundays."},
+ {w:4,t:"Pass 1: cover everything",d:"Every topic should now be started. Science required practicals in the drills."},
+ {w:5,t:"Pass 1 + second weekend paper",d:"Sunday paper added, so two real papers a week from here."},
+ {w:6,t:"Pass 1 finish",d:"Push every topic to Secure before Christmas."},
+ {w:7,t:"Christmas mocks",d:"A full real paper every day, rotating subjects. Corrections the same day."},
+ {w:8,t:"Christmas mocks",d:"Second round. Lit and Lang essays to a teacher for marking in January."},
+ {w:9,t:"Pass 2: harder questions",d:"Targets switch to grade 6-9 questions. Two to three papers a week."},
+ {w:10,t:"Pass 2: harder questions",d:"Long answers: 6-markers, 9-markers, essays, Q5s. Learn mark scheme language."},
+ {w:11,t:"Pass 2: harder questions",d:"Fading topics first. Everything should be Secure or Mastered."},
+ {w:12,t:"Full mock week",d:"Every paper for every subject, exam timing."},
+ {w:13,t:"Fix-up",d:"Close the last gaps, re-run all baselines."}
+];
+// each block type: topic = bring one topic to target (+ real questions), mixed = interleaved set across topics, drill = timed long-answer questions
+const ROTA=[ // index by getDay(): 0 Sun..6 Sat
+ {blocks:[["mistakes",null],["fading",null]],paper:"wk5",note:"Sunday: redo old mistakes from memory, rescue fading topics, and from week 5 a second real paper."},
+ {blocks:[["topic","maths"],["mixed","science"],["drill","englit"]]},
+ {blocks:[["topic","science"],["mixed","maths"],["drill","englang"]]},
+ {blocks:[["topic","englit"],["mixed","maths"],["drill","geography"]]},
+ {blocks:[["topic","geography"],["mixed","science"],["drill","maths"]]},
+ {blocks:[["topic","englang"],["mixed","maths"],["drill","science"]]},
+ {blocks:[["fading",null]],paper:true,note:"Saturday: a full real paper under exam conditions, marked and logged, then rescue one fading topic."}
+];
+const NOBLURT=["maths","englang"];
+const TARGET={topic:80,mixed:80,drill:75,blurt:80};
+function subCount(sid,k){const ts=Object.values(topicStats(sid));let a=0;ts.forEach(t=>{if(mastery(sid,t.id,t).k>=k)a++});return [a,ts.length]}
+function cardsSeen(n){let a=0;SUBJ.forEach(s=>{if(dueCards(s.id).seen>=n)a++});return [a,SUBJ.length]}
+const CP_STAGES=[["Foundation","Find where you start"],["Cover everything","Touch every topic once"],["Make it solid","Every topic Secure (75%+)"],["Prove it on real papers","Real papers, in order of difficulty"],["Master it","Every topic Mastered (grade 9 level)"],["Exam ready","90%+ on real papers"]];
+const CHECKPOINTS=(()=>{const L=[];let id=0;const add=(stage,name,goal,test)=>L.push({id:++id,stage,name,goal,test,by:"2099-01-01"});
+ add(0,"All 5 baselines","Finish the baseline test in every subject",()=>{const b=D("baseline");return [SUBJ.filter(s=>b[s.id]).length,SUBJ.length]});
+ add(0,"Card starter","See at least 50 flashcards in every subject",()=>cardsSeen(50));
+ SUBJ.forEach(s=>add(1,s.short+": all started","Every "+s.short+" topic attempted at least once",()=>subCount(s.id,2)));
+ SUBJ.forEach(s=>add(2,s.short+": all Secure","Every "+s.short+" topic at Secure (75%+ on half its questions)",()=>subCount(s.id,3)));
+ add(3,"First real papers","A real paper logged in every subject",()=>paperCount(0));
+ add(3,"Papers at 70%+","Latest real paper in every subject at 70%+",()=>paperCount(70));
+ add(3,"Papers at 80%+","Latest real paper in every subject at 80%+",()=>paperCount(80));
+ SUBJ.forEach(s=>add(4,s.short+": all Mastered","Every "+s.short+" topic Mastered and healthy",()=>subCount(s.id,4)));
+ add(5,"Papers at 85%+","Latest real paper in every subject at 85%+",()=>paperCount(85));
+ add(5,"Papers at 90%+","Latest real paper in every subject at 90%+. This is the grade 9 line.",()=>paperCount(90));
+ return L})();
+function topicCount(f){let a=0,n=0;SUBJ.forEach(s=>Object.values(topicStats(s.id)).forEach(t=>{n++;if(f(mastery(s.id,t.id,t).k))a++}));return [a,n]}
+function paperCount(min){const L=D("papers").list||[];let a=0;SUBJ.forEach(s=>{const ps=L.filter(p=>p.subject===s.id).sort((x,y)=>x.date<y.date?1:-1);if(ps[0]&&100*ps[0].score/ps[0].max>=min)a++});return [a,SUBJ.length]}
+function cpStatus(cp){const [a,n]=cp.test();const done=n>0&&a>=n;const late=false;return {a,n,done,late}}
+function nextCheckpoint(){return CHECKPOINTS.find(c=>!cpStatus(c).done)||null}
+const LVL={1:"G4-5",2:"G6-7",3:"G8-9"}; const LW={1:0.7,2:1,3:1.3};
+const BOX=[0,1,3,7,14,30];
+
+/* ===== helpers ===== */
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const pad=n=>String(n).padStart(2,"0");
+const dkey=(d=new Date())=>d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate());
+const dnum=(d=new Date())=>Math.floor(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())/864e5);
+const pct=(g,m)=>m?Math.round(100*g/m):0;
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+function weekNo(){const d=dnum()-dnum(START);return d<0?0:Math.min(13,Math.floor(d/7)+1)}
+function lsGet(k){try{const v=localStorage.getItem("g9:"+k);return v?JSON.parse(v):null}catch(e){return null}}
+function lsSet(k,v){try{localStorage.setItem("g9:"+k,JSON.stringify(v))}catch(e){}}
+
+/* ===== store: shared db when available, otherwise this device ===== */
+const DOCNAMES=["honesty","daily","baseline","papers",...SUBJ.flatMap(s=>["qa_"+s.id,"cards_"+s.id,"l3_"+s.id,"blurt_"+s.id,"realq_"+s.id])];
+const Store={mode:"local",db:null,docs:{},timers:{},chain:{},dirty:{},note:"",ansLocal:lsGet("ans")||{},ansRemote:{},reports:lsGet("reports")||[]};
+function allAnswers(){return {...Store.ansLocal,...Store.ansRemote}}
+DOCNAMES.forEach(n=>Store.docs[n]=lsGet(n)||{});
+function D(n){return Store.docs[n]||(Store.docs[n]={})}
+function save(n){
+  lsSet(n,Store.docs[n]); if(Store.mode!=="db")return;
+  Store.dirty[n]=true; clearTimeout(Store.timers[n]);
+  Store.timers[n]=setTimeout(()=>{
+    const body=JSON.parse(JSON.stringify(Store.docs[n]));
+    Store.chain[n]=(Store.chain[n]||Promise.resolve()).then(()=>Store.db.doc("prog/"+n).set(body)).then(()=>{Store.dirty[n]=false}).catch(e=>{
+      Store.dirty[n]=false;
+      if(e&&(e.code==="invalid_argument"||e.code==="not_granted"||e.code==="revoked")){goLocal("Your progress is saving on this device only. Ask Mo to share this page with you as an Editor so it syncs to his tracker.")}
+      else if(e&&e.code==="quota_exceeded"){Store.note="Storage is full. Tell Mo.";render()}
+    });
+  },1200);
+}
+function goLocal(msg){Store.mode="local";Store.note=msg;render()}
+/* ===== Supabase sync (used when the page runs outside Claude, e.g. GitHub Pages) ===== */
+const SB={url:"https://tdouksowkvykwgzoeckt.supabase.co",key:"sb_publishable_ZOBBIk9k9uq4ocAVZqRU1w_BaEIXFcX"};
+function sbOn(){return /^https:\/\/[a-z0-9-]+\.supabase\.co$/.test(SB.url)}
+function sbCode(){return lsGet("code")}
+async function sbReq(path,opt={}){const r=await fetch(SB.url+"/rest/v1/"+path,{...opt,headers:{apikey:SB.key,"Content-Type":"application/json",...(opt.headers||{})}});if(!r.ok){const e=new Error("sb "+r.status);e.code=r.status===401||r.status===403?"not_granted":"unavailable";throw e}return r.status===204?null:r.json().catch(()=>null)}
+function sbDb(code){const pre=code+"/";
+  const put=(id,doc)=>sbReq("prog",{method:"POST",headers:{Prefer:"resolution=merge-duplicates,return=minimal"},body:JSON.stringify({id:pre+id,doc,updated_at:new Date().toISOString()})});
+  const list=(coll,lim)=>sbReq(`prog?select=id,doc,updated_at&id=like.${encodeURIComponent(pre+coll+"/")}%25&order=updated_at.desc${lim?"&limit="+lim:""}`);
+  function collection(coll){let lim=0;const c={
+    orderBy(){return c},limit(n){lim=n;return c},
+    doc(id){return {set:doc=>put(coll+"/"+id,doc)}},
+    add(doc){return put(coll+"/"+Date.now().toString(36)+Math.random().toString(36).slice(2,6),doc)},
+    onSnapshot(cb,err){let stop=false;const tick=async()=>{if(stop)return;try{const rows=await list(coll,lim);cb({docs:(rows||[]).map(r=>({id:r.id.slice((pre+coll+"/").length),data:()=>r.doc})),metadata:{fromCache:false}})}catch(e){if(err&&!c._ok)err(e)}};
+      tick().then(()=>{c._ok=true});const iv=setInterval(()=>{if(!document.hidden)tick()},20000);document.addEventListener("visibilitychange",()=>{if(!document.hidden)tick()});return()=>{stop=true;clearInterval(iv)}}};return c}
+  return {doc(p){const [coll,id]=p.split("/");return collection(coll).doc(id)},collection}}
+function codeScreen(){return `<div class="stack" style="padding-top:40px;max-width:420px;margin:0 auto"><h1>GCSE HQ</h1><p>Type your passcode to load your progress. Use the same passcode on your phone and laptop.</p><input id="pcode" class="input" autocomplete="off" autocapitalize="none" placeholder="Passcode" style="font-size:18px;padding:12px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink)"><button class="btn primary" data-pcode>Start</button><p class="small muted">${esc(Store.note||"")}</p></div>`}
+async function initStore(){
+  let db=null;
+  if(!window.claude&&sbOn()){const code=sbCode();if(!code){View.needCode=true;render();return}db=sbDb(code);Store.sb=true}
+  else{try{ if(window.claude&&claude.use) db=await claude.use("db") }catch(e){db=null}}
+  if(!db){Store.note="Progress is saving on this device only.";render();return}
+  Store.db=db; Store.mode="db";
+  let first=true; const timer=setTimeout(()=>{if(first){Store.note="Can't reach the shared tracker yet. Progress saves on this device until it connects.";render()}},10000);
+  db.collection("prog").onSnapshot(snap=>{
+    let changed=false;
+    snap.docs.forEach(d=>{ if(!DOCNAMES.includes(d.id)||Store.dirty[d.id])return;
+      const v=d.data(); if(v){Store.docs[d.id]=JSON.parse(JSON.stringify(v));lsSet(d.id,Store.docs[d.id]);changed=true} });
+    if(!snap.metadata.fromCache&&first){first=false;clearTimeout(timer);
+      // push any local-only progress made before the shared store answered
+      DOCNAMES.forEach(n=>{ if(!snap.docs.find(x=>x.id===n)&&Object.keys(D(n)).length) save(n) });
+      if(Store.note.startsWith("Can't reach"))Store.note="";
+      changed=true}
+    if(changed&&!View.busy)render();
+  },e=>{clearTimeout(timer);goLocal("Progress is saving on this device only right now.")});
+  db.collection("ans").orderBy("t","desc").limit(40).onSnapshot(s=>{Store.ansRemote=Object.fromEntries(s.docs.map(d=>{const v=d.data();return [v.qid||d.id,v]}));if(!View.busy&&View.tab==="tracker")render()},()=>{});
+  db.collection("reports").orderBy("t","desc").limit(50).onSnapshot(s=>{Store.reports=s.docs.map(d=>({...d.data(),_id:d.id}));if(!View.busy&&View.tab==="tracker")render()},()=>{});
+}
+function sendReport(rec){Store.reports=[rec,...Store.reports].slice(0,50);lsSet("reports",Store.reports);
+  if(Store.mode==="db")Store.db.collection("reports").add(rec).catch(()=>{})}
+function saveAnswer(qid,rec){
+  Store.ansLocal[qid]=rec; const keys=Object.keys(Store.ansLocal);
+  if(keys.length>80){keys.sort((a,b)=>Store.ansLocal[a].t-Store.ansLocal[b].t).slice(0,keys.length-80).forEach(k=>delete Store.ansLocal[k])}
+  lsSet("ans",Store.ansLocal);
+  if(Store.mode==="db"){Store.db.collection("ans").doc(qid.replace(/[^A-Za-z0-9_.~:@+-]/g,"_")).set({...rec,qid}).catch(()=>{})}
+}
+/* mastery: Mastered = 85%+ on G8-9 questions on two days 7+ days apart AND last blurt 80%+ */
+function mastery(sid,tid,o){
+  const l3=D("l3_"+sid)[tid]||{};
+  const good=Object.entries(l3).filter(([d,v])=>v[1]>=3&&v[0]/v[1]>=.85).map(([d])=>dnum(pkey(d))).sort((a,b)=>a-b);
+  const spaced=good.length>=2&&good[good.length-1]-good[0]>=7;
+  const bl=D("blurt_"+sid)[tid]||[];const lastB=bl.length?bl[bl.length-1].p:null;
+  const lastL3=Object.keys(l3).sort().pop();const age=lastL3?dnum()-dnum(pkey(lastL3)):999;
+  if(spaced&&(NOBLURT.includes(sid)||(lastB!=null&&lastB>=80)))return {s:"Mastered",k:4,retest:age>=18};
+  if(o.pct!=null&&o.pct>=75&&o.cov>=.5)return {s:"Secure",k:3,why:!spaced?"needs 85%+ on G8-9 twice, a week apart":(NOBLURT.includes(sid)?"needs 85%+ on G8-9 twice":"needs a blurt at 80%+")};
+  if(o.att||o.real)return {s:"Learning",k:2};return {s:"Not started",k:1};
+}
+const MCOL={4:"var(--good)",3:"var(--accent)",2:"var(--warn)",1:"var(--ink-2)"};
+
+/* ===== data ===== */
+const DATA={}; const QIDX={}; const CIDX={}; let PROFILE={}; let PAPERS={}; let RLINKS={}; let LEARN={};
+async function loadData(){
+  const opt=async f=>{try{const r=await fetch("data/"+f);return r.ok?await r.json():{}}catch(e){return {}}};
+  [PROFILE,PAPERS,RLINKS,LEARN]=await Promise.all([opt("exam_profile.json"),opt("papers.json"),opt("real_links.json"),opt("learn_links.json")]);
+  await Promise.all(SUBJ.map(async s=>{
+    try{const r=await fetch("data/"+s.id+".json");const j=await r.json();
+      j.topicMap=Object.fromEntries(j.topics.map(t=>[t.id,t]));
+      j.questions.forEach(q=>{q.subject=s.id;QIDX[q.id]=q}); j.flashcards.forEach(c=>{c.subject=s.id;CIDX[c.id]=c});
+      DATA[s.id]=j}catch(e){DATA[s.id]={topics:[],questions:[],flashcards:[],topicMap:{}}}
+  }));
+}
+
+/* ===== analytics ===== */
+function topicStats(sid){
+  const qa=D("qa_"+sid), d=DATA[sid], out={};
+  d.topics.forEach(t=>out[t.id]={id:t.id,name:t.name,g:0,m:0,att:0,total:0});
+  d.questions.forEach(q=>{const o=out[q.topic];if(!o)return;o.total++;const a=qa[q.id];if(a){o.att++;const w=LW[q.level]||1;o.g+=a.g*w;o.m+=a.m*w}});
+  // real past-paper questions done on this topic count too (latest two sessions)
+  const rq=D("realq_"+sid);Object.entries(rq).forEach(([tid,arr])=>{const o=out[tid];if(!o)return;arr.slice(-2).forEach(x=>{o.g+=x.g;o.m+=x.m});o.real=arr[arr.length-1]});
+  Object.values(out).forEach(o=>{o.pct=o.m?Math.round(100*o.g/o.m):null;o.cov=o.total?o.att/o.total:0});
+  return out;
+}
+/* Real Higher papers spread marks across grade bands, so the bank % is the average of the
+   band %s (G4-5, G6-7, G8-9) in equal shares, not skewed by whichever level you happened to practise most. */
+const BANDSHARE={1:1/3,2:1/3,3:1/3};
+function subjectStats(sid){
+  const ts=Object.values(topicStats(sid)); let att=0,total=0,touched=0;
+  ts.forEach(t=>{att+=t.att;total+=t.total;if(t.att)touched++});
+  const qa=D("qa_"+sid);const band={1:[0,0],2:[0,0],3:[0,0]};
+  DATA[sid].questions.forEach(q=>{const a=qa[q.id];if(a&&band[q.level]){band[q.level][0]+=a.g;band[q.level][1]+=a.m}});
+  let w=0,acc=0;[1,2,3].forEach(l=>{if(band[l][1]){acc+=BANDSHARE[l]*band[l][0]/band[l][1];w+=BANDSHARE[l]}});
+  // a band with no attempts yet counts at half the attempted average, so an untested G8-9 band can't hide
+  let qb=null;if(w){const avg=acc/w;[1,2,3].forEach(l=>{if(!band[l][1]){acc+=BANDSHARE[l]*avg*0.5;w+=BANDSHARE[l]}});qb=100*acc/w}
+  const papers=(D("papers").list||[]).filter(p=>p.subject===sid).sort((a,b)=>b.date<a.date?-1:1).slice(0,3);
+  const pp=papers.length?papers.reduce((s,p)=>s+100*p.score/p.max,0)/papers.length:null;
+  let pred=null; if(pp!=null&&qb!=null)pred=0.65*pp+0.35*qb; else pred=pp!=null?pp:qb;
+  const topicCov=ts.length?touched/ts.length:0;
+  const conf=pp!=null?"Based on real papers":topicCov>=.8?"Good coverage":topicCov>=.4?"Partial coverage":att?"Early estimate":"No data yet";
+  return {qb,pp,pred,att,total,topicCov,conf,papers:papers.length,band};
+}
+function gradeFor(s,p){ if(p==null)return "–"; const mk=p/100*s.max; for(const [g,b] of s.b26){if(mk>=b)return String(g)} return s.double?"<4-4":"<4"}
+function nineLine(s){return 100*s.b26[0][1]/s.max}
+/* topic weight = its area's share of exam marks (from the board's spec) split across the area's topics */
+function topicWeight(sid,tid){const P=PROFILE[sid];const d=DATA[sid];const t=d.topicMap[tid];if(!P||!P.topicWeights||!t)return 1;
+  const A=String(t.area||"").toLowerCase();if(!A)return 1;
+  const area=P.topicWeights.find(x=>String(x[0]).toLowerCase()===A)||P.topicWeights.find(x=>{const k=String(x[0]).toLowerCase();return k.includes(A)||A.includes(k.split(/[ /(]/)[0])});if(!area)return 1;
+  // topics whose area shares this weight band (e.g. Statistics + Probability share one spec band)
+  const n=d.topics.filter(x=>{const B=String(x.area||"").toLowerCase();const k=String(area[0]).toLowerCase();return B===A||k.includes(B)}).length||1;const avg=100/(d.topics.length||1);return (area[1]/n)/avg}
+/* Health: a topic's score fades if you don't touch it. Faster for shaky topics, slower once mastered. */
+const TAU={1:4,2:6,3:12,4:25};
+function lastTouch(sid){const out={};const up=(tid,t)=>{if(t>(out[tid]||0))out[tid]=t};
+  Object.entries(D("qa_"+sid)).forEach(([id,a])=>{const q=QIDX[id];if(q)up(q.topic,a.t)});
+  Object.entries(D("blurt_"+sid)).forEach(([tid,arr])=>arr.forEach(x=>up(tid,pkey(x.d).getTime()+43200000)));
+  Object.entries(D("realq_"+sid)).forEach(([tid,arr])=>arr.forEach(x=>up(tid,pkey(x.d).getTime()+43200000)));
+  return out}
+function topicHealth(sid){const ts=topicStats(sid);const lt=lastTouch(sid);const now=Date.now();
+  return Object.values(ts).map(t=>{const m=mastery(sid,t.id,t);const last=lt[t.id];
+    if(t.pct==null||!last)return {...t,sid,m,health:null,days:null,fading:false};
+    const days=(now-last)/864e5;const h=Math.round(t.pct*Math.exp(-0.357*days/TAU[m.k]));
+    return {...t,sid,m,health:h,days:Math.floor(days),fading:days>TAU[m.k]&&h<t.pct-8}})}
+function weakTopics(sid,n){
+  // priority = marks still to win (using faded health) x how many exam marks the topic carries
+  return topicHealth(sid).filter(t=>!(t.m.k===4&&!t.fading)).map(t=>({...t,prio:(t.health==null?110:100-t.health)*topicWeight(sid,t.id)}))
+    .sort((a,b)=>b.prio-a.prio||a.cov-b.cov).slice(0,n);
+}
+function fadingTopics(n){const all=[];SUBJ.forEach(s=>topicHealth(s.id).forEach(t=>{if(t.fading)all.push(t)}));return all.sort((a,b)=>(a.health-a.pct)-(b.health-b.pct)).slice(0,n)}
+/* XP: earned from real work only, so it can't be farmed by tapping */
+function xpTotal(){let xp=0;SUBJ.forEach(s=>{Object.values(D("qa_"+s.id)).forEach(a=>xp+=a.g*2);Object.values(D("realq_"+s.id)).forEach(a=>a.forEach(x=>xp+=x.g*2));
+  topicHealth(s.id).forEach(t=>{if(t.m.k===4)xp+=150;else if(t.m.k===3)xp+=50})});
+  Object.entries(D("daily")).forEach(([k,o])=>Object.entries(o).forEach(([sid,x])=>{if(sid[0]!=="_")xp+=x.c||0}));
+  (D("papers").list||[]).forEach(p=>xp+=100+p.score);return xp}
+function lvlFor(xp){const L=Math.floor(Math.sqrt(xp/60))+1;const cur=60*(L-1)**2,next=60*L**2;return {L,cur,next,p:Math.round(100*(xp-cur)/(next-cur))}}
+function today(){const k=dkey();const d=D("daily");return d[k]||{}}
+function bumpDaily(sid,field,inc){const dd=D("daily");const k=dkey();dd[k]=dd[k]||{};dd[k][sid]=dd[k][sid]||{g:0,m:0,q:0,c:0};dd[k][sid][field]+=inc;
+  const ks=Object.keys(dd).sort();if(ks.length>140)ks.slice(0,ks.length-140).forEach(x=>delete dd[x]);save("daily")}
+function recordAttempt(q,g,m,mode){
+  const doc=D("qa_"+q.subject);const prev=doc[q.id];
+  doc[q.id]={g,m,t:Date.now(),n:(prev?prev.n:0)+1,h:[...(prev&&prev.h||[]),Math.round(100*g/m)].slice(-4)};
+  save("qa_"+q.subject);
+  if(q.level===3){const l3=D("l3_"+q.subject);const t=l3[q.topic]=l3[q.topic]||{};const k0=dkey();t[k0]=t[k0]||[0,0];t[k0][0]+=g;t[k0][1]+=m;
+    const ks=Object.keys(t).sort();if(ks.length>8)ks.slice(0,ks.length-8).forEach(x=>delete t[x]);save("l3_"+q.subject)}
+  const dd=D("daily");const k=dkey();dd[k]=dd[k]||{};const o=dd[k][q.subject]=dd[k][q.subject]||{g:0,m:0,q:0,c:0};o.g+=g;o.m+=m;o.q+=1;save("daily");
+}
+function dueCards(sid,newLimit=20){
+  const cs=D("cards_"+sid), now=dnum(); const due=[],fresh=[];
+  (DATA[sid].flashcards||[]).forEach(c=>{const st=cs[c.id];if(st){if(st[1]<=now)due.push(c)}else fresh.push(c)});
+  const introducedToday=Object.values(cs).filter(v=>v[2]===now).length;
+  return {due,fresh:fresh.slice(0,Math.max(0,newLimit-introducedToday)),seen:Object.keys(cs).length,total:(DATA[sid].flashcards||[]).length};
+}
+function streak(){const dd=D("daily");let n=0,i=0,last=-99;let d=new Date();if(!dd[dkey(d)])d.setDate(d.getDate()-1);
+  for(;;i++){if(dd[dkey(d)])n++;else{const p=new Date(d);p.setDate(p.getDate()-1);if(i-last>=7&&dd[dkey(p)])last=i;else break}d.setDate(d.getDate()-1)}return n}
+
+/* ===== view state & router ===== */
+const View={mapOpen:{},tab:"today",busy:false,session:null,deck:null,pSub:"maths",pLvl:0,tSub:null};
+const TABS=[["today","Today","M4 6h16M4 12h10M4 18h7"],["map","Map","M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3zM9 3v15M15 6v15"],["practice","Study","M5 4h14v16H5zM8 9h8M8 13h8M8 17h5"],["me","Me","M12 12a4 4 0 100-8 4 4 0 000 8zM4 21a8 8 0 0116 0"]];
+const GROUP={practice:"practice",cards:"practice",papers:"practice",tracker:"me",plan:"me",me:"me"};
+const SUBNAV={practice:[["practice","Questions"],["cards","Cards"],["papers","Papers"]],me:[["me","Character"],["tracker","My stats"],["plan","The plan"]]};
+const ROUTES=["today","map","practice","cards","papers","me","tracker","plan"];
+const LVLNAME=["Rookie","Apprentice","Learner","Student","Grafter","Hustler","Sharp","Scholar","Contender","Challenger","Top Set","Specialist","Elite","Master","Grade 9 Legend"];
+const lname=L=>LVLNAME[Math.min(L-1,LVLNAME.length-1)];
+function subnav(t){const g=GROUP[t];if(!g)return "";return `<div class="row" style="margin-bottom:12px">${SUBNAV[g].map(([id,l])=>`<button class="chip ${t===id?"on":""}" data-tab="${id}">${l}</button>`).join("")}</div>`}
+function renderTabs(){$("#tabs").innerHTML=TABS.map(([id,l,p])=>`<button class="tab ${(GROUP[View.tab]||View.tab)===id?"on":""}" data-tab="${id}" aria-current="${(GROUP[View.tab]||View.tab)===id?"page":"false"}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${p}"/></svg>${l}</button>`).join("")}
+function go(tab){View.tab=tab;View.session=null;View.deck=null;View.blurt=null;View.busy=false;if(location.hash!=="#"+tab){try{history.replaceState(null,"","#"+tab)}catch(e){location.hash=tab}}render();window.scrollTo(0,0)}
+window.addEventListener("hashchange",()=>{const h=location.hash.slice(1);if(ROUTES.includes(h)&&h!==View.tab)go(h)});
+function render(){renderTabs();const el=$("#app");
+  if(View.needCode){el.innerHTML=codeScreen();return}
+  if(View.session){el.innerHTML=renderSession();return}
+  if(View.deck){el.innerHTML=renderDeck();return}
+  if(View.blurt){el.innerHTML=renderBlurt();return}
+  el.innerHTML=subnav(View.tab)+({today:renderToday,map:renderMap,practice:renderPractice,cards:renderCards,papers:renderPapers,me:renderMe,tracker:renderTracker,plan:renderPlan}[View.tab]||renderToday)();
+}
+function noteHtml(){const f=View.flash;View.flash="";return (Store.note?`<div class="banner" role="status">${esc(Store.note)}</div>`:"")+(f?`<div class="banner" role="status">${esc(f)}</div>`:"")}
+function stag(sid){const s=SMAP[sid];return `<span class="subjtag" style="color:var(--c-${sid})"><span class="dot" style="background:var(--c-${sid})"></span>${esc(s.short)}</span>`}
+
+/* ===== grade strip ===== */
+function gradeStrip(){return `<div class="grades">${SUBJ.map(s=>{const st=subjectStats(s.id);const g=gradeFor(s,st.pred);const p=st.pred==null?null:Math.round(st.pred);
+  return `<div class="gcard" style="--sc:var(--c-${s.id})"><div class="row" style="justify-content:space-between"><span class="eyebrow">${esc(s.short)}</span><span class="small muted mono">${p==null?"":p+"%"}</span></div>
+  <div class="gbig">${esc(g)}<span class="small muted" style="font-family:var(--f-body);font-weight:400"> / goal ${s.double?"9-9":"9"}</span></div>
+  <div class="bar" title="Line: grade 9 boundary. Tick: 90% goal"><i style="width:${p||0}%"></i><u style="left:${nineLine(s)}%"></u><b style="left:${GOAL_PCT}%"></b></div>
+  <span class="small muted">${esc(st.conf)}</span></div>`}).join("")}</div>
+  <p class="small muted">Bar: your predicted %. Grey line: last summer's grade 9 boundary. Black tick: the 90% goal.</p>`}
+
+/* ===== TODAY ===== */
+/* Target-based day: every item has a finish line, not a time. Today's list is frozen once built so ticking one item off doesn't reshuffle the rest. */
+function taskDone(key){const t=(D("daily")[dkey()]||{})._t||{};return t[key]!=null}
+function markTask(key,val){const dd=D("daily");const k=dkey();dd[k]=dd[k]||{};dd[k]._t=dd[k]._t||{};dd[k]._t[key]=val;save("daily")}
+let TODAY_CACHE=null;
+const SPRINT={
+ "2026-11-05":[["topic","englit","lt-aic-pc"],["cards"]],
+ "2026-11-06":[["topic","englit","lt-aic-pc"],["topic","englit","lt-aic-tc"],["topic","englit","lt-essay"],["cards"]],
+ "2026-11-07":[["topic","englit","lt-pc-poems",{k:"A",re:/Ozymandias|London|Last Duchess/i,title:"Poems A: Ozymandias, London, My Last Duchess",target:"Power of rulers. For each poem: main idea, 4-5 quotes, 2-3 language or structure points, 1 link to another poem. Then do the questions on these three."}],["topic","englit","lt-pc-poems",{k:"B",re:/Storm on the Island|Prelude|Exposure/i,title:"Poems B: Storm on the Island, The Prelude, Exposure",target:"Power of nature and conflict. Same four things for each poem. Then do the questions on these three."}],["topic","englit","lt-pc-comp",{k:"C",re:/Ozymandias|London|Last Duchess|Storm on the Island|Prelude|Exposure/i,title:"Comparison drill on your six poems",target:"Pick a pair (Ozymandias + London, Storm + Prelude, Exposure + Storm). Write one timed 45 min comparison essay, then mark it with Claude."}],["cards"]],
+ "2026-11-08":[["paper","maths",/June 2024 Paper 1H/],["topic","englit","lt-unseen"],["topic","maths","m-num-surd"],["cards"]],
+ "2026-11-09":[["topic","maths","m-alg-frac"],["topic","maths","m-num-fdp"],["cards"]],
+ "2026-11-10":[["topic","science","sc-c-atom"],["topic","science","sc-c-bond"],["topic","science","sc-c-elec"],["cards"]],
+ "2026-11-11":[["topic","science","sc-c-quant"],["topic","science","sc-c-change"],["paper","science",/June 2024 Chemistry Paper 1H/],["topic","science","sc-c-energy"],["topic","science","sc-c-elec"],["cards"]],
+ "2026-11-12":[["topic","science","sc-c-quant"],["cards"]]};
+function sprintTasks(day){const out=[];day.forEach(it=>{
+  if(it[0]==="topic"){const [,sid,tid,x]=it;const t=DATA[sid].topicMap[tid];if(!t)return;const key=`topic:${sid}:${tid}`+(x?":"+x.k:"");out.push({kind:"topic",sid,topic:tid,key,re:x&&x.re||null,real:true,title:x?x.title:`Mock prep, ${SMAP[sid].name}: ${t.name}`,target:x?x.target:`Real exam questions first, then app questions on the gaps. ${TARGET.topic}%+ ticks it off.`,doneFn:()=>taskDone(key)})}
+  else if(it[0]==="paper"){const [,sid,re]=it;const pl=PAPERS[sid]||[];const done=new Set((D("papers").list||[]).map(p=>p.pid).filter(Boolean));const np=pl.find(p=>re.test(p.name)&&!done.has(p.id))||pl.find(p=>re.test(p.name))||null;
+    out.push({kind:"paper",sid,paper:np,title:np?`Mock practice: ${np.name}`:`Mock practice paper: ${SMAP[sid].name}`,target:np?`${np.marks} marks, ${np.mins} min, exam conditions. Target ${Math.ceil(np.marks*.9)}+ (90%). Mark it, log it, fix what you dropped.`:"Pick one from Papers, do it timed, mark it, log the score.",doneFn:()=>(D("papers").list||[]).some(p=>p.date===dkey()&&p.subject===sid)})}
+  else if(it[0]==="cards"){out.push({kind:"cards",title:"Flashcards",target:"Clear every due card. Missed ones come back at the end until you get them.",doneFn:()=>SUBJ.every(s=>{const c=dueCards(s.id,12);return c.due.length+c.fresh.length===0})})}});return out}
+function todayTasks(){
+  if(TODAY_CACHE&&TODAY_CACHE.k===dkey())return TODAY_CACHE.list.map(t=>({...t,done:t.doneFn()}));
+  if(SPRINT[dkey()]){const tl=sprintTasks(SPRINT[dkey()]);TODAY_CACHE={k:dkey(),list:tl};return tl.map(t=>({...t,done:t.doneFn()}))}
+  const tasks=[]; const wk=weekNo(); const day=new Date().getDay(); const late=wk>=9;
+  const base=D("baseline"); const missing=SUBJ.filter(s=>!base[s.id]);
+  missing.slice(0,2).forEach(s=>tasks.push({kind:"baseline",sid:s.id,title:`Baseline test: ${s.name}`,target:"Finish it. No target score, it's the starting point.",doneFn:()=>!!D("baseline")[s.id]}));
+  tasks.push({kind:"cards",title:"Flashcards",target:"Clear every due card. Missed ones come back at the end until you get them.",doneFn:()=>SUBJ.every(s=>{const c=dueCards(s.id,12);return c.due.length+c.fresh.length===0})});
+  if(missing.length<=3){
+    const r=ROTA[day];
+    r.blocks.forEach(([kind,sid],bi)=>{
+      if(kind==="topic"){const w=weakTopics(sid,1)[0];if(!w)return;const key=`topic:${sid}:${w.id}`;
+        tasks.push({kind,sid,topic:w.id,key,real:true,title:`${SMAP[sid].name}: ${w.name}`,target:`Real exam questions first: at least 20 marks' worth, marked with the real mark scheme. ${TARGET.topic}%+ ticks it off. Under that, the app gives fresh questions on the gaps until you're there.`,doneFn:()=>taskDone(key)})}
+      else if(kind==="mixed"){const key=`mixed:${sid}`;tasks.push({kind,sid,key,title:`${SMAP[sid].name}: mixed set`,target:`${TARGET.mixed}%+ on 30 marks of mixed topics, like a real paper.`,doneFn:()=>taskDone(key)})}
+      else if(kind==="drill"){const key=`drill:${sid}`;tasks.push({kind,sid,key,title:`${SMAP[sid].name}: exam-style drill`,target:`${TARGET.drill}%+ on ${DRILLDESC[sid]}, at exam pace.`,doneFn:()=>taskDone(key)})}
+      else if(kind==="mistakes"){const n=mistakePool(null,5).length;if(!n)return;const key="mistakes";tasks.push({kind,key,title:"Mistakes from last week, from memory",target:`Redo up to 12 questions you got wrong 5+ days ago. ${TARGET.topic}%+ this time.`,doneFn:()=>taskDone(key)})}
+      else if(kind==="fading"){const f=fadingTopics(1)[0];if(!f)return;const key=`topic:${f.sid}:${f.id}`;
+        tasks.push({kind:"topic",sid:f.sid,topic:f.id,key,title:`Rescue: ${f.name}`,target:`Health is down to ${f.health}%. ${TARGET.topic}%+ on a set brings it back.`,doneFn:()=>taskDone(key)})}
+    });
+    // catch-up: behind on a checkpoint whose deadline has passed
+    const cp=nextCheckpoint();if(cp&&cpStatus(cp).late){const w=SUBJ.map(s=>({s,t:weakTopics(s.id,1)[0]})).filter(x=>x.t).sort((a,b)=>b.t.prio-a.t.prio)[0];
+      if(w){const key=`topic:${w.s.id}:${w.t.id}`;if(!tasks.some(t=>t.key===key))tasks.push({kind:"topic",sid:w.s.id,topic:w.t.id,key,title:`Catch-up: ${w.t.name}`,target:`Checkpoint "${cp.name}" is overdue. ${TARGET.topic}%+ on this one.`,doneFn:()=>taskDone(key)})}}
+    const recent=lastPractised();
+    if(recent&&recent.tid&&!NOBLURT.includes(recent.sid)){const key=`blurt:${recent.sid}:${recent.tid}`;tasks.push({kind:"blurt",sid:recent.sid,topic:recent.tid,key,title:`Blurt: ${(DATA[recent.sid].topicMap[recent.tid]||{}).name||""}`,target:`${TARGET.blurt}%+ of the key points from memory, notes closed.`,doneFn:()=>taskDone(key)})}
+    (D("papers").list||[]).filter(p=>p.redo&&!p.corr).slice(0,1).forEach(p=>tasks.push({kind:"corr",pid:p.id,title:`Corrections: ${p.name}`,target:`Redo ${p.redo} with the mark scheme until each one would get full marks.`,doneFn:()=>{const x=(D("papers").list||[]).find(y=>y.id===p.id);return !!(x&&x.corr)}}));
+    const mockWeek=[7,8,12].includes(wk);
+    const paperDay=r.paper===true||(r.paper==="wk5"&&wk>=5)||mockWeek||(late&&day===3);
+    if(paperDay){const sid=paperSubjectToday();const np=nextPaper(sid,mockWeek);
+      tasks.push({kind:"paper",sid,paper:np,title:np?`Real paper: ${SMAP[sid].short} ${np.name}`:`Real paper: ${SMAP[sid].name}`,
+        target:np?`${np.marks} marks, ${np.mins} min, exam conditions. Target ${Math.ceil(np.marks*(late?.85:.75))}+ (${late?85:75}%). Mark it, log it.`:"Pick one from Papers, do it timed, mark it, log the score.",doneFn:()=>(D("papers").list||[]).some(p=>p.date===dkey()&&p.subject===sid)})}
+  }
+  TODAY_CACHE={k:dkey(),list:tasks};
+  return tasks.map(t=>({...t,done:t.doneFn()}));
+}
+const DRILLDESC={maths:"3-4 grade 8-9 questions",science:"long-answer questions (4-6 markers)",englit:"one essay question or paragraph drill",englang:"one long reading or writing question",geography:"a 9-marker plus a 6-marker"};
+function mistakePool(sid,minDays){const out=[];const cut=Date.now()-minDays*864e5;SUBJ.filter(s=>!sid||s.id===sid).forEach(s=>Object.entries(D("qa_"+s.id)).forEach(([id,a])=>{if(a.g/a.m<.6&&a.t<=cut&&QIDX[id])out.push(QIDX[id])}));return out}
+function renderToday(){
+  const wk=weekNo(); const plan=PLAN[Math.max(0,wk-1)]; const tasks=todayTasks();
+  const d=new Date(); const ds=d.toLocaleDateString("en-GB",{weekday:"long",day:"numeric",month:"long"});
+  const done=tasks.filter(t=>t.done).length;let ci=tasks.findIndex(x=>!x.done);if(View.pick!=null&&tasks[View.pick]&&!tasks[View.pick].done)ci=View.pick;const minN=Math.min(2,tasks.length);const minDone=tasks.slice(0,minN).filter(t=>t.done).length;const rd=Math.round(SUBJ.reduce((a,s2)=>{const th=topicHealth(s2.id),c=[0,0,0,0,0];th.forEach(t=>c[t.m.k]++);return a+(c[4]+c[3]*.7+c[2]*.35)/Math.max(1,th.length)},0)*100/SUBJ.length);const cp=nextCheckpoint();const cs=cp?cpStatus(cp):null;const X=lvlFor(xpTotal());if(minDone>=minN){const dd=D("daily");const k=dkey();dd[k]=dd[k]||{};if(!dd[k]._min){dd[k]._min=1;save("daily")}}
+  return `<div class="stack"><header class="top"><div><div class="eyebrow">${esc(ds)}</div><h1>${done===tasks.length?"Day cleared":minDone>=minN?"Minimum cleared. Bonus open":`${minDone} of ${minN} daily minimum`}</h1><p class="muted">${SPRINT[dkey()]?"Mock week":wk?esc(plan.t):"Baseline"} · goal: <span class="hl">9s, 90% on every paper</span></p></div>
+  <div class="stack" style="gap:4px;min-width:140px"><div class="row" style="justify-content:space-between"><b class="mono"><span style="display:inline-block;vertical-align:middle;margin-right:6px">${avatar(X.L,34)}</span>Lv ${X.L} · ${lname(X.L)}</b><span class="small muted mono">🔥 ${streak()}-day streak</span></div><div class="progress"><i style="width:${X.p}%;background:var(--hl)"></i></div></div></header>${noteHtml()}
+  ${View.ptimer?`<section class="sheet row" style="justify-content:space-between;border:2px solid var(--accent)"><b>Exam timer</b><span class="mono" id="ptimer" style="font-size:1.4rem;font-weight:800"></span><button class="btn" data-ptstop>Stop</button></section>`:""}
+  <section class="sheet stack"><div class="row" style="justify-content:space-between"><b>Exam ready</b><b class="mono">${rd}%</b></div><div class="progress" style="height:14px"><i style="width:${rd}%;background:var(--accent)"></i></div><div class="row small muted" style="justify-content:space-between"><span>Minimum ${minDone}/${minN} · bonus ${Math.max(0,done-minDone)}/${tasks.length-minN}</span><span>Goals ${CHECKPOINTS.filter(c=>cpStatus(c).done).length}/${CHECKPOINTS.length}</span></div></section>
+  <section class="sheet stack"><div class="row" style="justify-content:space-between"><b>This week</b><span class="small muted">${SPRINT[dkey()]?"Mock week":wk?`Week ${wk}: ${esc(plan.t)}`:"Baseline week"}</span></div><p class="small muted">${SPRINT[dkey()]?"Mocks: Lit Paper 2 Mon, Maths Paper 1 Tue, Chemistry Paper 1 Thu. Today's quests are built for them.":esc(plan.d)}</p>${weekStrip()}<p class="small muted">${paceLine()}</p></section>
+  ${false&&cp?`<section class="sheet stack" style="border-left:4px solid ${cs.late?"var(--bad)":"var(--accent)"}"><div class="row" style="justify-content:space-between"><div class="eyebrow">Checkpoint ${cp.id} of ${CHECKPOINTS.length}</div><span class="mono small">${cs.a}/${cs.n}</span></div><h3>${esc(cp.name)}</h3><p class="small muted">${esc(cp.goal)}${cs.late?" · overdue, catch-up block added below":""}</p><div class="progress"><i style="width:${pct(cs.a,cs.n)}%"></i></div></section>`:""}
+  <section class="sheet"><h2>Today's quests</h2><p class="small muted">Clear the 2 daily minimum quests to bank your day. Bonus quests earn extra XP. Do as many as you can finish.</p><div>${tasks.map((t,i)=>(t.done||i!==ci)?`<div class="task" style="${t.done?"opacity:.55":""}"><span class="tick ${t.done?"done":""}" aria-hidden="true">${t.done?"✓":i+1}</span><div class="tx"><div style="font-weight:700">${t.sid?stag(t.sid)+" ":""}${esc(t.title)}</div><div class="small muted">${!t.done?(i<minN?"Daily minimum":"Bonus quest"):esc(t.target)}</div></div>${!t.done?`<button class="btn ghost" style="min-height:36px;padding:6px 10px" data-pick="${i}">Do this</button>`:""}</div>`:`<div class="task cq" style="border:2px solid var(--accent);border-radius:12px;padding:14px;flex-direction:column;align-items:stretch;gap:10px"><div class="eyebrow" style="width:100%">${i<minN?"Daily minimum":"Bonus quest"}</div><span class="tick ${t.done?"done":""}" aria-hidden="true">${t.done?"✓":""}</span><div class="tx"><div style="font-weight:700">${t.sid?stag(t.sid)+" ":""}${esc(t.title)}</div><div class="small muted">${esc(t.target)}</div>
+  ${t.real&&!t.done&&LEARN[t.topic]&&mastery(t.sid,t.topic,topicStats(t.sid)[t.topic]||{}).k<=2?`<div class="row" style="margin-top:8px"><a class="btn" style="text-decoration:none;border-color:var(--hl)" href="${esc(LEARN[t.topic].url)}" target="_blank" rel="noopener">0. Learn it first ↗</a><span class="small muted">${esc(LEARN[t.topic].label)}</span></div>`:""}
+  ${t.real&&!t.done?`<div class="row" style="margin-top:8px"><a class="btn" style="text-decoration:none" href="${realUrl(t.sid,DATA[t.sid].topicMap[t.topic])}" target="_blank" rel="noopener">1. Real exam questions ↗</a>${RLINKS[t.topic]&&RLINKS[t.topic].ms?`<a class="btn" style="text-decoration:none" href="${esc(RLINKS[t.topic].ms)}" target="_blank" rel="noopener">Mark scheme ↗</a>`:""}</div>
+   ${RLINKS[t.topic]&&RLINKS[t.topic].level==="paper"?`<p class="small muted" style="margin-top:4px">No per-topic collection exists for this subject: open a past paper and do the questions on this topic.</p>`:""}
+   <div class="row" style="margin-top:8px"><label for="rt-g-${i}" class="small">Scored</label><input id="rt-g-${i}" type="number" min="0" style="width:80px"><label for="rt-m-${i}" class="small">out of</label><input id="rt-m-${i}" type="number" min="1" style="width:80px"><button class="btn primary" data-rtsave="${i}">Save</button></div>
+   <div class="row" style="margin-top:6px"><button class="btn" data-task="${i}">2. App set on the gaps</button></div>`:""}
+  ${t.kind==="paper"&&t.paper&&!t.done?`<div class="row" style="margin-top:8px"><a class="btn" style="text-decoration:none" href="${esc(t.paper.qp)}" target="_blank" rel="noopener">Question paper ↗</a><button class="btn" data-ptimer="${t.paper.mins||90}">Start ${t.paper.mins||90} min timer</button><a class="btn" style="text-decoration:none" href="${esc(t.paper.ms)}" target="_blank" rel="noopener">Mark scheme ↗</a>${t.paper.insert?`<a class="btn" style="text-decoration:none" href="${esc(t.paper.insert)}" target="_blank" rel="noopener">Insert ↗</a>`:""}${t.paper.prerelease?`<a class="btn" style="text-decoration:none" href="${esc(t.paper.prerelease)}" target="_blank" rel="noopener">Pre-release ↗</a>`:""}</div>${t.paper.note?`<p class="small muted" style="margin-top:6px">${esc(t.paper.note)}</p>`:""}
+   <div class="row" style="margin-top:8px"><label for="tp-score" class="small">Score</label><input id="tp-score" type="number" min="0" max="${t.paper.marks}" style="width:90px"><span class="small muted">/ ${t.paper.marks}</span><input id="tp-redo" type="text" placeholder="Qs you dropped marks on" style="flex:1;min-width:140px"><button class="btn primary" data-tpsave="${i}">Save</button></div>`:""}</div>
+  ${t.done&&t.kind!=="topic"||t.kind==="paper"&&t.paper||t.real&&!t.done?"":`<button class="btn ${i===ci?"primary":""}" data-task="${i}">${t.done?"More":"Start"}</button>`}</div>`).join("")}</div>
+  ${!SPRINT[dkey()]&&ROTA[new Date().getDay()].note?`<p class="small muted" style="margin-top:8px">${esc(ROTA[new Date().getDay()].note)}</p>`:""}</section>
+  ${mockCards()}
+  <button class="btn ghost" data-mapopen="more">${View.mapOpen.more?"Hide grades ▲":"Predicted grades ▼"}</button>${View.mapOpen.more?`<section class="stack"><h2>Where you stand</h2>${gradeStrip()}</section><section class="sheet"><div class="eyebrow">This week</div><p style="margin-top:6px">${esc(plan.d)}</p>${weekStrip()}</section>`:""}</div>`;
+}
+const MOCKS=[{date:"2026-11-09",sid:"englit",label:"English Literature Paper 2",note:"An Inspector Calls, Power and Conflict poetry, Unseen poetry",pick:t=>/Paper 2|All/.test(t.paper||"")},{date:"2026-11-10",sid:"maths",label:"Maths Paper 1 (non-calculator)",note:"Do every question without a calculator. Surds, fractions and algebra are the big ones",pick:t=>true},{date:"2026-11-12",sid:"science",label:"Science Chemistry Paper 1",note:"Atomic structure, bonding, quantitative chemistry, chemical changes, energy changes",pick:t=>/Chemistry Paper 1/.test(t.paper||"")}];
+function mockCards(){const today=dnum();const live=MOCKS.filter(m=>dnum(pkey(m.date))>=today);if(!live.length)return "";
+ return live.map(m=>{const left=dnum(pkey(m.date))-today;const tm=DATA[m.sid].topicMap||{};const th=topicHealth(m.sid).filter(t=>m.pick(tm[t.id]||{}));const sec=th.filter(t=>t.m.k>=3).length;
+  const weak=th.slice().sort((a,b)=>(a.m.k-b.m.k)||((a.health??-1)-(b.health??-1))).slice(0,6);
+  return `<section class="sheet stack" style="border-left:4px solid var(--c-${m.sid})"><div class="row" style="justify-content:space-between"><div class="eyebrow">Mock coming up</div><b class="mono">${left===0?"Today":left+" day"+(left>1?"s":"")}</b></div><h3>${esc(m.label)}</h3><p class="small muted">${esc(m.note)}</p><div class="progress"><i style="width:${pct(sec,th.length)}%;background:var(--c-${m.sid})"></i></div><p class="small muted">${sec}/${th.length} topics Secure. Start with the weakest:</p><div class="row" style="gap:6px">${weak.map(t=>`<button class="chip" data-wt="${m.sid}|${t.id}">${esc(t.name.length>34?t.name.slice(0,32)+"...":t.name)}</button>`).join("")}</div></section>`}).join("")}
+function paceLine(){const dd=D("daily");const now=new Date();const mon=new Date(now);mon.setDate(now.getDate()-((now.getDay()+6)%7));let n=0;for(let i=0;i<7;i++){const d=new Date(mon);d.setDate(mon.getDate()+i);const o=dd[dkey(d)];if(o&&(o._min||o._t&&Object.keys(o._t).length>=2))n++}
+ const dw=n===1?"day":"days";return n>=5?`${n} ${dw} this week with the minimum cleared. On pace.`:`${n} ${dw} this week with the minimum cleared. Aim for 5. Rest days are fine, just don't let a week go quiet.`}
+function weekStrip(){const dd=D("daily");const now=new Date();const mon=new Date(now);mon.setDate(now.getDate()-((now.getDay()+6)%7));
+  return `<div class="row" style="margin-top:10px;gap:6px;flex-wrap:nowrap">${["M","T","W","T","F","S","S"].map((l,i)=>{const d=new Date(mon);d.setDate(mon.getDate()+i);const k=dkey(d);const o=dd[k];const n=o&&o._t?Object.keys(o._t).length:0;const act=!!o;const isT=k===dkey();
+    return `<div style="flex:1;text-align:center"><div class="small muted">${l}</div><div style="height:28px;border-radius:6px;margin-top:2px;display:grid;place-items:center;font-size:.75rem;font-weight:700;background:${n>=3?"var(--good)":act?"var(--good-bg)":"var(--rule)"};color:${n>=3?"var(--accent-ink)":"var(--ink)"};${isT?"outline:2px solid var(--ink);outline-offset:1px":""}">${n||""}</div></div>`}).join("")}</div><p class="small muted" style="margin-top:6px">Number = targets hit that day.</p>`}
+/* real past papers: worked oldest first; the newest quarter of each subject's list is kept back for mock weeks */
+function paperSubjectToday(){const wk=weekNo();const day=new Date().getDay();
+  if([7,8,12].includes(wk)&&day!==6){const order=["maths","englit","science","englang","geography","maths","science"];return order[day]}
+  return SUBJ[(Math.max(1,wk)-1)%SUBJ.length].id}
+function nextPaper(sid,mock){const list=PAPERS[sid]||[];if(!list.length)return null;const done=new Set((D("papers").list||[]).map(p=>p.pid).filter(Boolean));
+  const cut=Math.floor(list.length*0.75);const pool=mock?[...list.slice(cut),...list.slice(0,cut)]:list.slice(0,cut);
+  return pool.find(p=>!done.has(p.id))||list.find(p=>!done.has(p.id))||null}
+function lastPractised(){let best=null;SUBJ.forEach(s=>{Object.entries(D("qa_"+s.id)).forEach(([id,a])=>{const q=QIDX[id];if(q&&a.t<new Date().setHours(0,0,0,0)&&(!best||a.t>best.t))best={t:a.t,sid:s.id,tid:q.topic}})});return best}
+function retestDue(){for(const s of SUBJ){const ts=topicStats(s.id);for(const t of Object.values(ts)){const m=mastery(s.id,t.id,t);if(m.k===4&&m.retest)return {sid:s.id,tid:t.id,name:t.name}}}return null}
+function startTask(i){const t=todayTasks()[i];if(!t)return;
+  if(t.kind==="blurt")return startBlurt(t.sid,t.topic,t.key);
+  if(t.kind==="corr"||t.kind==="paper")return go("papers");
+  if(t.kind==="baseline")return startBaseline(t.sid);
+  if(t.kind==="cards")return startDeck(null);
+  runBlock({kind:t.kind,sid:t.sid,topic:t.topic,key:t.key,re:t.re||null,round:1});
+}
+/* build a set by total marks, not question count, so a block matches real exam pace */
+function pickSet(pool,targetMarks,qa,order){
+  const unseen=shuffle(pool.filter(q=>!qa[q.id])),weak=shuffle(pool.filter(q=>qa[q.id]&&qa[q.id].g/qa[q.id].m<.7)),rest=shuffle(pool.filter(q=>qa[q.id]&&qa[q.id].g/qa[q.id].m>=.7));
+  const ordered=order==="mixed"?shuffle([...unseen.slice(0,8),...weak.slice(0,6),...rest.slice(0,4)]).concat(unseen.slice(8),weak.slice(6),rest.slice(4)):[...unseen,...weak,...rest];
+  const out=[];let mk=0;for(const q of ordered){if(mk>=targetMarks)break;if(out.length&&mk+q.marks>targetMarks*1.4)continue;out.push(q);mk+=q.marks}
+  return order==="mixed"?out:out.sort((a,b)=>a.level-b.level)}
+function blockQs(b){const qs=DATA[b.sid].questions;const qa=D("qa_"+b.sid);const late=weekNo()>=9;
+  if(b.kind==="topic"){let pool=qs.filter(q=>q.topic===b.topic&&(!late||q.level>=2)&&(!b.re||b.re.test(q.q)));if(pool.length<4)pool=qs.filter(q=>q.topic===b.topic&&(!b.re||b.re.test(q.q)));if(pool.length<4)pool=qs.filter(q=>q.topic===b.topic);return pickSet(pool,25,qa)}
+  if(b.kind==="mixed"){const touched=new Set(Object.keys(qa).map(id=>QIDX[id]&&QIDX[id].topic).filter(Boolean));let pool=qs.filter(q=>touched.has(q.topic)&&q.marks<=6);if(touched.size<3)pool=qs.filter(q=>q.marks<=6);return pickSet(pool,30,qa,"mixed")}
+  if(b.kind==="drill"){const spec={maths:[q=>q.level===3,20],science:[q=>q.type==="written"&&q.marks>=4,18],geography:[q=>q.type==="written"&&q.marks>=6,15],englit:[q=>q.type==="written"&&q.marks>=4,20],englang:[q=>q.type==="written"&&q.marks>=8,16]}[b.sid];
+    return pickSet(qs.filter(spec[0]),spec[1],qa)}
+  if(b.kind==="mistakes")return shuffle(mistakePool(null,5)).slice(0,12);
+  return []}
+function runBlock(b){const qs=blockQs(b);const t=b.topic?DATA[b.sid].topicMap[b.topic]:null;
+  const name={topic:t?t.name:"",mixed:"mixed set",drill:"exam-style drill",mistakes:"mistakes from memory"}[b.kind];
+  const keepTimed=View.timed;
+  startSession(`${b.sid?SMAP[b.sid].short+": ":""}${name}${b.round>1?` · round ${b.round}`:""}`,qs,b.kind==="mistakes"?"mistakes":"topic",b.sid);
+  View.timed=keepTimed;if(View.session){View.session.block=b;View.session.realTopic=b.kind==="topic"?b.topic:null}}
+
+/* ===== sessions ===== */
+function startSession(title,qs,kind,sid){
+  if(!qs.length){View.session=null;alertMsg("No questions found for that selection yet.");return}
+  View.session={title,kind,sid,items:qs.map(q=>q.id),i:0,res:[],state:{},timed:!!View.timed&&kind!=="baseline",qStart:Date.now(),over:0};View.busy=true;render();window.scrollTo(0,0)}
+function alertMsg(m){View.flash=m;render()}
+function startBaseline(sid){const qs=DATA[sid].questions.filter(q=>q.baseline);startSession(`${SMAP[sid].name} baseline`,qs,"baseline",sid)}
+function pickTopicQs(sid,tid,lvl,n=10){
+  const qa=D("qa_"+sid);let pool=DATA[sid].questions.filter(q=>(!tid||q.topic===tid)&&(!lvl||(lvl===23?q.level>=2:q.level===lvl)));
+  if(lvl&&pool.length<4)pool=DATA[sid].questions.filter(q=>(!tid||q.topic===tid)&&q.level>=2);
+  const unseen=shuffle(pool.filter(q=>!qa[q.id])), weak=shuffle(pool.filter(q=>qa[q.id]&&qa[q.id].g/qa[q.id].m<.7)), rest=shuffle(pool.filter(q=>qa[q.id]&&qa[q.id].g/qa[q.id].m>=.7));
+  return [...unseen.slice(0,n-2),...weak,...unseen.slice(n-2),...rest].slice(0,n).sort((a,b)=>a.level-b.level);
+}
+function startTopic(sid,tid,lvl){const t=tid?DATA[sid].topicMap[tid]:null;startSession(`${SMAP[sid].short}: ${t?t.name:"mixed topics"}`,pickTopicQs(sid,tid,lvl),"topic",sid);if(View.session)View.session.realTopic=tid||null}
+function startMistakes(sid){const out=[];SUBJ.filter(s=>!sid||s.id===sid).forEach(s=>{const qa=D("qa_"+s.id);Object.entries(qa).forEach(([id,a])=>{if(a.g/a.m<.6&&QIDX[id])out.push(QIDX[id])})});
+  startSession("Mistakes review",shuffle(out).slice(0,12),"mistakes",sid)}
+function renderSession(){
+  const S=View.session; if(S.i>=S.items.length)return renderSummary();
+  const q=QIDX[S.items[S.i]]; const st=S.state; const topic=DATA[q.subject].topicMap[q.topic];
+  let body="";
+  if(q.type==="mcq"){
+    body=`<div class="opts" role="group" aria-label="Options">${q.options.map((o,k)=>{let cls="";if(st.picked!=null){if(k===q.answer)cls="right";else if(k===st.picked)cls="wrong"}
+      return `<button class="opt ${cls}" data-opt="${k}" ${st.picked!=null?"disabled":""}>${String.fromCharCode(65+k)}. ${esc(o)}</button>`}).join("")}</div>
+    ${st.picked!=null?`<div class="stack"><p style="font-weight:700;color:${st.picked===q.answer?"var(--good)":"var(--bad)"}">${st.picked===q.answer?"Correct":"Not quite. Answer: "+String.fromCharCode(65+q.answer)}</p>${(q.ms||[]).map(m=>`<p>${esc(m)}</p>`).join("")}${q.tip?`<p class="tip">${esc(q.tip)}</p>`:""}<button class="btn primary" data-next>Next</button></div>`:""}`;
+  }else{
+    const exact=(q.ms||[]).length===q.marks;
+    body=`<label class="small muted" for="ans">Your answer (write it here or on paper)</label><textarea id="ans" ${st.shown?"readonly":""}>${esc(st.text||"")}</textarea>
+    ${!st.shown?`<button class="btn primary" data-show>Show mark scheme</button>`:`<div class="stack"><div><div class="eyebrow">Model answer</div><div class="model">${esc(q.answer)}</div></div>
+      <div><div class="eyebrow">Mark scheme: ${exact?"tick each mark earned":"award marks honestly"}</div>
+      ${exact?`<ul class="ms">${q.ms.map((m,k)=>`<li><label><input type="checkbox" data-mk="${k}" ${st.ticks&&st.ticks[k]?"checked":""}> <span>${esc(m)}</span></label></li>`).join("")}</ul>`
+      :`<ul class="ms">${(q.ms||[]).map(m=>`<li>• ${esc(m)}</li>`).join("")}</ul><label class="row" style="margin-top:8px" for="mkn"><span style="font-weight:700">Marks awarded</span><input id="mkn" type="number" min="0" max="${q.marks}" value="${st.n??0}" style="width:90px"> <span class="muted">/ ${q.marks}</span></label>`}</div>
+      ${q.marks>=3?`<div class="stack" style="gap:6px"><button class="btn" data-claudemark ${st.cmBusy?"disabled":""}>${st.cmBusy?"Marking...":"Ask Claude to mark my answer"}</button>${st.cm?`<div class="sheet small" style="white-space:pre-wrap">${esc(st.cm)}</div><p class="small muted">A guide only. You still mark yourself against the scheme above.</p>`:""}</div>`:""}${q.subject==="englang"&&q.marks>=8?`<p class="tip">Now improve it: pick your weakest paragraph, rewrite it using one idea from the model answer, then compare again.</p>`:""}${q.tip?`<p class="tip">${esc(q.tip)}</p>`:""}<button class="btn primary" data-savemark>Save ${exact?"marks":"mark"} and next</button></div>`}`;
+  }
+  return `<div class="stack" style="padding-top:16px">${noteHtml()}<div class="row" style="justify-content:space-between"><button class="btn ghost" data-quit>← Exit</button><span class="small muted mono">${S.i+1} / ${S.items.length}</span></div>
+  <div class="progress"><i style="width:${100*S.i/S.items.length}%"></i></div>
+  <div class="eyebrow">${esc(S.title)}</div>
+  <article class="sheet stack"><div class="row">${stag(q.subject)}<span class="small muted">${esc(topic?topic.name:"")}</span><span class="lvl" style="color:${q.level===3?"var(--bad)":q.level===2?"var(--warn)":"var(--good)"}">${LVL[q.level]||""}</span><span class="small mono muted" style="margin-left:auto">${S.timed?`<span id="qtimer" style="font-weight:700">${fmtT(q.marks*PACE[q.subject])}</span> · `:""}[${q.marks} mark${q.marks>1?"s":""}]</span></div>
+  <div class="qtext">${esc(q.q)}</div>${body}</article>
+  ${st.rep?`<div class="sheet stack"><label class="small muted" for="rep">What's wrong with this question?</label><textarea id="rep" style="min-height:80px"></textarea><div class="row"><button class="btn" data-repsend>Send to Mo</button><button class="btn ghost" data-repx>Cancel</button></div></div>`
+   :`<button class="btn ghost small" data-rep style="align-self:flex-start">Report a problem with this question</button>`}
+  <a class="small" href="${realUrl(q.subject,topic)}" target="_blank" rel="noopener">Real exam questions on this topic ↗</a></div>`;
+}
+async function claudeMark(){const S=View.session;if(!S)return;const q=QIDX[S.items[S.i]];const st=S.state;const ans=(st.text||"").trim();
+  if(ans.length<15){st.cm="Write a real answer first, then ask for marking.";render();return}
+  st.cmBusy=true;render();
+  try{const sample=await claude.use("sample");if(!sample)throw new Error("na");
+   const r=await sample(`You are an experienced GCSE examiner marking one answer for a 15 year old.\nSubject: ${SMAP[q.subject].name} (${SMAP[q.subject].board}).\nQuestion (${q.marks} marks): ${q.q}\nMark scheme points: ${(q.ms||[]).join(" | ")}\nModel answer: ${q.answer}\nStudent answer: ${ans}\n\nReply in this exact shape, plain words, no markdown:\nSuggested mark: X/${q.marks}\nGot: one short line per mark earned\nMissed: one short line per mark missed and what to add\nBe strict like a real examiner. Do not give marks for vague points.`,{modelTier:"default"});
+   st.cm=r.text||"No reply."}catch(e){st.cm="Claude marking isn't available right now. Mark it yourself against the scheme."}
+  st.cmBusy=false;if(View.session===S)render()}
+function finishQ(g){const S=View.session;const q=QIDX[S.items[S.i]];
+  recordAttempt(q,g,q.marks,S.kind);S.res.push({id:q.id,g,m:q.marks});
+  if(q.type!=="mcq"&&S.state.text&&S.state.text.trim())saveAnswer(q.id,{text:S.state.text.slice(0,3000),g,m:q.marks,t:Date.now(),subject:q.subject});
+  if(S.timed&&(Date.now()-S.qStart)/1000>q.marks*PACE[q.subject])S.over++;
+  S.i++;S.state={};S.qStart=Date.now();render();window.scrollTo(0,0)}
+function renderSummary(){const S=View.session;const g=S.res.reduce((a,r)=>a+r.g,0),m=S.res.reduce((a,r)=>a+r.m,0);
+  if(S.kind==="baseline"&&!S.saved){S.saved=true;const b=D("baseline");const bt={};S.res.forEach(r=>{const t=QIDX[r.id].topic;bt[t]=bt[t]||[0,0];bt[t][0]+=r.g;bt[t][1]+=r.m});
+    b[S.sid]={g,m,date:dkey(),topics:bt};save("baseline")}
+  const s=S.sid?SMAP[S.sid]:null;
+  // target check for a Today block: hit it (or 3 rounds) and the item ticks off; miss it and go again with fresh questions
+  let tgt="";const B=S.block;
+  if(B&&B.key&&!S.judged){S.judged=true;const need=B.kind==="drill"?TARGET.drill:TARGET.topic;S.hit=pct(g,m)>=need;S.need=need;
+    if(S.hit||B.round>=3)markTask(B.key,pct(g,m))}
+  if(B&&B.key){tgt=S.hit?`<p class="banner" style="background:var(--good-bg)">Target hit: ${pct(g,m)}% (needed ${S.need}%). Ticked off.</p>`
+    :B.round>=3?`<p class="banner">Still under ${S.need}% after 3 rounds. Ticked off for today; this topic stays near the top of your list.</p>`
+    :`<p class="banner" style="background:var(--bad-bg)">${pct(g,m)}%, target is ${S.need}%. Go again with fresh questions (round ${B.round+1} of 3).</p><button class="btn primary" data-goagain>Go again</button>`}
+  return `<div class="stack" style="padding-top:20px"><div class="eyebrow">${esc(S.title)}</div><h1>${g} / ${m} <span class="muted">(${pct(g,m)}%)</span></h1>${tgt}
+  ${s&&S.kind==="baseline"?`<p>Starting point: that's roughly a <span class="hl">grade ${esc(gradeFor(s,pct(g,m)))}</span> standard in ${esc(s.name)}. The Today list now builds your sessions around your weakest topics.</p>`:""}
+  ${S.timed?`<p class="small">${S.over?`Over time on ${S.over} of ${S.res.length}. Speed is part of the target.`:"All inside exam pace."}</p>`:""}
+  <p class="muted">${pct(g,m)>=GOAL_PCT?"At the 90% goal. Move up a level next time.":pct(g,m)>=70?"Solid. The dropped marks are listed below; they come back in Mistakes review.":"These topics need another pass. Every question under 60% is queued in Mistakes review."}</p>
+  <div class="sheet"><table><thead><tr><th>Question</th><th>Marks</th></tr></thead><tbody>${S.res.map(r=>{const q=QIDX[r.id];return `<tr><td>${esc((DATA[q.subject].topicMap[q.topic]||{}).name||"")} <span class="small muted">${LVL[q.level]||""}</span></td><td class="mono" style="color:${r.g/r.m>=.6?"var(--good)":"var(--bad)"}">${r.g}/${r.m}</td></tr>`}).join("")}</tbody></table></div>
+  ${S.realTopic&&!(S.block&&S.block.key)?(()=>{const t=DATA[S.sid].topicMap[S.realTopic];return S.realSaved?`<p class="small" style="color:var(--good)">Real exam questions logged.</p>`:`<section class="sheet stack" style="border-left:4px solid var(--hl)"><div class="eyebrow">Step 2 of 2</div><h3>Real exam questions: ${esc(t?t.name:"")}</h3>
+    <p class="small">Open the real past-paper questions on this topic, do them on paper (at least 20 marks' worth), mark them with the mark scheme on that page, then enter the total.</p>
+    <a class="btn" style="text-decoration:none;align-self:flex-start" href="${realUrl(S.sid,t)}" target="_blank" rel="noopener">Open real questions ↗</a>
+    <div class="row"><label for="rq-g" class="small">Marks scored</label><input id="rq-g" type="number" min="0" style="width:90px"><label for="rq-m" class="small">out of</label><input id="rq-m" type="number" min="1" style="width:90px"><button class="btn primary" data-rqsave>Save</button></div></section>`})():""}
+  <div class="row"><button class="btn ${S.realTopic&&!S.realSaved?"":"primary"}" data-done>Back to Today</button>${S.sid&&S.kind!=="baseline"?`<button class="btn" data-again>Another 10</button>`:""}</div></div>`}
+
+/* ===== BLURTING ===== */
+const BLURT_SECS=480;
+function startBlurt(sid,tid,key){const cards=DATA[sid].flashcards.filter(c=>c.topic===tid);
+  if(!cards.length){alertMsg("No key points for that topic yet.");return}
+  const cs0=D("cards_"+sid);const n=sid==="maths"?4:5;const set=shuffle(cards.slice()).sort((a,b)=>((cs0[a.id]||[0])[0])-((cs0[b.id]||[0])[0])).slice(0,Math.min(n,cards.length)).map(c=>c.id);
+   View.blurt={sid,tid,key,set,start:Date.now(),text:"",phase:"write",ticks:{}};View.busy=true;render();window.scrollTo(0,0)}
+function fmtT(s){const a=Math.abs(s);return (s<0?"+":"")+Math.floor(a/60)+":"+pad(a%60)}
+function renderBlurt(){const B=View.blurt;const t=DATA[B.sid].topicMap[B.tid];const cards=B.set.map(id=>CIDX[id]).filter(Boolean);
+  const head=`<div class="row" style="justify-content:space-between"><button class="btn ghost" data-quit>← Exit</button></div>
+  <div class="eyebrow">Blurt · ${esc(SMAP[B.sid].short)}</div><h1>${esc(t?t.name:"")}</h1>`;
+  if(B.phase==="write")return `<div class="stack" style="padding-top:16px">${head}<p class="muted">${cards.length} specific things from this topic. Close your notes and write ${B.sid==="maths"?"the formula or method steps for each, then one quick worked example":"everything you can remember about each one"}. Bullets are fine.</p><ol class="stack" style="gap:6px;padding-left:20px;margin:0">${cards.map(c=>`<li><b>${esc(c.front)}</b></li>`).join("")}</ol>
+    <label class="small muted" for="blurt">Your answers</label><textarea id="blurt" style="min-height:180px">${esc(B.text)}</textarea><button class="btn primary" data-bcheck>Done, check it</button></div>`;
+  const got=Object.values(B.ticks).filter(Boolean).length;
+  return `<div class="stack" style="padding-top:16px">${head}<p>Tick every point you got down (roughly is fine, but it has to be there). Anything unticked becomes a flashcard due tomorrow.</p>
+  <details><summary>Your blurt</summary><div class="model" style="margin-top:8px">${esc(B.text||"(empty)")}</div></details>
+  <div class="sheet"><ul class="ms">${cards.map(c=>`<li><label><input type="checkbox" data-bt="${esc(c.id)}" ${B.ticks[c.id]?"checked":""}> <span><b>${esc(c.front)}</b><br><span class="small muted">${esc(c.back)}</span></span></label></li>`).join("")}</ul></div>
+  <div class="row"><span class="mono" id="bscore">${got}/${cards.length}</span><button class="btn primary" data-bsave>Save blurt</button></div></div>`}
+function saveBlurt(){const B=View.blurt;const cards=B.set.map(id=>CIDX[id]).filter(Boolean);const got=cards.filter(c=>B.ticks[c.id]).length;const p=pct(got,cards.length);
+  const bd=D("blurt_"+B.sid);bd[B.tid]=[...(bd[B.tid]||[]),{d:dkey(),p}].slice(-6);save("blurt_"+B.sid);
+  const cs=D("cards_"+B.sid);const now=dnum();cards.forEach(c=>{if(!B.ticks[c.id]){const st=cs[c.id];cs[c.id]=[1,now+1,st?st[2]:now]}});save("cards_"+B.sid);
+  saveAnswer("blurt-"+B.tid,{text:B.text.slice(0,3000),g:got,m:cards.length,t:Date.now(),subject:B.sid,blurt:true});
+  const tries=(bd[B.tid]||[]).filter(x=>x.d===dkey()).length;
+  if(B.key&&(p>=TARGET.blurt||tries>=2))markTask(B.key,p);
+  const msg=p>=TARGET.blurt?`Blurt target hit: ${got}/${cards.length} (${p}%).`:tries>=2?`${p}% on the second go. Ticked off; the ${cards.length-got} missed points are flashcards tomorrow.`:`${p}%, target is ${TARGET.blurt}%. Read the missed points once, wait 20 minutes, then blurt it again from Today.`;
+  View.blurt=null;View.busy=false;go("today");View.flash=msg;render()}
+setInterval(()=>{const pt=document.getElementById("ptimer");if(pt&&View.ptimer){const l=Math.floor((View.ptimer.end-Date.now())/1000);pt.textContent=(l<0?"+":"")+fmtT(Math.abs(l));pt.style.color=l<0?"var(--bad)":""}
+  const B=View.blurt;const el=document.getElementById("btimer");if(B&&el){const left=BLURT_SECS-Math.floor((Date.now()-B.start)/1000);el.textContent=left>=0?fmtT(left):"Time's up "+fmtT(left);el.style.color=left<0?"var(--bad)":""}
+  const S=View.session;const qt=document.getElementById("qtimer");if(S&&S.timed&&qt&&S.qStart){const q=QIDX[S.items[S.i]];if(!q)return;const left=q.marks*PACE[q.subject]-Math.floor((Date.now()-S.qStart)/1000);qt.textContent=left>=0?fmtT(left):"over "+fmtT(-left);qt.style.color=left<0?"var(--bad)":""}},1000);
+
+/* ===== MAP: the game view ===== */
+function hcol(h){return h==null?"var(--rule)":h>=80?"var(--good)":h>=60?"var(--warn)":"var(--bad)"}
+function cpNow(){const c=nextCheckpoint();if(!c)return `<p class="small muted">All checkpoints done.</p>`;const s=cpStatus(c);return `<div class="task"><span class="tick" aria-hidden="true">→</span><div class="tx"><div class="eyebrow">Next goal · ${esc(CP_STAGES[c.stage][0])}</div><div style="font-weight:700">${esc(c.name)}</div><div class="small muted">${esc(c.goal)}</div><div class="progress" style="margin-top:6px"><i style="width:${pct(s.a,s.n)}%"></i></div></div><span class="mono small">${s.a}/${s.n}</span></div>`}
+function cpRow(c){const s=cpStatus(c);return `<div class="task" style="padding:8px 0"><span class="tick ${s.done?"done":""}" aria-hidden="true">${s.done?"✓":""}</span><div class="tx"><div style="font-weight:700">${esc(c.name)}</div><div class="small muted">${esc(c.goal)}</div><div class="progress" style="margin-top:4px;height:6px"><i style="width:${pct(s.a,s.n)}%;${s.done?"background:var(--good)":""}"></i></div></div><span class="mono small">${s.a}/${s.n}</span></div>`}
+function cpList(){return `<div class="stack">${CP_STAGES.map((st,i)=>{const cs=CHECKPOINTS.filter(c=>c.stage===i);const d=cs.filter(c=>cpStatus(c).done).length;return `<div><div class="row" style="justify-content:space-between"><b>Stage ${i+1}: ${esc(st[0])}</b><span class="small mono muted">${d}/${cs.length}</span></div><div class="small muted">${esc(st[1])}</div>${cs.map(cpRow).join("")}</div>`}).join("")}</div>`}
+function renderMap(){const xp=xpTotal();const X=lvlFor(xp);
+  return `<div class="stack"><header class="top"><div><div class="eyebrow">Progress map</div><h1>Lv ${X.L} · ${lname(X.L)}</h1><p class="muted">${xp.toLocaleString("en-GB")} XP · ${X.next-xp} to level ${X.L+1} · ${streak()}-day streak</p></div></header>${noteHtml()}
+  <div class="progress" style="height:10px"><i style="width:${X.p}%;background:var(--hl)"></i></div>
+  <p class="small muted">XP: 2 per mark earned, 1 per flashcard, 100 + score per real paper, 50 when a topic goes Secure, 150 when Mastered. Topic health fades when a topic isn't touched: shaky topics fade in days, Mastered ones over weeks. Faded topics come back on Today automatically.</p>
+  <section class="sheet stack"><button class="btn ghost" data-mapopen="legend" style="display:flex;justify-content:space-between;padding:0;border:0"><h2 style="margin:0">What the labels mean</h2><span class="small muted">${View.mapOpen.legend?"Hide ▲":"Show ▼"}</span></button>${View.mapOpen.legend?`<div class="stack small" style="gap:8px"><div><b style="color:${MCOL[1]}">Not started</b>: no questions done on this topic yet.</div><div><b style="color:${MCOL[2]}">Learning</b>: started, but below 75%.</div><div><b style="color:${MCOL[3]}">Secure</b>: 75%+ on at least half the topic's questions. You can do it.</div><div><b style="color:${MCOL[4]}">Mastered</b>: 85%+ on the hardest (G8-9) questions on two different days a week apart, plus a blurt at 80%+ (not needed in Maths or English Language). This is the grade 9 level.</div><div><b>Health %</b>: how fresh the topic is. It drops if you don't touch it, fast for shaky topics, slowly for Mastered ones. Fading topics (red) come back on Today.</div><div><b>G4-5, G6-7, G8-9</b>: how hard a question is.</div><div><b>Level and XP</b>: a score for effort only. It goes up when you do real work, and doesn't change your grade.</div></div>`:""}</section>
+  <section class="sheet stack"><button class="btn ghost" data-mapopen="cp" style="display:flex;justify-content:space-between;padding:0;border:0"><h2 style="margin:0">Goals</h2><span class="small muted">${View.mapOpen.cp?"Hide ▲":`All ${CHECKPOINTS.length} ▼`}</span></button>${View.mapOpen.cp?cpList():cpNow()}</section>
+  ${SUBJ.map(s=>{const th=topicHealth(s.id);const n=th.length||1;const cnt=[0,0,0,0,0];th.forEach(t=>cnt[t.m.k]++);
+     const prog=Math.round(100*(cnt[4]+cnt[3]*.7+cnt[2]*.35)/n);const st=subjectStats(s.id);const fad=th.filter(t=>t.fading).length;
+     const open=!!View.mapOpen[s.id];const tm=DATA[s.id].topicMap||{};
+     const groups={};th.forEach(t=>{const m=tm[t.id]||{};const p=m.paper||"";const key=(p&&p!=="All papers"&&!/ and /.test(p))?p:(m.area||"Other");(groups[key]=groups[key]||[]).push(t)});
+     const body=!open?"":Object.entries(groups).map(([g,ts])=>{const c2=[0,0,0,0,0];ts.forEach(t=>c2[t.m.k]++);const gp=Math.round(100*(c2[4]+c2[3]*.7+c2[2]*.35)/ts.length);const f2=ts.filter(t=>t.fading).length;
+       return `<div class="stack" style="gap:8px"><div class="row" style="justify-content:space-between"><h3 style="margin:0">${esc(g)}</h3><span class="small mono muted">${c2[3]+c2[4]}/${ts.length} secure${f2?` · <b style="color:var(--bad)">${f2} fading</b>`:""}</span></div>
+       <div class="progress" style="height:6px"><i style="width:${gp}%;background:var(--c-${s.id})"></i></div>
+       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px">${ts.map(t=>`<button class="opt" data-maptopic="${s.id}|${t.id}" style="padding:8px;display:flex;flex-direction:column;gap:5px;${t.fading?"border-color:var(--bad)":""}"><span class="small" style="font-weight:700;line-height:1.25">${esc(t.name)}</span><span class="small" style="color:${MCOL[t.m.k]};letter-spacing:2px">${"★".repeat(Math.max(0,t.m.k-1))}${"☆".repeat(3-Math.max(0,t.m.k-1))}</span><span class="bar" style="height:5px"><i style="width:${t.health||0}%;background:${hcol(t.health)}"></i></span><span class="small muted" style="display:flex;justify-content:space-between;gap:4px"><span style="color:${MCOL[t.m.k]};font-weight:700">${t.m.s}</span><span class="mono">${t.health==null?"–":t.health+"%"}</span></span>${t.fading?`<span class="small" style="color:var(--bad);font-weight:700">Fading · ${t.days}d</span>`:""}</button>`).join("")}</div></div>`}).join("");
+     return `<section class="sheet stack" style="border-top:4px solid var(--c-${s.id})"><button class="btn ghost" data-mapopen="${s.id}" aria-expanded="${open}" style="display:flex;flex-direction:column;align-items:stretch;gap:8px;text-align:left;padding:0;border:0"><span class="row" style="justify-content:space-between"><h2 style="margin:0">${esc(s.name)}</h2><span class="gbig" style="font-size:1.4rem">${prog}%</span></span><span class="progress" style="height:10px"><i style="width:${prog}%;background:var(--c-${s.id})"></i></span><span class="row small"><span><b style="color:${MCOL[4]}">${cnt[4]}</b> mastered</span><span><b style="color:${MCOL[3]}">${cnt[3]}</b> secure</span><span><b style="color:${MCOL[2]}">${cnt[2]}</b> learning</span>${fad?`<span style="color:var(--bad);font-weight:700">${fad} fading</span>`:""}<span class="muted" style="margin-left:auto">${open?"Hide ▲":"Topics ▼"}</span></span></button>${body}</section>`}).join("")}</div>`}
+
+/* ===== PRACTICE ===== */
+function srcNames(t){const out=[];const L=LEARN[t.id],R=RLINKS[t.id];
+  if(L&&L.label){const n=L.label.split(": ").pop().replace(/\s*\(.*$/,"");if(n&&!/grade-|\)/.test(n))out.push(`Learn: <b>${esc(n)}</b>`)}
+  if(R&&R.label&&R.level==="topic"){const m=R.label.match(/(?:Higher|Foundation):\s*([^(]+?)(?:\s+QP)?\s*(?:\(|$)/);if(m)out.push(`Questions: <b>${esc(m[1].trim())}</b>`)}
+  return out.length?`<div class="small muted" style="grid-column:1/-1">On the websites this is called: ${out.join(" · ")}</div>`:""}
+function diagTopic(sid,t){const n=t.name||"";return (sid==="maths"&&/geometry|angle|circle|trig|vector|transform|graph|histogram|loci|construct|bearing|similar|congru|pythag|area|volume|surface|cumulative|box|scatter|venn|tree|plane|shape|enlarg|rotat|reflect|tangent|3D/i.test(n))||(sid==="science"&&/circuit|motion|graph|forces|wave|magnet|ray|diagram|current|velocity|energy transfer|cell structure|microscop|heart|digest/i.test(n))}
+const STUDY={englang:["It's a skills exam, not a facts exam. You get better by doing questions, marking them and fixing them, not by memorising.","For each question type: learn the method (the steps and the marks), do two or three, compare with the model answer and level descriptors, then rewrite your weakest paragraph.","Reading questions: short quotes, zoom in on single words, and always say the effect on the reader and why the writer did it. Q4 needs a judgement with several quotes.","Writing (Q5 is 40 marks twice): plan for 5 minutes, then write. Use ambitious but accurate vocabulary and varied sentences. Do one piece a week and get it marked.","Technical accuracy is 16 of the 40 marks on each Q5. The SPaG cards are worth learning properly.","Read one short extract a day (news, fiction, a speech). Pick one word or line and say why it works. This builds the instinct the reading questions test.","The flashcards here are a toolkit: terms, SPaG, vocab and question methods. There is no blurting for this subject."],englit:["Learn a small set of short quotes for each text and tag each to two or three themes. Examiners credit paraphrase, so word-perfect recall isn't needed.","Plan every essay in 5 minutes with a clear argument, then write. Do one full essay a week and get it marked.","Know the context for AO3, but only use it where it explains something in the text."],maths:["Learn the method from the Learn link, then do the real exam questions. Don't just re-read.","Do a mix of topics once you know the methods. It sticks better than doing one topic over and over.","Show every step. Method marks are most of the marks on hard questions."]};
+const HOWTO={englit:[
+["Every essay: the paragraph recipe","1. Point that uses the question's key word.|2. Short quote (1 to 6 words) woven into your sentence.|3. Zoom in on one word or method and say what it suggests.|4. Say what the writer wants the audience to think.|5. Link to another moment in the text or to context that explains the idea."],
+["Macbeth / An Inspector Calls (34 marks, about 45-50 min)","Underline the key word. Write a one-sentence thesis that answers it.|Plan 3 or 4 points: the extract, earlier, later, the ending.|2-3 line intro: answer the question, no story summary.|3 or 4 paragraphs with the recipe. Use the whole text, not just the extract.|Context only where it explains the idea: \"this isn't GCSE History\" (examiner report).|Last 3 minutes: proofread. 4 marks are spelling, punctuation and grammar."],
+["A Christmas Carol (30 marks, about 40-45 min)","Same plan as Macbeth, no spelling marks.|Track change: Stave 1, middle, Stave 5.|Methods: contrast (Fred, Cratchits), motifs (cold, light, fire, food), the ghosts, Ignorance and Want.|Two sentences of context at most, tied to Dickens' message."],
+["Power and Conflict comparison (30 marks, about 45 min)","Read the printed poem and underline the question's key word.|Pick the second poem you know best, within a minute.|Intro: the shared idea and one difference.|Paragraph on poem 1, paragraph on poem 2, then a compare paragraph using whereas / similarly / in contrast.|Write about ideas (abuse of power, fear of nature), not just what happens.|Don't misread: in My Last Duchess the Duke is not grieving."],
+["Unseen poetry (24 + 8 marks, about 45 min)","Read the question before the poem: it gives you a steer.|Read twice: who speaks, what changes, how it ends.|Q1: one-line idea, then go through the poem start to end. Every method needs its effect.|Don't technique-spot or talk about rhyme scheme unless it clearly does something.|Q2 (about 10 min): compare methods and effects of both poems in one or two paragraphs."]],
+englang:[
+["Paper 1 Q1 (4 marks, 5 min)","Four true facts, only from the lines given. Copy words carefully: one wrong word loses the mark."],
+["Paper 1 Q2 language (8 marks, 10 min)","Pick 3 or 4 single words or tiny phrases from the lines given.|Name the method, say what it suggests, ask \"why this word and not another?\".|Treat similes and metaphors as figurative, not literal."],
+["Paper 1 Q3 structure (8 marks, 10 min)","Cover the whole extract: start, middle, end.|What does the writer focus on, what shifts, why does it happen now?|Use shift, contrast, climax, foreshadowing. Never write \"makes the reader read on\"."],
+["Paper 1 Q4 evaluate (20 marks, 20 min)","Decide how far you agree and say it in your first line.|4 or 5 developed paragraphs: point, quote, language or structure, effect, link back to the statement.|Use the ending of the extract. Stay on the statement."],
+["Q5 writing (40 marks, 45 min, both papers)","5 min plan, 35 min write, 5 min check.|Paper 1: one moment, not a whole journey. Open with an image, zoom in, a small turn, echo the opening at the end.|Paper 2: one clear view, three arguments from different angles, answer one counter-argument, match the form (speech, letter, article).|No templates or stock phrases. 16 of the 40 marks are spelling, punctuation and sentence variety."],
+["Paper 2 Q2 summary (8 marks, 10 min)","Use both sources. Make the question's focus the subject of each sentence.|Compare like with like and infer: \"this suggests...\"."],
+["Paper 2 Q3 language (12 marks, 15 min)","Only the source and lines named. 4 or 5 words: why this word? Skip \"makes the reader feel scared\"."],
+["Paper 2 Q4 compare perspectives (16 marks, 20 min)","Both sources in full. Compare the same aspect each time.|Name each writer's attitude precisely (weary, enthralled, cynical), then show the method and effect."]]};
+function howTo(sid){const g=HOWTO[sid];return g?`<details class="sheet"><summary><b>How to answer each question</b></summary><div class="stack" style="margin-top:8px">${g.map(([h,b])=>`<div><b class="small">${esc(h)}</b><ul class="small" style="padding-left:18px;margin:4px 0 0">${b.split("|").map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>`).join("")}</div></details>`:""}
+function studyGuide(sid){const g=STUDY[sid];return g?`<details class="sheet"><summary><b>How to study this subject</b></summary><ul class="stack small" style="gap:6px;padding-left:18px;margin:8px 0 0">${g.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></details>`:""}
+function renderPractice(){const sid=View.pSub;const ts=topicStats(sid);const d=DATA[sid];
+  const areas=[...new Set(d.topics.map(t=>t.area||""))];
+  const qa=D("qa_"+sid);const mistakes=Object.entries(qa).filter(([id,a])=>a.g/a.m<.6&&QIDX[id]).length;
+  return `<div class="stack"><header class="top"><div><div class="eyebrow">Practice</div><h1>Question bank</h1><p class="muted">${SUBJ.reduce((a,s)=>a+DATA[s.id].questions.length,0)} exam-style questions with mark schemes</p></div></header>${noteHtml()}
+  <div class="row">${SUBJ.map(s=>`<button class="chip ${s.id===sid?"on":""}" data-psub="${s.id}">${esc(s.short)}</button>`).join("")}</div>
+  <div class="row"><span class="small muted">Level:</span>${[0,1,2,3].map(l=>`<button class="chip ${View.pLvl===l?"on":""}" data-plvl="${l}">${l?LVL[l]:"All"}</button>`).join("")}</div>
+  ${studyGuide(sid)}${howTo(sid)}<p class="small muted">Mastered = 85%+ on G8-9 questions on two days a week apart, plus a blurt at 80%+ (not needed in Maths or English Language).</p>
+  <div class="row"><button class="btn primary" data-mixed>Mixed 10</button><button class="btn" data-mist ${mistakes?"":"disabled"}>Mistakes (${mistakes})</button><button class="btn" data-base>${D("baseline")[sid]?"Redo baseline":"Baseline test"}</button></div>
+  ${areas.map(a=>`<section class="sheet"><h3>${esc(a||SMAP[sid].name)}</h3>${d.topics.filter(t=>(t.area||"")===a).map(t=>{const o=ts[t.id];const ms=mastery(sid,t.id,o);
+    return `<div class="topic"><div class="nm">${esc(t.name)} ${diagTopic(sid,t)?`<span class="small" style="color:var(--warn)">📐 diagram topic: do the real questions first</span> `:""}<span class="chip" style="cursor:default;color:${MCOL[ms.k]};border-color:currentColor" title="${esc(ms.why||"")}">${ms.s}${ms.retest?" · re-test due":""}</span></div><span class="small mono muted">${o.pct==null?"–":o.pct+"%"} · ${o.att}/${o.total}</span>
+    <div class="bar" style="--sc:${o.pct==null?"var(--rule)":o.pct>=80?"var(--good)":o.pct>=60?"var(--warn)":"var(--bad)"}"><i style="width:${o.pct||0}%"></i></div><span></span>
+    <div class="row" style="grid-column:1/-1;gap:6px"><button class="btn" data-ptopic="${t.id}">Practise</button>${NOBLURT.includes(sid)?"":`<button class="btn" data-blurt="${t.id}">Blurt</button>`}${LEARN[t.id]?`<a class="btn" style="text-decoration:none" href="${esc(LEARN[t.id].url)}" target="_blank" rel="noopener">Learn ↗</a>`:""}<a class="btn" style="text-decoration:none" href="${realUrl(sid,t)}" target="_blank" rel="noopener">Real exam Qs ↗</a>${RLINKS[t.id]&&RLINKS[t.id].url2?`<a class="btn" style="text-decoration:none" href="${esc(RLINKS[t.id].url2)}" target="_blank" rel="noopener">More questions ↗</a>`:""}<button class="btn" data-rlog="${t.id}">Log real score</button></div>${srcNames(t)}${(()=>{const rq=(D("realq_"+sid)[t.id]||[]);const l=rq[rq.length-1];return l?`<div class="small muted" style="grid-column:1/-1">Last real questions: ${l.g}/${l.m} (${pct(l.g,l.m)}%) on ${esc(l.d)}</div>`:""})()}${View.rlog===t.id?`<div class="row" style="grid-column:1/-1"><label class="small" for="rl-g">Scored</label><input id="rl-g" type="number" min="0" style="width:80px"><label class="small" for="rl-m">out of</label><input id="rl-m" type="number" min="1" style="width:80px"><button class="btn primary" data-rlsave="${t.id}">Save</button></div>`:""}</div>`}).join("")}</section>`).join("")}</div>`}
+
+/* ===== FLASHCARDS ===== */
+function startDeck(sid){const cards=[];SUBJ.filter(s=>!sid||s.id===sid).forEach(s=>{const c=dueCards(s.id,sid?30:12);cards.push(...shuffle(c.due),...c.fresh)});
+  if(!cards.length){alertMsg("No cards due. Come back tomorrow.");return}
+  View.deck={sid,items:cards.slice(0,sid?80:60).map(c=>c.id),i:0,flip:false,got:0,missed:0,again:[]};View.busy=true;render()}
+const STOPW=new Set("that this with from have they their there then than what when which where while will would should could about into over under only also each such these those been being were your does just like make made some more most very"+" ".split(" "));
+function keyToks(t){return [...new Set(String(t).toLowerCase().replace(/[^a-z0-9.%]+/g," ").split(" ").filter(w=>w&&(/\d/.test(w)||(w.length>=4&&!STOPW.has(w)))).map(w=>w.slice(0,5)))]}
+function kmatch(typed,back){const bk=keyToks(back);if(!bk.length)return 1;const tk=new Set(keyToks(typed));return bk.filter(w=>tk.has(w)).length/bk.length}
+function startTopicDeck(sid,tid){const cs=D("cards_"+sid);const now=dnum();const all=DATA[sid].flashcards.filter(c=>c.topic===tid);
+  const due=shuffle(all.filter(c=>cs[c.id]&&cs[c.id][1]<=now)),fresh=all.filter(c=>!cs[c.id]),rest=shuffle(all.filter(c=>cs[c.id]&&cs[c.id][1]>now));
+  const items=[...due,...fresh,...rest].slice(0,40).map(c=>c.id);if(!items.length){return}
+  View.deck={sid,items,i:0,flip:false,got:0,missed:0,again:[]};View.busy=true;render()}
+function renderDeck(){const K=View.deck;
+  if(K.i>=K.items.length){return `<div class="stack" style="padding-top:20px"><div class="eyebrow">Flashcards</div><h1>${K.got} known, ${K.missed} to relearn</h1><p class="muted">Missed cards came back until you got them, then return in a few days. Known cards space out to 3, 7, 14 and 30 days.</p><div class="row"><button class="btn primary" data-done>Back to Today</button></div></div>`}
+  const c=CIDX[K.items[K.i]];const t=DATA[c.subject].topicMap[c.topic];
+  const m=K.match==null?1:K.match;
+  return `<div class="stack" style="padding-top:16px">${noteHtml()}<div class="row" style="justify-content:space-between"><button class="btn ghost" data-quit>← Exit</button><span class="small muted mono">${K.i+1} / ${K.items.length}</span></div>
+  <div class="progress"><i style="width:${100*K.i/K.items.length}%"></i></div>
+  <div class="row">${stag(c.subject)}<span class="small muted">${esc(t?t.name:"")}</span></div>
+  <div class="sheet fcard"><div style="font-weight:700">${esc(c.front)}</div>${K.flip?`<div class="small muted" style="margin-top:8px">Your answer: ${esc(K.typed||"(nothing)")}</div><div class="back">${esc(c.back)}</div>`:""}</div>
+  ${K.flip?`${K.dk?"":`<p class="small" style="color:${m>=.5?"var(--good)":"var(--warn)"}">${m>=.5?"Your answer has most of the key words.":"Your answer is missing a lot of the key words. Compare carefully."}</p>`}${K.warned?`<p class="small" style="color:var(--bad);font-weight:700">That doesn't look close to the real answer. Tap Knew it again only if you really had it.</p>`:""}
+   <div class="row" style="justify-content:stretch"><button class="btn" style="flex:1;border-color:var(--bad)" data-card="0">${K.dk?"Got it, next":"Missed it"}</button>${K.dk?"":`<button class="btn primary" style="flex:1" data-card="1">Knew it</button>`}</div>`
+  :`<label class="small muted" for="cans">Type what you think the answer is first</label><textarea id="cans" style="min-height:80px"></textarea>${K.need?`<p class="small" style="color:var(--bad)">Type something first, or tap I don't know.</p>`:""}<div class="row"><button class="btn" data-cdk>I don't know</button><button class="btn primary" data-flip>Check my answer</button></div>`}</div>`}
+function gradeCard(ok){const K=View.deck;const c=CIDX[K.items[K.i]];const low=ok&&!K.dk&&K.match<0.25;if(low&&!K.warned){K.warned=true;render();return}
+  const H=D("honesty");H.n=(H.n||0)+1;if(ok){H.k=(H.k||0)+1;if(low)H.low=(H.low||0)+1}if(K.dk)H.dk=(H.dk||0)+1;save("honesty");const cs=D("cards_"+c.subject);const now=dnum();const st=cs[c.id]||[0,now,now];
+  if(ok){const b=Math.min(5,st[0]+1);cs[c.id]=[b,now+BOX[b],st[2]];if(!K.again.includes(c.id))K.got++}else{cs[c.id]=[1,now+1,st[2]];K.missed++;if(!K.again.includes(c.id)){K.again.push(c.id);K.items.push(c.id)}}
+  save("cards_"+c.subject);bumpDaily(c.subject,"c",low?0:1);K.i++;K.flip=false;K.typed="";K.match=null;K.dk=false;K.warned=false;K.need=false;render()}
+function renderCards(){return `<div class="stack"><header class="top"><div><div class="eyebrow">Flashcards</div><h1>Spaced repetition</h1><p class="muted">${SUBJ.reduce((a,s)=>a+DATA[s.id].flashcards.length,0)} cards. Due cards first, then new ones.</p></div></header>${noteHtml()}
+  <button class="btn primary" data-deck="">All subjects</button>
+  <div class="grid2">${SUBJ.map(s=>{const c=dueCards(s.id,30);return `<div class="sheet stack" style="border-top:4px solid var(--c-${s.id})"><div class="row" style="justify-content:space-between"><h3>${esc(s.name)}</h3><span class="small mono muted">${c.seen}/${c.total} seen</span></div>
+  <div class="progress"><i style="width:${pct(c.seen,c.total)}%;background:var(--c-${s.id})"></i></div><p class="small muted">${c.due.length} due, ${c.fresh.length} new available</p>${s.id==="englang"?`<p class="small muted">Toolkit cards: terms, SPaG, vocab and question methods. The real work is in Questions and Papers.</p>`:""}<button class="btn" data-deck="${s.id}" ${c.due.length+c.fresh.length?"":"disabled"}>Study ${esc(s.short)}</button><button class="btn ghost" data-mapopen="cards_${s.id}" style="padding:0;border:0;justify-content:space-between;display:flex"><span class="small">Study one topic</span><span class="small muted">${View.mapOpen["cards_"+s.id]?"Hide ▲":"By topic ▼"}</span></button>${View.mapOpen["cards_"+s.id]?`<div class="stack" style="gap:4px">${DATA[s.id].topics.map(t=>{const cs=D("cards_"+s.id);const tc=DATA[s.id].flashcards.filter(x=>x.topic===t.id);const seen=tc.filter(x=>cs[x.id]).length;const due=tc.filter(x=>cs[x.id]&&cs[x.id][1]<=dnum()).length;return `<button class="opt" data-dtopic="${s.id}|${t.id}" style="display:flex;justify-content:space-between;gap:8px;padding:8px 10px"><span class="small" style="text-align:left">${esc(t.name)}</span><span class="small mono muted">${seen}/${tc.length}${due?` · ${due} due`:""}</span></button>`}).join("")}</div>`:""}</div>`}).join("")}</div></div>`}
+
+/* ===== PAPERS ===== */
+function renderPapers(){const list=(D("papers").list||[]).slice().sort((a,b)=>a.date<b.date?1:-1);
+  return `<div class="stack"><header class="top"><div><div class="eyebrow">Real past papers</div><h1>Papers</h1><p class="muted">The real thing, from the exam boards. Do them timed, mark them with the official mark scheme, log the score here. Logged papers count most in your predicted grade.</p></div></header>${noteHtml()}
+  <form class="sheet stack" id="pform"><h2>Log a paper</h2>
+  <div class="grid2"><label class="stack" style="gap:4px" for="p-sub"><span class="small muted">Subject</span><select id="p-sub">${SUBJ.map(s=>`<option value="${s.id}">${esc(s.name)}</option>`).join("")}</select></label>
+  <label class="stack" style="gap:4px" for="p-name"><span class="small muted">Paper</span><input id="p-name" type="text" placeholder="e.g. June 2024 Paper 2H" required></label>
+  <label class="stack" style="gap:4px" for="p-score"><span class="small muted">Score</span><input id="p-score" type="number" min="0" required></label>
+  <label class="stack" style="gap:4px" for="p-max"><span class="small muted">Out of</span><input id="p-max" type="number" min="1" required value="80"></label>
+  <label class="stack" style="gap:4px" for="p-date"><span class="small muted">Date</span><input id="p-date" type="date" value="${dkey()}" required></label>
+  <label class="stack" style="gap:4px" for="p-redo"><span class="small muted">Questions you dropped marks on</span><input id="p-redo" type="text" placeholder="e.g. Q7, Q12b, Q18"></label></div>
+  <p class="small muted">Corrections rule: every question listed gets redone with the mark scheme within 48 hours. It shows on Today until it's ticked off.</p>
+  <button class="btn primary" type="submit">Save score</button><p class="small muted" id="p-msg"></p></form>
+  ${list.length?`<section class="sheet"><h2>Logged</h2><div class="tablewrap"><table><thead><tr><th>Date</th><th>Subject</th><th>Paper</th><th>Score</th></tr></thead><tbody>${list.map(p=>{const s=SMAP[p.subject];const pc=pct(p.score,p.max);return `<tr><td class="mono">${esc(p.date.slice(5))}</td><td>${stag(p.subject)}</td><td>${esc(p.name)}<div class="row" style="margin-top:4px;gap:6px">${p.redo?(p.corr?`<span class="small" style="color:var(--good)">corrected ✓</span>`:`<button class="chip" data-corr="${esc(p.id)}">Corrections done</button>`):""}${View.delAsk===p.id?`<button class="chip" style="color:var(--bad)" data-delp="${esc(p.id)}">Tap again to delete</button>`:`<button class="chip" data-delask="${esc(p.id)}" aria-label="Delete">✕ Delete</button>`}</div></td><td class="mono" style="color:${pc>=GOAL_PCT?"var(--good)":pc>=nineLine(s)?"var(--warn)":"var(--bad)"}">${p.score}/${p.max} (${pc}%)</td></tr>`}).join("")}</tbody></table></div></section>`:""}
+  ${SUBJ.map(s=>{const pl=PAPERS[s.id]||[];const doneIds=new Set(list.map(p=>p.pid).filter(Boolean));const cut=Math.floor(pl.length*.75);
+   return `<section class="sheet stack" style="border-top:4px solid var(--c-${s.id})"><h3>${esc(s.name)} <span class="small muted">${esc(s.board)}</span></h3><p class="small muted">${esc(s.papers)}</p>
+   ${pl.length?`<details><summary>Every real paper (${pl.filter(p=>doneIds.has(p.id)).length}/${pl.length} done)</summary><p class="small muted" style="margin:6px 0">Worked oldest first. The last ${pl.length-cut} are held back for mock weeks. Today assigns them automatically.</p><div class="tablewrap"><table><tbody>${pl.map((p,i)=>`<tr><td>${doneIds.has(p.id)?"✓":i>=cut?"<span class='small muted'>mock</span>":""}</td><td>${esc(p.name)}</td><td class="small"><a href="${esc(p.qp)}" target="_blank" rel="noopener">Paper</a> · <a href="${esc(p.ms)}" target="_blank" rel="noopener">Mark scheme</a>${p.insert?` · <a href="${esc(p.insert)}" target="_blank" rel="noopener">Insert</a>`:""}${p.prerelease?` · <a href="${esc(p.prerelease)}" target="_blank" rel="noopener">Pre-release</a>`:""}</td></tr>`).join("")}</tbody></table></div></details>`:""}<ul class="stack" style="gap:6px;padding-left:18px;margin:0">${s.links.map(([l,u])=>`<li><a href="${u}" target="_blank" rel="noopener">${esc(l)}</a></li>`).join("")}</ul></section>`}).join("")}</div>`}
+
+/* ===== TRACKER ===== */
+function sparkSvg(sid){const dd=D("daily");const keys=Object.keys(dd).sort();const wk={};keys.forEach(k=>{const o=dd[k][sid];if(!o||!o.m)return;const d=new Date(k);const w=Math.floor((dnum(d)-dnum(START))/7);wk[w]=wk[w]||[0,0];wk[w][0]+=o.g;wk[w][1]+=o.m});
+  const ws=Object.keys(wk).map(Number).sort((a,b)=>a-b).slice(-12);if(ws.length<2)return `<p class="small muted">Trend appears after two weeks of practice.</p>`;
+  const W=300,H=56,P=4;const xs=i=>P+i*(W-2*P)/(ws.length-1);const ys=v=>H-P-(v/100)*(H-2*P);
+  const pts=ws.map((w,i)=>[xs(i),ys(100*wk[w][0]/wk[w][1])]);
+  return `<svg class="spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="Weekly % trend"><line x1="0" x2="${W}" y1="${ys(90)}" y2="${ys(90)}" stroke="var(--rule)" stroke-dasharray="3 3"/><path d="M${pts.map(p=>p.join(",")).join("L")}L${pts[pts.length-1][0]},${H}L${pts[0][0]},${H}Z" fill="var(--c-${sid})" opacity=".12"/><polyline points="${pts.map(p=>p.join(",")).join(" ")}" fill="none" stroke="var(--c-${sid})" stroke-width="2"/><circle cx="${pts[pts.length-1][0]}" cy="${pts[pts.length-1][1]}" r="3.5" fill="var(--c-${sid})"/></svg>`}
+function renderTracker(){
+  const dd=D("daily");const last7=[];for(let i=0;i<7;i++){const d=new Date();d.setDate(d.getDate()-i);last7.push(dkey(d))}
+  let q=0,c=0,g=0,m=0,days=0;last7.forEach(k=>{const o=dd[k];if(!o)return;days++;Object.entries(o).forEach(([k2,x])=>{if(k2[0]==="_")return;q+=x.q;c+=x.c;g+=x.g;m+=x.m})});
+  const weak=[];SUBJ.forEach(s=>Object.values(topicStats(s.id)).forEach(t=>{if(t.pct!=null&&t.att>=2)weak.push({...t,sid:s.id})}));weak.sort((a,b)=>a.pct-b.pct);
+  const ans=Object.entries(allAnswers()).sort((a,b)=>b[1].t-a[1].t).slice(0,10);
+  const base=D("baseline");
+  return `<div class="stack"><header class="top"><div><div class="eyebrow">For Mo</div><h1>Tracker</h1><p class="muted">Predicted grades blend real past paper scores (65%) with the question bank (35%), weighted towards harder questions.</p></div></header>${noteHtml()}
+  <section class="sheet"><div class="eyebrow">Last 7 days</div><div class="grid2" style="margin-top:8px">${[["Days active",days+"/7"],["Questions",q],["Marks",m?pct(g,m)+"%":"–"],["Flashcards",c]].map(([l,v])=>`<div><div class="gbig mono" style="font-size:1.6rem">${v}</div><div class="small muted">${l}</div></div>`).join("")}</div></section>
+  ${gradeStrip()}
+  ${SUBJ.map(s=>{const st=subjectStats(s.id);const p=st.pred==null?null:Math.round(st.pred);const need9=Math.ceil(s.b26[0][1]);const marksNow=p==null?null:Math.round(p/100*s.max);
+    const b=base[s.id];
+    return `<section class="sheet stack" style="border-top:4px solid var(--c-${s.id})"><div class="row" style="justify-content:space-between"><h2>${esc(s.name)}</h2><span class="gbig" style="font-size:1.6rem">${esc(gradeFor(s,st.pred))}</span></div>
+    <p class="small">${p==null?"No data yet.":`Predicted ${p}% ≈ ${marksNow}/${s.max}. Grade 9 needed ${need9}. ${marksNow>=Math.round(GOAL_PCT/100*s.max)?"At the 90% goal.":`${Math.max(0,Math.round(GOAL_PCT/100*s.max)-marksNow)} marks short of 90%.`}`}</p>
+    ${(()=>{const cnt=[0,0,0,0,0];Object.values(topicStats(s.id)).forEach(t=>cnt[mastery(s.id,t.id,t).k]++);const n=cnt[1]+cnt[2]+cnt[3]+cnt[4];
+      return `<div class="row small">${[[4,"Mastered"],[3,"Secure"],[2,"Learning"],[1,"Not started"]].map(([k,l])=>`<span style="color:${MCOL[k]};font-weight:700">${cnt[k]} ${l}</span>`).join("<span class='muted'>·</span>")}<span class="muted">of ${n} topics</span></div>`})()}
+    <p class="small muted">${b?`Baseline ${pct(b.g,b.m)}% on ${esc(b.date)}`:"Baseline not done"} · ${st.att}/${st.total} questions attempted · ${st.papers} real paper${st.papers===1?"":"s"} logged</p>
+    ${sparkSvg(s.id)}
+    <details><summary>Topics</summary><div class="tablewrap"><table><thead><tr><th>Topic</th><th>Mastery</th><th>Done</th></tr></thead><tbody>${Object.values(topicStats(s.id)).map(t=>`<tr><td>${esc(t.name)}</td><td class="mono" style="color:${t.pct==null?"var(--ink-2)":t.pct>=80?"var(--good)":t.pct>=60?"var(--warn)":"var(--bad)"}">${t.pct==null?"–":t.pct+"%"}</td><td class="mono small">${t.att}/${t.total}</td></tr>`).join("")}</tbody></table></div></details></section>`}).join("")}
+  <section class="sheet"><h2>Weakest topics</h2>${weak.length?weak.slice(0,8).map(t=>`<div class="task"><div class="tx">${stag(t.sid)} ${esc(t.name)}</div><span class="mono" style="color:var(--bad)">${t.pct}%</span><button class="btn" data-wt="${t.sid}|${t.id}">Practise</button></div>`).join(""):`<p class="muted small">Shows up once you've attempted a few questions per topic.</p>`}</section>
+  <section class="sheet"><h2>Flashcard honesty</h2>${(()=>{const H=D("honesty");if(!H.n)return `<p class="small muted">Shows up once he has done some flashcards. Every card needs a typed answer first, and the app compares it with the real one.</p>`;const k=H.k||0,l=H.low||0;return `<p class="small">${H.n} cards answered. ${k} marked Knew it. <b style="color:${l/Math.max(1,k)>.2?"var(--bad)":"var(--good)"}">${l} of those (${pct(l,Math.max(1,k))}%)</b> had an answer that barely matched the real one. ${H.dk||0} were I don't know, which is honest and fine.</p><p class="small muted">Over 20% means he is tapping Knew it without knowing. Those cards earn no XP or target credit.</p>`})()}</section>
+  <section class="sheet"><h2>Spot-check his marking</h2><p class="small muted">His self-marked written answers and blurts. Once a week, open five. If he was too generous, put in the real mark and save; his topic scores update.</p>${ans.length?ans.map(([id,a])=>{
+      if(a.blurt){const tid=id.replace(/^blurt-/,"");const tn=(DATA[a.subject]&&DATA[a.subject].topicMap[tid]||{}).name||"";return `<details style="padding:10px 0;border-bottom:1px solid var(--rule)"><summary>${stag(a.subject)} Blurt: ${esc(tn)} <span class="mono">${a.g}/${a.m}</span></summary><div class="model" style="margin-top:8px">${esc(a.text)}</div></details>`}
+      const qq=QIDX[id];return qq?`<details style="padding:10px 0;border-bottom:1px solid var(--rule)"><summary>${stag(qq.subject)} ${esc((DATA[qq.subject].topicMap[qq.topic]||{}).name||"")} <span class="mono">${a.g}/${a.m}</span></summary><div class="stack" style="margin-top:8px"><div class="qtext small">${esc(qq.q)}</div><div class="eyebrow">Your answer</div><div class="model">${esc(a.text)}</div><div class="eyebrow">Mark scheme</div><ul class="ms small">${(qq.ms||[]).map(m=>`<li>• ${esc(m)}</li>`).join("")}</ul>
+      <div class="row"><label for="rm-${esc(id)}" class="small">Real mark</label><input id="rm-${esc(id)}" type="number" min="0" max="${a.m}" value="${a.g}" style="width:80px"><span class="muted small">/ ${a.m}</span><button class="btn" data-remark="${esc(id)}">Save mark</button></div></div></details>`:""}).join(""):`<p class="muted small">Nothing yet.</p>`}</section>
+  <section class="sheet"><h2>Reported problems</h2>${Store.reports.length?Store.reports.slice(0,20).map(r=>{const qq=QIDX[r.qid];return `<div class="task"><div class="tx"><div class="small">${qq?stag(qq.subject):""} <span class="mono small muted">${esc(r.qid)}</span></div><div>${esc(r.text)}</div></div></div>`}).join(""):`<p class="muted small">None. When he flags a question, it shows here. Send me the list and I'll fix them.</p>`}</section></div>`}
+
+/* ===== PLAN ===== */
+
+function avatar(L,size){const c="var(--accent)";const cape=L>=3,band=L>=5,shades=L>=8,crown=L>=12,aura=L>=15;
+ return `<svg viewBox="0 0 120 130" width="${size}" height="${size*130/120}" role="img" aria-label="Your character, level ${L}">${aura?`<circle cx="60" cy="68" r="58" fill="none" stroke="var(--hl)" stroke-width="3" stroke-dasharray="4 6"/>`:""}
+ ${cape?`<path d="M32 62 Q18 105 30 118 L90 118 Q102 105 88 62 Z" fill="#c0392b"/>`:""}
+ <rect x="38" y="70" width="44" height="46" rx="14" fill="${c}"/>
+ <circle cx="60" cy="46" r="26" fill="#f2c9a0"/>
+ <circle cx="50" cy="45" r="3.5" fill="#222"/><circle cx="70" cy="45" r="3.5" fill="#222"/>
+ <path d="M50 57 Q60 65 70 57" stroke="#222" stroke-width="3" fill="none" stroke-linecap="round"/>
+ ${band?`<rect x="34" y="28" width="52" height="7" rx="3" fill="#f1c40f"/>`:`<path d="M36 36 Q60 12 84 36 Q60 24 36 36Z" fill="#3b2a20"/>`}
+ ${shades?`<rect x="41" y="40" width="16" height="9" rx="3" fill="#111"/><rect x="63" y="40" width="16" height="9" rx="3" fill="#111"/><rect x="57" y="43" width="6" height="3" fill="#111"/>`:""}
+ ${crown?`<path d="M40 22 L46 8 L54 20 L60 4 L66 20 L74 8 L80 22 Z" fill="#f1c40f" stroke="#b8860b" stroke-width="2"/>`:""}
+ <path d="M${L>=6?"52 92 L60 84 L68 92 L60 100Z":"54 90 h12 v8 h-12z"}" fill="#fff" opacity=".85"/></svg>`}
+function nextUnlock(L){const u=[[3,"a cape"],[5,"a golden headband"],[8,"cool shades"],[12,"a crown"],[15,"a legend aura"]].find(x=>x[0]>L);return u?`Level ${u[0]} unlocks ${u[1]}`:"Everything unlocked. Grade 9 Legend."}
+function badges(){const xp=xpTotal(),b=D("baseline"),pl=D("papers").list||[];let seen=0,k2=0,k3=0,k4=0,sub50=0;
+ SUBJ.forEach(s=>{seen+=dueCards(s.id).seen;const th=topicHealth(s.id),c=[0,0,0,0,0];th.forEach(t=>c[t.m.k]++);k3+=c[3]+c[4];k4+=c[4];if((c[4]+c[3]*.7+c[2]*.35)/Math.max(1,th.length)>=.5)sub50++});
+ const st=streak();
+ return [["First steps","Earn your first XP",xp>0],["Baselined","Finish all 5 baselines",SUBJ.every(s=>b[s.id])],["Warm-up","3-day streak",st>=3],["Unstoppable","7-day streak",st>=7],["Card shark","See 100 flashcards",seen>=100],["Locked in","Get a topic to Secure",k3>=1],["Master","Get a topic to Mastered",k4>=1],["Paper warrior","Log a real paper",pl.length>=1],["Top marks","Score 80%+ on a real paper",pl.some(p=>pct(p.score,p.max)>=80)],["Boss level","Get a subject to 50%",sub50>=1],["Grind","Reach 1000 XP",xp>=1000]]}
+function renderMe(){const xp=xpTotal(),X=lvlFor(xp),bg=badges();const earned=bg.filter(x=>x[2]).length;
+ return `<div class="stack"><header class="top"><div><div class="eyebrow">Your character</div><h1>${lname(X.L)}</h1><p class="muted">Level ${X.L} · ${xp.toLocaleString("en-GB")} XP · 🔥 ${streak()}-day streak (one rest day a week is free)</p></div></header>${noteHtml()}
+ <section class="sheet stack" style="align-items:center;text-align:center"><div>${avatar(X.L,150)}</div><div style="width:100%"><div class="progress" style="height:12px"><i style="width:${X.p}%;background:var(--hl)"></i></div><p class="small muted">${X.next-xp} XP to level ${X.L+1}. ${nextUnlock(X.L)}.</p></div></section>
+ <section class="sheet stack"><button class="btn ghost" data-mapopen="lvl" style="display:flex;justify-content:space-between;padding:0;border:0"><h2 style="margin:0">Level guide</h2><span class="small muted">${View.mapOpen.lvl?"Hide ▲":"What each level means ▼"}</span></button><p class="small muted">XP only comes from real work: 2 per mark you earn, 1 per flashcard, 100 plus your score per real paper, 50 when a topic hits Secure, 150 when it hits Mastered. A normal 25-mark set is about 40 XP.</p>${View.mapOpen.lvl?`<div class="stack" style="gap:6px">${LVLNAME.map((n,i)=>{const L=i+1,need=60*(L-1)**2,un={3:"Cape",5:"Golden headband",8:"Cool shades",12:"Crown",15:"Legend aura"}[L];const feel=["Just started. Do your baselines.","First 30 marks of real work.","Getting into the habit.","Topics starting to stick.","Regular grinder.","A few topics Secure.","Noticeably sharper.","Lots of topics Secure.","Half the course is solid.","Mastered topics piling up.","Top-set level knowledge.","Nearly everything strong.","Exam-ready territory.","Papers at 85%+.","Grade 9 Legend. Ready."][i];
+ return `<div class="row" style="justify-content:space-between;gap:8px;padding:6px 8px;border-radius:8px;${L===X.L?"background:var(--good-bg);font-weight:700":""}"><span class="small"><b>Lv ${L} ${n}</b>${un?` · unlocks ${un}`:""}<br><span class="muted" style="font-weight:400">${feel}</span></span><span class="small mono muted">${need.toLocaleString("en-GB")} XP</span></div>`}).join("")}</div>`:""}</section>
+ <section class="sheet stack"><h2>Subject levels</h2>${SUBJ.map(s=>{const th=topicHealth(s.id),c=[0,0,0,0,0];th.forEach(t=>c[t.m.k]++);const p=Math.round(100*(c[4]+c[3]*.7+c[2]*.35)/Math.max(1,th.length));const lv=Math.floor(p/20)+1;
+  return `<div><div class="row" style="justify-content:space-between"><b>${esc(s.short)}</b><span class="small mono muted">Lv ${lv} · ${p}%</span></div><div class="progress" style="height:8px"><i style="width:${p}%;background:var(--c-${s.id})"></i></div></div>`}).join("")}<p class="small muted">Subject level: Lv 1 is 0-19% (just starting), Lv 2 is 20-39% (getting going), Lv 3 is 40-59% (halfway), Lv 4 is 60-79% (strong), Lv 5 is 80-99% (nearly there), Lv 6 is 100% (every topic Mastered).</p></section>
+ <section class="sheet stack"><h2>Badges ${earned}/${bg.length}</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px">${bg.map(([n,d,ok])=>`<div class="opt" style="padding:10px;${ok?"":"opacity:.45"}"><b class="small">${ok?"🏅 ":"🔒 "}${esc(n)}</b><div class="small muted">${esc(d)}</div></div>`).join("")}</div></section></div>`}
+function renderPlan(){
+  const FIT={maths:"Topics are grouped by area. For each one you do the real Edexcel questions, then app questions on your gaps, then harder G8-9 sets. The last third of every paper is where 9s are won, so those get drilled.",
+   science:"Topics are grouped by paper (Biology, Chemistry and Physics, Paper 1 and 2). You also drill the 6-mark answers and the required practicals, because they come up on every paper.",
+   englang:"Reading questions and the two Q5 writing tasks are drilled on sample papers. Half the marks are writing, so that is where most of the practice goes.",
+   englit:"Each text is a topic: Macbeth, A Christmas Carol, An Inspector Calls, Power and Conflict and Unseen. You build quote cards, plan essays and blurt them.",
+   geography:"Paper 1 is physical (coasts, glacial, rainforests, hot deserts), Paper 2 is human (Rio, London, Brazil, food) and Paper 3 is fieldwork (Stratford and Regent's Park)."};
+  const list=(a,f)=>a&&a.length?`<ul class="stack small" style="gap:4px;padding-left:18px;margin:0">${a.map(f).join("")}</ul>`:"";
+  return `<div class="stack"><header class="top"><div><div class="eyebrow">Your plan</div><h1>How this works</h1><p class="muted">No hours and no deadlines. Hit your targets, then you're done for the day.</p></div></header>
+  <section class="sheet stack"><h2>Every day</h2>
+   <div class="task"><span class="tick" aria-hidden="true">1</span><div class="tx"><b>Open Today.</b> It tells you what to do. Don't choose anything.</div></div>
+   <div class="task"><span class="tick" aria-hidden="true">2</span><div class="tx"><b>Do the "Do this now" card.</b> Real exam questions first, then the app questions on the gaps. Hit the target score.</div></div>
+   <div class="task"><span class="tick" aria-hidden="true">3</span><div class="tx"><b>Tick off every target.</b> When they're all ticked, you're done. Missed a target? It stays until you hit it.</div></div>
+   <p class="small muted">Also every day: clear your flashcards and blurt yesterday's topic (not Maths or English Language). Weekends are the same but with a full real paper.</p></section>
+  <section class="sheet stack"><h2>The route to a 9</h2><p class="small muted">Every stage has a gate. You only move on when you've hit it, so nothing is skipped and nothing is left to luck.</p>
+   ${[["1","Find where you start","Baseline test in every subject. This sets your starting level, and the Today list aims at your weakest high-mark topics.","Gate: all 5 baselines done"],["2","Cover everything","Every topic gets a first go: learn it (video link), real exam questions, then app questions on your gaps. Flashcards every day.","Gate: every topic started"],["3","Make it solid","Repeat each topic until you score 75%+. Missed targets come back with fresh questions. Topics fade if you leave them, so they come back.","Gate: every topic Secure"],["4","Prove it on real papers","Real exam papers with the official mark scheme. Every dropped mark gets redone. This is the real test, not the app's questions.","Gate: 70%, then 80%+ on a real paper per subject"],["5","Master it","Harder grade 8-9 questions, long answers, essays. A topic is Mastered at 85%+ on those on two days a week apart.","Gate: every topic Mastered"],["6","Exam ready","Full papers in exam conditions, all papers per subject, kept fresh until May.","Gate: 90%+ on real papers"]].map(([n,t,d,g])=>`<div class="task" style="align-items:flex-start"><span class="tick" aria-hidden="true">${n}</span><div class="tx"><b>${t}</b><div class="small">${d}</div><div class="small muted"><b>${g}</b></div></div></div>`).join("")}
+   <p class="small muted"><b>Rough pace (a guide, not a deadline):</b> stages 1 and 2 by the end of November, stage 3 by Christmas, stage 4 over Christmas, stage 5 in January, stage 6 from February to the exams in May and June.</p>
+   <p class="small"><b>The honest bit:</b> nothing can promise a grade. But if you've hit all the gates, you're scoring 90% on real papers marked with the real mark scheme, and a 9 needs about 71% to 90% depending on the subject. That's the proof you're ready.</p></section>
+  <section class="sheet stack"><h2>Your goals</h2>
+   <p><b>Grade 9 in all five subjects, ideally 90%+ on every paper.</b> ${CHECKPOINTS.length} small goals in 6 stages get you there. They are goals, not dates: hit them as fast as you can.</p>
+   ${cpList()}</section>
+  <section class="sheet stack"><h2>Getting the grade is simple</h2>
+   <ul class="stack" style="gap:6px;padding-left:18px;margin:0"><li><b>Test yourself, don't reread.</b> Questions and blurting beat notes every time.</li><li><b>Spend your time on what you get wrong.</b> A topic you already know needs little. A weak one needs the most.</li><li><b>Keep topics fresh.</b> Red means it's fading. Do it again before it drops.</li><li><b>Do real papers and fix every dropped mark.</b> That's what the exam is.</li></ul>
+   <p class="small muted">Do those four things every day and the grade follows. It doesn't need clever tricks.</p></section>
+  <h2>Your exams, one by one</h2>
+  ${SUBJ.map(s=>{const nine=s.b26[0][1];const P=PROFILE[s.id];
+   return `<section class="sheet stack" style="border-top:4px solid var(--c-${s.id})"><div class="row" style="justify-content:space-between"><h3>${esc(s.name)}</h3><span class="small muted">${esc(s.board)}</span></div>
+   <p class="small"><b>The exam:</b> ${esc(s.papers)}</p>
+   <p class="small"><b>A 9 needed:</b> ${nine}/${s.max} (${pct(nine,s.max)}%) in 2026. <b>Your goal:</b> ${Math.round(GOAL_PCT/100*s.max)}/${s.max} (90%), which leaves a safety margin.</p>
+   <p class="small"><b>How the app covers it:</b> ${esc(FIT[s.id]||"")}</p>
+   <details><summary>What the examiners reward</summary><div class="stack" style="margin-top:10px">${P?`${P.nineVsSeven?`<div><div class="eyebrow">What makes a 9, not a 7</div>${list(P.nineVsSeven,a=>`<li>${esc(a)}</li>`)}</div>`:""}${P.dropMarks?`<div><div class="eyebrow">Where students drop marks</div>${list(P.dropMarks,a=>`<li>${esc(a)}</li>`)}</div>`:""}${P.commandWords?`<div><div class="eyebrow">Command words</div>${list(P.commandWords,a=>`<li><b>${esc(a[0])}</b>: ${esc(a[1])}</li>`)}</div>`:""}${P.aos?`<div><div class="eyebrow">What the marks are for</div>${list(P.aos,a=>`<li><b>${esc(a[0])} ${esc(a[1])}</b>: ${esc(a[2])}</li>`)}</div>`:""}`:`<p class="small">${esc(s.what9)}</p>`}</div></details></section>`}).join("")}
+  <p class="small muted">Grade boundaries are the official minimum marks from AQA and Pearson. They move a few percent each year, which is why the goal sits above them.</p></div>`}
+
+/* ===== events ===== */
+document.addEventListener("click",e=>{const t=e.target.closest("button");if(!t)return;const ds=t.dataset;
+  if(ds.pcode!==undefined){const v=($("#pcode").value||"").trim().toLowerCase().replace(/[^a-z0-9-]/g,"");if(v.length<4){Store.note="At least 4 letters or numbers.";render();return}lsSet("code",v);View.needCode=false;Store.note="";render();initStore();return}
+  if(ds.tab)return go(ds.tab);
+  if(ds.task)return startTask(+ds.task);
+  if(ds.quit!==undefined||ds.done!==undefined){go(ds.done!==undefined?"today":View.tab);return}
+  if(ds.again!==undefined){const S=View.session;const q=QIDX[S.items[0]];startTopic(S.sid,S.kind==="topic"&&S.title.includes("mixed")?null:q.topic,0);return}
+  if(ds.opt!==undefined){const S=View.session;S.state.picked=+ds.opt;render();return}
+  if(ds.next!==undefined){const S=View.session;const q=QIDX[S.items[S.i]];finishQ(S.state.picked===q.answer?1:0);return}
+  if(ds.show!==undefined){const S=View.session;S.state.text=($("#ans")||{}).value||"";S.state.shown=true;S.state.ticks={};render();return}
+  if(ds.savemark!==undefined){const S=View.session;const q=QIDX[S.items[S.i]];let g;
+    if((q.ms||[]).length===q.marks){g=document.querySelectorAll("[data-mk]:checked").length}else{g=Math.max(0,Math.min(q.marks,parseInt(($("#mkn")||{}).value)||0))}
+    finishQ(g);return}
+  if(ds.cdk!==undefined){const K=View.deck;K.typed="";K.dk=true;K.match=0;K.flip=true;render();return}
+  if(ds.flip!==undefined){const K=View.deck;const v=(($("#cans")||{}).value||"").trim();if(v.length<2){K.need=true;render();return}const c=CIDX[K.items[K.i]];K.typed=v;K.match=kmatch(v,c.back);K.flip=true;K.need=false;render();return}
+  if(ds.card!==undefined)return gradeCard(ds.card==="1");
+  if(ds.dtopic){const [sd,td]=ds.dtopic.split("|");return startTopicDeck(sd,td)}
+  if(ds.deck!==undefined)return startDeck(ds.deck||null);
+  if(ds.psub){View.pSub=ds.psub;render();return}
+  if(ds.plvl!==undefined){View.pLvl=+ds.plvl;render();return}
+  if(ds.ptopic)return startTopic(View.pSub,ds.ptopic,View.pLvl);
+  if(ds.mixed!==undefined)return startTopic(View.pSub,null,View.pLvl);
+  if(ds.mist!==undefined)return startMistakes(View.pSub);
+  if(ds.base!==undefined)return startBaseline(View.pSub);
+  if(ds.wt){const [s,tp]=ds.wt.split("|");return startTopic(s,tp,0)}
+  if(ds.rlog){View.rlog=View.rlog===ds.rlog?null:ds.rlog;render();return}
+  if(ds.rlsave){const g=parseInt(($("#rl-g")||{}).value),m=parseInt(($("#rl-m")||{}).value);if(!(m>0&&g>=0&&g<=m)){View.flash="Enter marks scored and marks available.";render();return}
+    const rq=D("realq_"+View.pSub);rq[ds.rlsave]=[...(rq[ds.rlsave]||[]),{d:dkey(),g,m}].slice(-6);save("realq_"+View.pSub);View.rlog=null;View.flash=`Saved: ${g}/${m} (${pct(g,m)}%) on real questions.`;render();return}
+  if(ds.ptimer){View.ptimer={end:Date.now()+(+ds.ptimer)*60000};render();return}
+  if(ds.ptstop!==undefined){View.ptimer=null;render();return}
+  if(ds.claudemark!==undefined){return claudeMark()}
+  if(ds.mapopen){View.mapOpen[ds.mapopen]=!View.mapOpen[ds.mapopen];render();return}
+  if(ds.maptopic){const [s,tp]=ds.maptopic.split("|");return runBlock({kind:"topic",sid:s,topic:tp,round:1})}
+  if(ds.rtsave!==undefined){const i=+ds.rtsave;const t=todayTasks()[i];if(!t)return;const g=parseInt(($("#rt-g-"+i)||{}).value),m=parseInt(($("#rt-m-"+i)||{}).value);
+    if(!(m>0&&g>=0&&g<=m)){View.flash="Enter marks scored and marks available.";render();return}
+    const rq=D("realq_"+t.sid);rq[t.topic]=[...(rq[t.topic]||[]),{d:dkey(),g,m}].slice(-6);save("realq_"+t.sid);
+    const p=pct(g,m);if(p>=TARGET.topic)markTask(t.key,p);
+    View.flash=p>=TARGET.topic?`Real questions: ${g}/${m} (${p}%). Target hit.`:`Real questions: ${g}/${m} (${p}%). Now do step 2: fresh app questions until you hit ${TARGET.topic}%.`;render();return}
+  if(ds.goagain!==undefined){const B=View.session.block;return runBlock({...B,round:B.round+1})}
+  if(ds.tpsave!==undefined){const t=todayTasks()[+ds.tpsave];if(!t||!t.paper)return;const sc=parseInt(($("#tp-score")||{}).value);
+    if(!(sc>=0&&sc<=t.paper.marks)){View.flash=`Enter a score between 0 and ${t.paper.marks}.`;render();return}
+    const p=D("papers");p.list=p.list||[];p.list.push({id:"p"+Date.now(),pid:t.paper.id,subject:t.sid,name:t.paper.name,score:sc,max:t.paper.marks,date:dkey(),redo:(($("#tp-redo")||{}).value||"").trim().slice(0,120),corr:false});
+    save("papers");View.flash=`Logged: ${sc}/${t.paper.marks} (${pct(sc,t.paper.marks)}%).`;render();return}
+  if(ds.rqsave!==undefined){const S=View.session;const g=parseInt(($("#rq-g")||{}).value),m=parseInt(($("#rq-m")||{}).value);
+    if(!(m>0&&g>=0&&g<=m)){View.flash="Enter marks scored and marks available.";render();return}
+    const tid=S.realTopic;const rq=D("realq_"+S.sid);rq[tid]=[...(rq[tid]||[]),{d:dkey(),g,m}].slice(-6);save("realq_"+S.sid);bumpDaily(S.sid,"q",0);
+    S.realSaved=true;render();return}
+  if(ds.timed!==undefined){View.timed=!View.timed;render();return}
+  if(ds.blurt)return startBlurt(View.pSub,ds.blurt);
+  if(ds.bcheck!==undefined){const B=View.blurt;B.text=($("#blurt")||{}).value||"";B.phase="check";render();window.scrollTo(0,0);return}
+  if(ds.bsave!==undefined)return saveBlurt();
+  if(ds.rep!==undefined){View.session.state.rep=true;render();return}
+  if(ds.repx!==undefined){View.session.state.rep=false;render();return}
+  if(ds.repsend!==undefined){const S=View.session;const q=QIDX[S.items[S.i]];const txt=(($("#rep")||{}).value||"").trim();if(txt){sendReport({qid:q.id,subject:q.subject,text:txt.slice(0,500),t:Date.now()})}S.state.rep=false;View.flash=txt?"Reported. Mo will see it in the Tracker.":"";render();return}
+  if(ds.corr){const p=D("papers");const x=(p.list||[]).find(y=>y.id===ds.corr);if(x){x.corr=true;save("papers")}render();return}
+  if(ds.remark){const id=ds.remark;const all=allAnswers();const a=all[id];const q=QIDX[id];const v=Math.max(0,Math.min(a.m,parseInt(($("#rm-"+CSS.escape(id))||{}).value)||0));
+    const doc=D("qa_"+q.subject);if(doc[id]){doc[id].g=v;save("qa_"+q.subject)}saveAnswer(id,{...a,g:v,remarked:true});View.flash="Mark updated.";render();return}
+  if(ds.pick!==undefined){View.pick=+ds.pick;render();window.scrollTo(0,0);return}
+  if(ds.delask){View.delAsk=ds.delask;render();return}
+  if(ds.delp){View.delAsk=null;const p=D("papers");p.list=(p.list||[]).filter(x=>x.id!==ds.delp);save("papers");render();return}
+});
+document.addEventListener("change",e=>{if(e.target.matches("[data-bt]")&&View.blurt){View.blurt.ticks[e.target.dataset.bt]=e.target.checked;const n=Object.values(View.blurt.ticks).filter(Boolean).length;const el=$("#bscore");if(el)el.textContent=n+"/"+((View.blurt.set&&View.blurt.set.length)||DATA[View.blurt.sid].flashcards.filter(c=>c.topic===View.blurt.tid).length)}if(e.target.matches("[data-mk]")){const S=View.session;if(S){S.state.ticks=S.state.ticks||{};S.state.ticks[e.target.dataset.mk]=e.target.checked}}
+  if(e.target.id==="mkn"&&View.session)View.session.state.n=e.target.value});
+document.addEventListener("input",e=>{if(e.target.id==="blurt"&&View.blurt)View.blurt.text=e.target.value;if(e.target.id==="ans"&&View.session)View.session.state.text=e.target.value});
+document.addEventListener("submit",e=>{if(e.target.id!=="pform")return;e.preventDefault();
+  const score=+$("#p-score").value,max=+$("#p-max").value;const msg=$("#p-msg");
+  if(!(max>0)||score<0||score>max){msg.textContent="Score must be between 0 and the paper total.";return}
+  const p=D("papers");p.list=p.list||[];p.list.push({id:"p"+Date.now(),subject:$("#p-sub").value,name:$("#p-name").value.trim().slice(0,80),score,max,date:$("#p-date").value||dkey(),redo:$("#p-redo").value.trim().slice(0,120),corr:false});
+  save("papers");render();const m2=$("#p-msg");if(m2)m2.textContent="Saved."});
+
+/* ===== boot ===== */
+(async()=>{const h=location.hash.slice(1);if(ROUTES.includes(h))View.tab=h;
+  await loadData();render();initStore();})();
+</script>
+
+</body></html>

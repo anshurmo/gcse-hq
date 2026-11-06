@@ -1,0 +1,724 @@
+{
+ "maths": {
+  "structure": "Three papers, all Higher tier, each 1 hour 30 minutes and 80 marks, each worth 33.3% (240 marks total). Paper 1 is non-calculator; Papers 2 and 3 allow a calculator. Each paper typically has around 20 to 24 numbered questions (some with parts) worth 1 to 5 marks each, with the multi-step problem solving and proof questions usually worth 3 to 5 marks. Higher awards grades 4 to 9, with an allowed grade 3. Only a few formulae are given in the questions (cone and sphere area/volume); everything else, including the quadratic formula, trig rules and circle theorems, must be memorised.",
+  "aos": [
+   [
+    "AO1",
+    "40%",
+    "Use and apply standard techniques: recall facts and notation and carry out routine procedures and multi-step methods accurately."
+   ],
+   [
+    "AO2",
+    "30%",
+    "Reason, interpret and communicate: make deductions, build chains of reasoning to a given result, present arguments and proofs, and judge whether a method or argument is valid."
+   ],
+   [
+    "AO3",
+    "30%",
+    "Solve problems: turn a problem (often in a real-world context) into maths, connect different topics, then interpret and evaluate the answer in context."
+   ]
+  ],
+  "difficulty": "Pearson designs each paper to ramp steadily: early questions are aimed at grades 4 and 5 (these are the overlap questions that also appear on the Foundation paper), the middle of the paper targets grades 6 and 7, and the last third holds the grade 8 and 9 discriminators (algebraic fractions, vectors proof, circle theorems with algebra, conditional or non-replacement probability, functions, iteration, harder graph transformations). Pearson says it reviews live performance each series to decide which grade each question targets. The spec does not publish a percentage of marks per grade band. Because Higher is 60% AO2 plus AO3, a large share of marks needs reasoning or problem solving rather than just routine method.",
+  "topicWeights": [
+   [
+    "Number",
+    15
+   ],
+   [
+    "Algebra",
+    30
+   ],
+   [
+    "Ratio, proportion and rates of change",
+    20
+   ],
+   [
+    "Geometry and measures",
+    20
+   ],
+   [
+    "Statistics and probability",
+    15
+   ]
+  ],
+  "topicWeightNote": "Spec gives ranges for Higher: Number 12 to 18%, Algebra 27 to 33%, Ratio 17 to 23%, Geometry 17 to 23%, Statistics and probability 12 to 18%. Figures above are the midpoints.",
+  "commandWords": [
+   [
+    "Write down",
+    "Answer only; working is not normally needed and usually worth 1 mark."
+   ],
+   [
+    "Work out / Calculate",
+    "Find the answer and show the method; method marks are available even if the final answer is wrong."
+   ],
+   [
+    "You must show your working",
+    "A correct answer with no working can score zero. Every step must be visible."
+   ],
+   [
+    "Show that",
+    "The answer is given; marks are for a complete chain of steps that reaches it, with the final line clearly matching the target."
+   ],
+   [
+    "Prove",
+    "A general logical argument, usually algebraic (e.g. using 2n and 2n+1); numerical examples alone score nothing."
+   ],
+   [
+    "Explain / Give a reason",
+    "A written justification; in geometry, name the exact angle fact or circle theorem using correct wording."
+   ],
+   [
+    "Give the exact value",
+    "Do not round; leave in surd, fraction or pi form."
+   ],
+   [
+    "Simplify / Factorise fully",
+    "Collect like terms or take out the highest common factor so nothing more can be done."
+   ],
+   [
+    "Estimate",
+    "Round values (usually to 1 significant figure) first, then calculate; using the exact values loses marks."
+   ],
+   [
+    "Sketch",
+    "Show the correct shape and key points such as intercepts and turning points; not to scale."
+   ],
+   [
+    "Construct",
+    "Use ruler and compasses only and leave construction arcs visible."
+   ],
+   [
+    "Give your answer to an appropriate degree of accuracy",
+    "Match the accuracy of the data given, and do not round mid-calculation."
+   ]
+  ],
+  "dropMarks": [
+   "Copying numbers or algebra wrongly from the question or from one line of working to the next.",
+   "Sign and bracket errors, especially when expanding, rearranging, simplifying algebraic fractions or using the quadratic formula with negative coefficients.",
+   "Rounding too early in multi-step calculations (trig, compound interest, bounds), which loses the final accuracy mark.",
+   "Answering a slightly different question: giving both roots when one is asked for, comparing the wrong statistic, or not giving the answer in the required form.",
+   "Show that and proof answers that skip steps, are not linked together, or never state the final conclusion.",
+   "Choosing the wrong method, such as treating inverse proportion as direct proportion or mixing up HCF and LCM.",
+   "Not sense-checking the answer, for example a length longer than the hypotenuse or a probability above 1.",
+   "Missing or unclear working on longer questions, so no method marks can be given when the final answer is wrong."
+  ],
+  "nineVsSeven": [
+   "Grade 8 and 9 answers set out a clear, logically ordered chain of reasoning with correct notation, so every step can be followed and credited.",
+   "They handle algebra accurately under pressure (signs, brackets, fractions) and spot structure, such as recognising a difference of two squares, instead of brute force.",
+   "They pick efficient routes, for example going straight to a tangent gradient using the perpendicular radius, rather than long detours.",
+   "They read context carefully in the final unstructured problems (ratio given in the question, without replacement, bounds) and finish to the exact form asked.",
+   "Grade 6 and 7 students usually score well on the first half of the paper and on routine Higher methods but lose marks on the last 5 to 8 questions, which need several topics combined with little scaffolding.",
+   "Top candidates can complete proofs and show that questions fully, which is AO2 territory and makes up a big chunk of the 30% reasoning marks."
+  ],
+  "sources": [
+   [
+    "Pearson Edexcel GCSE (9-1) Mathematics 1MA1 specification",
+    "https://qualifications.pearson.com/content/dam/pdf/GCSE/mathematics/2015/specification-and-sample-assesment/gcse-maths-2015-specification.pdf"
+   ],
+   [
+    "Pearson GCSE maths paper accessibility (ramping and tier overlap)",
+    "https://qualifications.pearson.com/content/dam/pdf/GCSE/mathematics/2015/misc/gcse-paper-accessibility.pdf"
+   ],
+   [
+    "Pearson examiner report 1MA1 Higher Paper 3, June 2023",
+    "https://newham.ac.uk/wp-content/uploads/sites/2/2025/03/1ma1-3h-pef-20230824.pdf"
+   ],
+   [
+    "Pearson examiner report 1MA1 Higher Paper 1, November 2023",
+    "https://qualifications.pearson.com/content/dam/pdf/GCSE/mathematics/2015/exam-materials/1ma1-1h-pef-20240111.pdf"
+   ],
+   [
+    "Edexcel GCSE Maths command words (Oxford Revise summary)",
+    "https://www.oxfordrevise.com/wp-content/uploads/2026/05/OR-Command-words-Edexcel-GCSE-Maths.pdf"
+   ]
+  ]
+ },
+ "science": {
+  "structure": "Six papers: Biology 1 and 2, Chemistry 1 and 2, Physics 1 and 2. Each is 1 hour 15 minutes, 70 marks, 16.7% of the qualification (420 marks total). All six must be the same tier. Higher awards grades 4-4 up to 9-9 (it is a double award on a 17-point scale). Question types: multiple choice, structured, closed short answer and open response. Papers usually include one or two 6-mark extended response questions marked in three levels (1-2, 3-4, 5-6). Biology 1 covers cell biology, organisation, infection and response, bioenergetics; Biology 2 covers homeostasis, inheritance and evolution, ecology; Chemistry 1 covers atomic structure, bonding, quantitative chemistry, chemical changes, energy changes; Chemistry 2 covers rates, organic, analysis, atmosphere, resources; Physics 1 covers energy, electricity, particle model, atomic structure; Physics 2 covers forces, waves, magnetism. Physics papers give an equation sheet but many equations must be recalled.",
+  "aos": [
+   [
+    "AO1",
+    "40%",
+    "Knowledge and understanding: recall scientific ideas, techniques and procedures."
+   ],
+   [
+    "AO2",
+    "40%",
+    "Application: use that knowledge in new contexts, including calculations, data handling and practical situations."
+   ],
+   [
+    "AO3",
+    "20%",
+    "Analysis and evaluation: interpret data and information, make judgements, draw conclusions and improve experimental methods."
+   ]
+  ],
+  "difficulty": "AO weightings are 37 to 43% per component for AO1 and AO2 and 17 to 23% for AO3. AQA says there are no low demand questions on Higher: roughly 40% of marks are standard demand (aimed at grades 4 to 5) and 60% are high demand (standard/high aimed at grades 6 to 7, and high aimed at grades 8 to 9). About 30% of marks are common questions shared with Foundation, and these are standard demand and come early. Later questions ramp up sharply, have less scaffolding (for example physics equations not given or not rearranged) and Higher papers carry more open and extended response marks. The exact split between the 6-7 and 8-9 bands is not published.",
+  "topicWeights": [
+   [
+    "Biology",
+    33.3
+   ],
+   [
+    "Chemistry",
+    33.3
+   ],
+   [
+    "Physics",
+    33.3
+   ]
+  ],
+  "practicalShare": "At least 15% of marks across the papers test the 21 required practicals and practical skills; at least two required practicals per subject appear each series.",
+  "mathsShare": "At least 20% of marks in Combined Science test maths skills (minimum 10% in Biology, 20% in Chemistry, 30% in Physics). Higher tier maths is set at Foundation GCSE Maths level of demand or above.",
+  "commandWords": [
+   [
+    "Give / Name / State / Write",
+    "Short answer, a word or phrase, no explanation needed."
+   ],
+   [
+    "Describe",
+    "Recall facts or say what happens or what a pattern shows, step by step; no reasons needed."
+   ],
+   [
+    "Explain",
+    "Give reasons why or how something happens, linking cause and effect (use because, so, therefore). Every mark scheme point must be made for full marks."
+   ],
+   [
+    "Compare",
+    "Give similarities and differences, with both things mentioned in each point (comparative words like higher than)."
+   ],
+   [
+    "Suggest",
+    "Apply knowledge to an unfamiliar situation; more than one answer may be credited."
+   ],
+   [
+    "Evaluate",
+    "Use the information given, weigh up strengths and weaknesses or evidence for and against, then reach a justified judgement."
+   ],
+   [
+    "Justify",
+    "Back up an answer with evidence from the data or information given."
+   ],
+   [
+    "Calculate / Determine",
+    "Work out a number using the data given; show working, include units and the requested significant figures."
+   ],
+   [
+    "Plan / Design",
+    "Write a method in logical order with apparatus, variables to control, measurements and repeats."
+   ],
+   [
+    "Predict / Estimate",
+    "Give a likely outcome or a rough value based on a pattern."
+   ],
+   [
+    "Plot / Draw / Sketch",
+    "Plot accurately and use a line of best fit that ignores anomalies; a sketch only needs the correct shape."
+   ]
+  ],
+  "dropMarks": [
+   "Not linking ideas in 6-mark answers: correct but unconnected points stay in Level 1 even if there are lots of them.",
+   "Vague, everyday language (it is healthier, stronger, bonds) instead of precise terms such as oxide ion, delocalised electrons or optimum.",
+   "Calculation slips: not converting units (cm3 to dm3, minutes to seconds, kJ to J), using the wrong equation, failing to rearrange, or truncating instead of rounding to the stated significant figures.",
+   "Weak required practical knowledge: wrong apparatus, missing control variables, no repeats, no mention of when or how to measure.",
+   "Misreading the command word, for example describing when asked to explain, or repeating the question back.",
+   "Not sense-checking answers against the context (impossible values, ratios written the wrong way round).",
+   "Common misconceptions, such as antibiotics working on viruses or getting stronger, or misunderstanding how thermistors behave.",
+   "Not bringing a calculator, or leaving several attempts uncrossed so examiners cannot credit any."
+  ],
+  "nineVsSeven": [
+   "Grade 8 and 9 answers write logical chains for extended responses where each step leads to the next, reaching Level 3 (5 to 6 marks) by being coherent and linked rather than long.",
+   "They use exact scientific vocabulary every time and talk about the right particles (atoms, ions, electrons) in the right places.",
+   "They apply ideas confidently to unfamiliar contexts in the last, least scaffolded questions, which is where most of the high demand marks sit.",
+   "They complete multi-step calculations fully: recall and rearrange equations, convert units, and give answers to the right significant figures with units.",
+   "They can plan and evaluate practicals precisely (resolution, repeats and means, control variables, sources of error).",
+   "Grade 6 and 7 answers are usually secure on recall and standard calculations but drop marks on the final high demand parts, on linking in 6-markers and on AO3 evaluation."
+  ],
+  "sources": [
+   [
+    "AQA GCSE Combined Science: Trilogy 8464 specification",
+    "https://filestore.aqa.org.uk/resources/science/specifications/AQA-8464-SP-2016.PDF"
+   ],
+   [
+    "AQA 8464 scheme of assessment (AO weightings)",
+    "https://www.aqa.org.uk/subjects/science/gcse/science-8464/specification/scheme-of-assessment"
+   ],
+   [
+    "AQA GCSE Science exams explained (demand, maths and practical shares)",
+    "https://filestore.aqa.org.uk/resources/science/AQA-GCSE-SCIENCE-EXAMS-EXPLAINED.PDF"
+   ],
+   [
+    "AQA GCSE Science tiering guide",
+    "https://filestore.aqa.org.uk/resources/science/AQA-GCSE-SCIENCE-TG.PDF"
+   ],
+   [
+    "AQA examiner report Trilogy Biology 2H, June 2023",
+    "https://filestore.aqa.org.uk/sample-papers-and-mark-schemes/2023/june/AQA-8464B2H-WRE-JUN23.PDF"
+   ],
+   [
+    "AQA examiner report Trilogy Chemistry 1H, June 2023",
+    "https://filestore.aqa.org.uk/sample-papers-and-mark-schemes/2023/june/AQA-8464C1H-WRE-JUN23.PDF"
+   ],
+   [
+    "AQA examiner report Trilogy Physics 1H, November 2021",
+    "https://filestore.aqa.org.uk/sample-papers-and-mark-schemes/2021/november/AQA-8464P1H-WRE-NOV21.PDF"
+   ],
+   [
+    "AQA science command words",
+    "https://www.aqa.org.uk/resources/science/gcse/teach/command-words"
+   ]
+  ]
+ },
+ "englang": {
+  "structure": "Untiered. Two papers, each 1 hour 45 minutes, 80 marks, 50% (160 marks total). Paper 1 Explorations in Creative Reading and Writing: Section A reading of one literature fiction extract, Q1 4 marks (list four things), Q2 8 marks (language analysis), Q3 8 marks (structure of the whole extract), Q4 20 marks (evaluate a statement about the text); Section B Q5 40 marks, descriptive or narrative writing from a choice of two tasks (24 content and organisation, 16 technical accuracy). Paper 2 Writers' Viewpoints and Perspectives: two linked non-fiction sources, one 19th century and one 20th or 21st century. Q1 4 marks (choose four true statements), Q2 8 marks (summary of differences or similarities across both sources), Q3 12 marks (language analysis of one source), Q4 16 marks (compare writers' viewpoints and methods across both sources); Section B Q5 40 marks, writing to present a viewpoint (24 content, 16 technical accuracy). Spoken Language is a separate endorsement with 0% weighting.",
+  "aos": [
+   [
+    "AO1",
+    "10%",
+    "Find and interpret explicit and implicit information; select and combine evidence from two texts (Paper 1 Q1, Paper 2 Q1 and Q2)."
+   ],
+   [
+    "AO2",
+    "17.5%",
+    "Analyse how writers use language and structure for effect, using subject terminology (Paper 1 Q2 and Q3, Paper 2 Q3)."
+   ],
+   [
+    "AO3",
+    "10%",
+    "Compare writers' ideas and perspectives and how they are conveyed across two texts (Paper 2 Q4)."
+   ],
+   [
+    "AO4",
+    "12.5%",
+    "Evaluate texts critically with supporting references (Paper 1 Q4)."
+   ],
+   [
+    "AO5",
+    "30%",
+    "Write clearly, effectively and imaginatively, matching tone, style and register to form, purpose and audience, and organise ideas with structural and grammatical features (both Q5s, 24 marks each)."
+   ],
+   [
+    "AO6",
+    "20%",
+    "Technical accuracy: range of vocabulary and sentence structures, accurate spelling, punctuation and grammar (both Q5s, 16 marks each)."
+   ]
+  ],
+  "difficulty": "Questions ramp from low tariff to extended within each paper: 4 marks, then 8, 8 or 12, then 16 or 20, then 40. Writing is half of the whole qualification (AO5 plus AO6 = 50%). Reading questions are marked in four levels; the step from Level 2 (clear, relevant) to Level 3 (clear explanation of effects) to Level 4 (perceptive, detailed analysis) is the grade 5 to 7 to 9 progression. Examiner reports note the mean on many reading questions sits at the low end of Level 2, so Level 4 responses are relatively rare.",
+  "topicWeights": [
+   [
+    "Paper 1 Q1 retrieval",
+    2.5
+   ],
+   [
+    "Paper 1 Q2 language",
+    5.0
+   ],
+   [
+    "Paper 1 Q3 structure",
+    5.0
+   ],
+   [
+    "Paper 1 Q4 evaluation",
+    12.5
+   ],
+   [
+    "Paper 1 Q5 writing",
+    25.0
+   ],
+   [
+    "Paper 2 Q1 true statements",
+    2.5
+   ],
+   [
+    "Paper 2 Q2 summary",
+    5.0
+   ],
+   [
+    "Paper 2 Q3 language",
+    7.5
+   ],
+   [
+    "Paper 2 Q4 comparison",
+    10.0
+   ],
+   [
+    "Paper 2 Q5 writing",
+    25.0
+   ]
+  ],
+  "topicWeightNote": "Percent of the qualification (raw marks out of 160 converted; scaling x1).",
+  "commandWords": [
+   [
+    "List four things (P1 Q1)",
+    "Retrieve four separate, true points from the named lines only; short quotes or paraphrase are fine."
+   ],
+   [
+    "Choose four true statements (P2 Q1)",
+    "Shade exactly four; any extra shading costs marks automatically."
+   ],
+   [
+    "Write a summary of the differences or similarities (P2 Q2)",
+    "Select relevant points from both sources and make inferences about what they suggest; no language analysis needed."
+   ],
+   [
+    "How does the writer use language (P1 Q2, P2 Q3)",
+    "Pick precise words, phrases and techniques and explain their effect in context; terminology helps but is not rewarded on its own."
+   ],
+   [
+    "How has the writer structured the text (P1 Q3)",
+    "Track the whole extract: openings, shifts in focus, time or place, contrasts, endings, and why things are placed where they are."
+   ],
+   [
+    "To what extent do you agree (P1 Q4)",
+    "Give your own evaluation of the statement, backed by quotes, and judge how well the writer's methods create the effect."
+   ],
+   [
+    "Compare how the writers convey their perspectives (P2 Q4)",
+    "Compare viewpoints and the methods used to convey them, like for like, across both texts."
+   ],
+   [
+    "Write a description / story (P1 Q5)",
+    "Crafted creative writing; descriptions should stay mainly descriptive, stories should be controlled and shaped."
+   ],
+   [
+    "Write an article, letter, speech, essay (P2 Q5)",
+    "Argue a clear viewpoint in the correct form for the stated audience and purpose."
+   ]
+  ],
+  "dropMarks": [
+   "Feature spotting: naming techniques or word classes without explaining their effect in context.",
+   "Retelling the story on Paper 1 Q3 instead of analysing structure, or writing about sentence level language instead of structure.",
+   "Using lines outside the ones specified, or writing about the wrong source on Paper 2 Q3.",
+   "Paraphrasing rather than inferring on Paper 2 Q2, and mismatched or one-sided comparisons on Paper 2 Q4 with no comment on methods (capped around 6 out of 16).",
+   "Paper 1 Q4 that evaluates ideas only and never discusses how the writer creates the effect.",
+   "Formulaic writing for Q5 (I can see, I can hear, I can smell), over-ambitious vocabulary used wrongly, or long answers that lose control.",
+   "Technical accuracy errors: comma splices, weak sentence demarcation, dialogue punctuation, apostrophes and subject-verb agreement; checklist punctuation used incorrectly.",
+   "Poor timing, leaving too little for Q5, which is worth half of each paper."
+  ],
+  "nineVsSeven": [
+   "Level 4 reading answers are perceptive and detailed: they unpack layers of connotation and explain why the writer chose a word or image, not just what it shows.",
+   "On structure, top answers look at the whole text and pick out patterns such as motifs, foreshadowing and turning points, explaining how placement shapes meaning.",
+   "Top evaluation answers plan an argument first, weigh the evidence and assess both what the text says and how it says it.",
+   "Top comparison answers make like-for-like comparisons of viewpoint and analyse methods in both texts in detail.",
+   "Grade 8 and 9 writing is planned, concise and crafted (for example a circular structure or extended metaphor) with an original, distinctive voice; grade 6 and 7 writing is clear and engaging but more predictable.",
+   "Top technical accuracy uses a wide range of sentence forms and punctuation deliberately for effect, with almost no errors; mid band writing is generally accurate but has slips and less variety."
+  ],
+  "sources": [
+   [
+    "AQA GCSE English Language 8700 specification",
+    "https://filestore.aqa.org.uk/resources/english/specifications/AQA-8700-SP-2015.PDF"
+   ],
+   [
+    "AQA 8700 exam information for students and teachers",
+    "https://filestore.aqa.org.uk/resources/english/AQA_8700_EXAM_EXAM_INFO_TN.PDF"
+   ],
+   [
+    "AQA examiner report 8700 Paper 1, June 2018",
+    "https://pastpapers.co/aqa/GCSE/English Language-8700/AQA-87001-WRE-JUN18.pdf"
+   ],
+   [
+    "AQA examiner report 8700 Paper 2, November 2023",
+    "https://www.aqa.org.uk/files/sample-papers-and-mark-schemes.2023.november.AQA-87002-WRE-NOV23_PDF/40fa185fd682e1d0038d1008c73c7e588964c9f6.pdf"
+   ]
+  ]
+ },
+ "englit": {
+  "structure": "Untiered, closed book (no texts in the exam). Paper 1 Shakespeare and the 19th-century novel: 1 hour 45 minutes, 64 marks, 40%. Section A Macbeth: one question on an extract then the whole play, 30 marks plus 4 AO4 marks (34). Section B A Christmas Carol: one question on an extract then the whole novel, 30 marks. Paper 2 Modern texts and poetry: 2 hours 15 minutes, 96 marks, 60%. Section A An Inspector Calls: one essay from a choice of two, 30 marks plus 4 AO4 marks (34). Section B Power and Conflict: compare a named printed poem with one other poem from the cluster, 30 marks. Section C Unseen poetry: Q27.1 analyse one unseen poem, 24 marks; Q27.2 compare methods in a second unseen poem with the first, 8 marks (question numbers may shift, for example 28.1 and 28.2 in some series). 160 marks total.",
+  "aos": [
+   [
+    "AO1",
+    "37.5%",
+    "Personal, critical response to the text and task, with a clear argument and well chosen quotations or references."
+   ],
+   [
+    "AO2",
+    "42.5%",
+    "Analyse how the writer uses language, form and structure to create meaning and effect, with relevant terminology."
+   ],
+   [
+    "AO3",
+    "15%",
+    "Show understanding of the relationship between the text and its context (historical, social, the writer's purpose)."
+   ],
+   [
+    "AO4",
+    "5%",
+    "Spelling, punctuation, vocabulary and sentence structure; only on the Macbeth and An Inspector Calls questions (4 marks each)."
+   ]
+  ],
+  "difficulty": "Untiered, so every question spans grades 1 to 9 through a six-level mark scheme for the 30-mark questions. Level 4 (16 to 20) is clear and consistent, Level 5 (21 to 25) is thoughtful and developed, Level 6 (26 to 30) is critical, exploratory and conceptualised. Roughly, Level 4 maps to grade 5 to 6, Level 5 to grade 7, Level 6 to grades 8 and 9. AO3 is not assessed on the unseen poetry, and Q27.2 only assesses AO2.",
+  "topicWeights": [
+   [
+    "Paper 1 Macbeth (incl 4 AO4)",
+    21.25
+   ],
+   [
+    "Paper 1 A Christmas Carol",
+    18.75
+   ],
+   [
+    "Paper 2 An Inspector Calls (incl 4 AO4)",
+    21.25
+   ],
+   [
+    "Paper 2 Power and Conflict comparison",
+    18.75
+   ],
+   [
+    "Paper 2 Unseen poem 27.1",
+    15.0
+   ],
+   [
+    "Paper 2 Unseen comparison 27.2",
+    5.0
+   ]
+  ],
+  "topicWeightNote": "Percent of the qualification (raw marks out of 160 converted; scaling x1).",
+  "commandWords": [
+   [
+    "Starting with this extract, explore how Shakespeare / Dickens presents",
+    "Analyse the extract closely, then range across the whole text; both parts are needed for the top levels."
+   ],
+   [
+    "How does Priestley present / How far does Priestley present",
+    "How means analyse methods; how far invites a judgement about the extent of the idea. Reports say students often ignore the difference."
+   ],
+   [
+    "Compare how poets present",
+    "Analyse both poems and draw out similarities and differences in ideas and methods; integrated comparison is not required and can be forced."
+   ],
+   [
+    "In the unseen poem, how does the poet present (27.1)",
+    "Explore ideas, feelings and methods in one poem with no context needed."
+   ],
+   [
+    "Compare the methods the writers use (27.2)",
+    "Briefly compare techniques and their effects across the two unseen poems; only 8 marks, so keep it short."
+   ]
+  ],
+  "dropMarks": [
+   "Pre-learned paragraphs, introductions and online revision phrases used whether or not they fit the question.",
+   "Context bolted on: long paragraphs on the Gunpowder Plot, Poor Laws or Malthus that do not develop the argument.",
+   "Technique spotting and single-word zooming without explaining effect or linking to the writer's ideas.",
+   "Narrative retelling of plot instead of analysing how the writer presents the character or theme.",
+   "Using only the extract, or only one part of the play (often the opening of Macbeth), instead of the whole text.",
+   "Critical theory (Freudian, Marxist, feminist) dropped in without relevance.",
+   "Forced comparison structures and comparing ideas without a clear sense of why the poems are alike or different.",
+   "Poor timing: rushing Section B or spending too long on 27.2 relative to its 8 marks; misspelling character names and titles costs AO4."
+  ],
+  "nineVsSeven": [
+   "Grade 8 and 9 essays open with a clear thesis or big idea and run a single, conceptualised argument across the whole text; grade 6 and 7 essays are thoughtful but more point by point.",
+   "Top answers choose references judiciously from across the text to show change, contrast or motifs, rather than relying on memorised quotes.",
+   "They explore tentatively and consider more than one interpretation, treating characters as constructs or representatives of ideas and society.",
+   "Context is woven in briefly and only when it sharpens the argument, often linking the writer's purpose to the methods.",
+   "Analysis covers form and structure (openings, endings, shifts in pace or tone) as well as language, always tied to meaning.",
+   "On poetry, top answers define their reading of the theme first and then pick methods that support it, comparing with clear purpose."
+  ],
+  "sources": [
+   [
+    "AQA GCSE English Literature 8702 specification",
+    "https://filestore.aqa.org.uk/resources/english/specifications/AQA-8702-SP-2015.PDF"
+   ],
+   [
+    "AQA 8702 Paper 1 mark scheme, June 2023",
+    "https://filestore.aqa.org.uk/sample-papers-and-mark-schemes/2023/june/AQA-87021-MS-JUN23.PDF"
+   ],
+   [
+    "AQA examiner report 8702 Paper 1, June 2023",
+    "https://filestore.aqa.org.uk/sample-papers-and-mark-schemes/2023/june/AQA-87021-WRE-JUN23.PDF"
+   ],
+   [
+    "AQA examiner report 8702 Paper 1, June 2025",
+    "https://www.aqa.org.uk/files/cRIpdimsSKiybuSFvQKGG0/3976f0473adcf2651657f956f5fac2f9aa574a96.pdf"
+   ],
+   [
+    "AQA examiner report 8702 Paper 2, June 2025",
+    "https://www.aqa.org.uk/files/cRIpdimsSKiybuSFvQKKsS/e5fd19f07aa4be3c7c84ee3edd7de7c199170ce8.pdf"
+   ],
+   [
+    "AQA examiner report 8702 Paper 2, June 2023",
+    "https://filestore.aqa.org.uk/sample-papers-and-mark-schemes/2023/june/AQA-87022-WRE-JUN23.PDF"
+   ]
+  ]
+ },
+ "geography": {
+  "structure": "Untiered. Three papers, each 1 hour 30 minutes. Paper 1 Living with the physical environment: 88 marks incl 3 SPaG, 35%. Section A Natural hazards 33 marks (compulsory), Section B The living world 25 marks (ecosystems, tropical rainforests, plus hot deserts option), Section C Physical landscapes in the UK 30 marks (answer two of coasts, rivers, glacial; Gladesmore does coasts and glacial, 15 marks each). Paper 2 Challenges in the human environment: 88 marks incl 3 SPaG, 35%. Section A Urban issues 33, Section B Changing economic world 30, Section C Resource management 25 (Q3 compulsory plus one of food, water, energy; Gladesmore does food). Paper 3 Geographical applications: 76 marks incl 6 SPaG, 30%. Section A Issue evaluation 37 (based on a pre-release booklet out 12 weeks before), Section B Fieldwork 39 (own fieldwork and unfamiliar fieldwork). Where 9-markers sit: Paper 1 ends Section A (hazards, plus 3 SPaG) and Section B (living world) with a 9-marker; Section C options top out at 6 marks each. Paper 2 ends Section A (urban, plus 3 SPaG) and Section B (economic world) with a 9-marker; Section C uses 6-markers. Paper 3 has a 9-mark decision question at the end of Section A plus 3 SPaG, and a 9-mark fieldwork question at the end of Section B plus 3 SPaG. Typical question values elsewhere: 1, 2, 4 and 6 marks, with multiple choice and skills (maps, graphs, calculations) mixed in.",
+  "aos": [
+   [
+    "AO1",
+    "15%",
+    "Knowledge of places, processes, environments and scales (facts, case study details)."
+   ],
+   [
+    "AO2",
+    "25%",
+    "Understanding of geographical concepts and how they apply to places and processes (explaining how and why)."
+   ],
+   [
+    "AO3",
+    "35%",
+    "Apply knowledge to interpret, analyse and evaluate information and issues and make judgements (10% of this is in a fieldwork context)."
+   ],
+   [
+    "AO4",
+    "25%",
+    "Geographical skills: maps, graphs, statistics, data and fieldwork techniques, and communicating findings (5% is on fieldwork data)."
+   ]
+  ],
+  "difficulty": "Untiered, so difficulty comes from the levels-marked 6 and 9-mark questions (Level 1 basic, Level 2 clear, Level 3 detailed and evaluative). AO3 is the largest objective at 35% and is concentrated in Paper 3 (18% of the qualification). AO weightings per paper: Paper 1 and 2 each AO1 7.5, AO2 11, AO3 8.5, AO4 8; Paper 3 AO1 0, AO2 3, AO3 18, AO4 9. Examiner reports say AO2 and AO3 questions are generally answered less well than AO1 recall.",
+  "topicWeights": [
+   [
+    "Paper 1",
+    35
+   ],
+   [
+    "Paper 2",
+    35
+   ],
+   [
+    "Paper 3",
+    30
+   ]
+  ],
+  "sectionWeights": [
+   [
+    "Paper 1 Section A Natural hazards (incl 3 SPaG)",
+    33,
+    13.1
+   ],
+   [
+    "Paper 1 Section B Living world (rainforests, hot deserts)",
+    25,
+    9.9
+   ],
+   [
+    "Paper 1 Section C UK landscapes (coasts 15, glacial 15)",
+    30,
+    11.9
+   ],
+   [
+    "Paper 2 Section A Urban issues (incl 3 SPaG)",
+    33,
+    13.1
+   ],
+   [
+    "Paper 2 Section B Changing economic world",
+    30,
+    11.9
+   ],
+   [
+    "Paper 2 Section C Resource management (Q3 plus food option)",
+    25,
+    9.9
+   ],
+   [
+    "Paper 3 Section A Issue evaluation (incl 3 SPaG)",
+    37,
+    14.6
+   ],
+   [
+    "Paper 3 Section B Fieldwork (incl 3 SPaG)",
+    39,
+    15.4
+   ]
+  ],
+  "sectionWeightNote": "Each entry is [section, raw marks, approx % of the qualification].",
+  "commandWords": [
+   [
+    "Describe",
+    "Say what something is like or what a pattern shows, using figures from the resource; no reasons."
+   ],
+   [
+    "Explain",
+    "Give reasons why or how something happens, developing each point (this leads to, because)."
+   ],
+   [
+    "Outline",
+    "Briefly set out the main points; still develop each one a little."
+   ],
+   [
+    "Suggest",
+    "Offer a possible reason or idea, usually about an unfamiliar resource; depth depends on marks."
+   ],
+   [
+    "Compare",
+    "Point out similarities and differences between two things, using comparative words."
+   ],
+   [
+    "Calculate",
+    "Work out a value (percentage, mean, range, interquartile range) and show working."
+   ],
+   [
+    "Discuss",
+    "Set out the points on different sides of an issue; does not need to be perfectly balanced."
+   ],
+   [
+    "Assess",
+    "Weigh up and reach an informed verdict on how important or successful something is."
+   ],
+   [
+    "Evaluate",
+    "Weigh up strengths and weaknesses using evidence and reach a supported conclusion."
+   ],
+   [
+    "To what extent",
+    "Decide how far you agree, with a clear judgement backed by evidence."
+   ],
+   [
+    "Justify",
+    "Support a choice (often the Paper 3 decision) with detailed reasons and evidence, and say why other options are weaker."
+   ]
+  ],
+  "dropMarks": [
+   "Explaining when only describing is asked, or the reverse, and giving extra reasons when only one is asked for.",
+   "Not using the figure, map or photo provided, or just copying information from it without analysis.",
+   "Generic answers with no named place or case study, which cannot go beyond Level 2 on 9-mark questions.",
+   "Listing points instead of developing them with a because or which leads to.",
+   "Mixing up case studies or topics (river ideas in a coasts answer, glacial and river processes confused).",
+   "Weak key term knowledge (for example relief versus drainage) and shaky percentage or statistical calculations.",
+   "No judgement or conclusion on assess, evaluate and to what extent questions, so AO3 marks are lost.",
+   "On fieldwork, defining terms without linking them to the enquiry aim, and making claims the data cannot support."
+  ],
+  "nineVsSeven": [
+   "Level 3 answers (7 to 9 marks) cover all three AOs: detailed knowledge, clear explanation, and a reasoned judgement that runs through the answer and is restated at the end.",
+   "Top answers weave specific case study detail (names, figures, places) into the argument rather than tacking it on.",
+   "They explain processes step by step, often with annotated diagrams for landform questions, and link features to conditions (for example rock type, or desert plant and animal adaptations to specific conditions).",
+   "They go beyond the stimulus: adding adaptations or impacts not shown in the photos, and weighing short versus long term or social versus economic factors.",
+   "In Paper 3 they manipulate data (totals, means, ranges) to support a decision and justify why their option beats the alternatives without arguing against themselves.",
+   "Grade 6 and 7 answers usually reach Level 2: clear and accurate but with limited application or evaluation; grade 8 and 9 answers are consistently Level 3 and pick up full SPaG."
+  ],
+  "sources": [
+   [
+    "AQA GCSE Geography 8035 specification",
+    "https://filestore.aqa.org.uk/resources/geography/specifications/AQA-8035-SP-2016.PDF"
+   ],
+   [
+    "AQA 8035 specification at a glance",
+    "https://www.aqa.org.uk/subjects/geography/gcse/geography-8035/specification-at-a-glance"
+   ],
+   [
+    "AQA 8035 Paper 1 mark scheme, June 2024",
+    "https://pmt.physicsandmathstutor.com/download/Geography/GCSE/Past-Papers/AQA/Paper-1/MS/June%202024%20MS.pdf"
+   ],
+   [
+    "AQA 8035 Paper 3 mark scheme, June 2023",
+    "https://filestore.aqa.org.uk/sample-papers-and-mark-schemes/2023/june/AQA-80353-MS-JUN23.PDF"
+   ],
+   [
+    "AQA examiner report 8035 Paper 2, June 2024",
+    "https://www.aqa.org.uk/files/sample-papers-and-mark-schemes.2024.June.AQA-80352-WRE-JUN24_PDF/76bd72dd3fb051acaa784ff48db982c3cefe2fed.pdf"
+   ],
+   [
+    "AQA examiner report 8035 Paper 3, June 2022",
+    "https://filestore.aqa.org.uk/sample-papers-and-mark-schemes/2022/june/AQA-80353-WRE-JUN22.PDF"
+   ],
+   [
+    "tutor2u summary of AQA GCSE Geography Paper 1 examiner report",
+    "https://www.tutor2u.net/geography/blog/detailed-delve-paper-1-aqa-gcse-geography-examiner-report"
+   ],
+   [
+    "AQA 8035 command words guide",
+    "https://filestore.aqa.org.uk/resources/geography/AQA-8035-CW-GUIDE.PDF"
+   ]
+  ]
+ }
+}

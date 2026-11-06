@@ -1,0 +1,697 @@
+{
+"sb-cells": {
+"url": "https://www.freesciencelessons.co.uk/gcse-biology-paper-1/cell-biology/",
+"label": "Free Science Lessons Cell Biology page: all videos in order (cells, specialisation, microscopy, RP1); skip ones marked Triple",
+"kind": "video"
+},
+"sb-transport": {
+"url": "https://www.youtube.com/watch?v=qqe2NhQt8bY",
+"label": "Free Science Lessons video: Osmosis (diffusion and active transport videos sit next to it on the Cell Biology page)",
+"kind": "video"
+},
+"sb-division": {
+"url": "https://www.youtube.com/watch?v=I0VdEiPWkHs",
+"label": "Free Science Lessons video: Cell division by mitosis (then Stem Cells: Kh27eyjxvYM)",
+"kind": "video"
+},
+"sb-digestion": {
+"url": "https://www.youtube.com/watch?v=VLK2wANjQm0",
+"label": "Free Science Lessons video: Digestive enzymes",
+"kind": "video"
+},
+"sb-circulation": {
+"url": "https://www.youtube.com/watch?v=bpYaKM2hVFY",
+"label": "Free Science Lessons video: The heart and circulation",
+"kind": "video"
+},
+"sb-noncomm": {
+"url": "https://www.youtube.com/watch?v=H6DrSG_KQjo",
+"label": "Free Science Lessons video: Lifestyle and disease",
+"kind": "video"
+},
+"sb-plants": {
+"url": "https://www.youtube.com/watch?v=9yTDokLRZs0",
+"label": "Free Science Lessons video: Transpiration",
+"kind": "video"
+},
+"sb-infection": {
+"url": "https://www.youtube.com/watch?v=HSrrPdJDqxM",
+"label": "Free Science Lessons video: The immune system",
+"kind": "video"
+},
+"sb-photo": {
+"url": "https://www.youtube.com/watch?v=rAJGnS_ktk4",
+"label": "Free Science Lessons video: Photosynthesis (then Limiting factors: kx7AeCx_6xQ for Higher)",
+"kind": "video"
+},
+"sb-resp": {
+"url": "https://www.youtube.com/watch?v=ZKAaDbTP6Dc",
+"label": "Free Science Lessons video: Respiration",
+"kind": "video"
+},
+"sb-nervous": {
+"url": "https://www.youtube.com/watch?v=oDS1hAqWp2M",
+"label": "Free Science Lessons video: The nervous system",
+"kind": "video"
+},
+"sb-hormones": {
+"url": "https://www.youtube.com/watch?v=77oyUdNZ054",
+"label": "Free Science Lessons video: Control of blood glucose concentration",
+"kind": "video"
+},
+"sb-repro": {
+"url": "https://www.youtube.com/watch?v=iXswGsfeHJg",
+"label": "Free Science Lessons video: The menstrual cycle",
+"kind": "video"
+},
+"sb-genetics": {
+"url": "https://www.youtube.com/watch?v=reVLRjZIh3c",
+"label": "Free Science Lessons video: Alleles (genetic crosses and Punnett squares)",
+"kind": "video"
+},
+"sb-evolution": {
+"url": "https://www.youtube.com/watch?v=7RraYCKvTXc",
+"label": "Free Science Lessons video: Evolution by natural selection",
+"kind": "video"
+},
+"sb-ecosystems": {
+"url": "https://www.youtube.com/watch?v=2MW6nwf80XM",
+"label": "Free Science Lessons video: Sampling organisms (quadrats and transects)",
+"kind": "video"
+},
+"sb-biodiversity": {
+"url": "https://www.youtube.com/watch?v=I5UR9uMeWuQ",
+"label": "Free Science Lessons video: Biodiversity",
+"kind": "video"
+},
+"sc-c-atom": {
+"url": "https://www.freesciencelessons.co.uk/gcse-chemistry-paper-1/atomic-structure-and-the-periodic-table/",
+"label": "Free Science Lessons Atomic Structure and Periodic Table page: all videos in order; skip Transition Elements (Triple)",
+"kind": "video"
+},
+"sc-c-bond": {
+"url": "https://www.freesciencelessons.co.uk/gcse-chemistry-paper-1/structure-and-bonding/",
+"label": "Free Science Lessons Structure and Bonding page: ionic, covalent, metallic, giant structures in order",
+"kind": "video"
+},
+"sc-c-quant": {
+"url": "https://www.freesciencelessons.co.uk/gcse-chemistry-paper-1/quantitative-chemistry/",
+"label": "Free Science Lessons Quantitative Chemistry page: videos 1-16 are Trilogy; skip the ones marked triple (yield, titration, gas volumes)",
+"kind": "video"
+},
+"sc-c-change": {
+"url": "https://www.freesciencelessons.co.uk/gcse-chemistry-paper-1/chemical-changes/",
+"label": "Free Science Lessons Chemical Changes page: reactivity, redox, acids and salts videos; skip titration (triple)",
+"kind": "video"
+},
+"sc-c-elec": {
+"url": "https://www.youtube.com/watch?v=AhTRiL6xjBA",
+"label": "Free Science Lessons video: Introducing electrolysis (then aqueous solutions parts 1 and 2 on the same page)",
+"kind": "video"
+},
+"sc-c-energy": {
+"url": "https://www.youtube.com/watch?v=4HS6D0hTzdg",
+"label": "Free Science Lessons video: Exothermic and endothermic reactions (then bond energy calculations)",
+"kind": "video"
+},
+"sc-c-rates": {
+"url": "https://www.freesciencelessons.co.uk/gcse-chemistry-paper-2/rates-of-reaction/",
+"label": "Free Science Lessons Rates of Reaction page: mean rate, tangents, factors, catalysts, RP5",
+"kind": "video"
+},
+"sc-c-equil": {
+"url": "https://www.youtube.com/watch?v=66qcNNJFy6E",
+"label": "Free Science Lessons video: Reversible reactions (then concentration, temperature, pressure videos on the Rates page)",
+"kind": "video"
+},
+"sc-c-organic": {
+"url": "https://www.youtube.com/watch?v=CX2IYWggEBc",
+"label": "Free Science Lessons video: Crude oil and hydrocarbons (then fractional distillation and cracking)",
+"kind": "video"
+},
+"sc-c-analysis": {
+"url": "https://www.youtube.com/watch?v=-XCPPB-sBFU",
+"label": "Free Science Lessons video: Chromatography (purity and gas tests videos on the same page)",
+"kind": "video"
+},
+"sc-c-atmos": {
+"url": "https://www.youtube.com/watch?v=t1Z3GlNldLA",
+"label": "Free Science Lessons video: The atmosphere (then greenhouse effect and climate change)",
+"kind": "video"
+},
+"sc-c-resources": {
+"url": "https://www.freesciencelessons.co.uk/gcse-chemistry-paper-2/resources/",
+"label": "Free Science Lessons Resources page: potable water, waste water, LCA, recycling, alternative metal extraction",
+"kind": "video"
+},
+"sp-energy-stores": {
+"url": "https://www.youtube.com/watch?v=-zy9eWzmGe4",
+"label": "Free Science Lessons video: Kinetic energy (elastic and gravitational potential energy videos follow)",
+"kind": "video"
+},
+"sp-energy-shc": {
+"url": "https://www.youtube.com/watch?v=HAPmwu7byGM",
+"label": "Free Science Lessons video: Required practical 1: specific heat capacity",
+"kind": "video"
+},
+"sp-energy-power": {
+"url": "https://www.youtube.com/watch?v=NI5jaeBrIgQ",
+"label": "Free Science Lessons video: Efficiency (Calculating power: EDT0DPhaaMY)",
+"kind": "video"
+},
+"sp-energy-resources": {
+"url": "https://www.youtube.com/watch?v=pqzvUur7QRw",
+"label": "Free Science Lessons video: Renewable sources of energy",
+"kind": "video"
+},
+"sp-elec-circuits": {
+"url": "https://www.freesciencelessons.co.uk/gcse-physics-paper-1/electricity/",
+"label": "Free Science Lessons Electricity page: series and parallel current, p.d., charge, resistance in order",
+"kind": "video"
+},
+"sp-elec-components": {
+"url": "https://www.youtube.com/watch?v=A1SyKvdHoqY",
+"label": "Free Science Lessons video: Required practical 4: current / p.d. characteristics",
+"kind": "video"
+},
+"sp-elec-mains": {
+"url": "https://www.youtube.com/watch?v=iNvGiTn64fQ",
+"label": "Free Science Lessons video: The National Grid (mains electricity and power videos on same page)",
+"kind": "video"
+},
+"sp-particle": {
+"url": "https://www.freesciencelessons.co.uk/gcse-physics-paper-1/particle-model-of-matter/",
+"label": "Free Science Lessons Particle Model page: density, internal energy, latent heat, gas pressure",
+"kind": "video"
+},
+"sp-atomic": {
+"url": "https://www.youtube.com/watch?v=0ASldDQmIOQ",
+"label": "Free Science Lessons video: Alpha-scattering and the nuclear model",
+"kind": "video"
+},
+"sp-radio": {
+"url": "https://www.youtube.com/watch?v=wj9BzGFao8k",
+"label": "Free Science Lessons video: Half life (nuclear equations: xpSBhUpBXic)",
+"kind": "video"
+},
+"sp-forces": {
+"url": "https://www.youtube.com/watch?v=PL8ATKipoB4",
+"label": "Free Science Lessons video: Resultant forces",
+"kind": "video"
+},
+"sp-elastic": {
+"url": "https://www.youtube.com/watch?v=jQAt3e6Bz7U",
+"label": "Free Science Lessons video: Required practical 6: stretching a spring",
+"kind": "video"
+},
+"sp-motion": {
+"url": "https://www.youtube.com/watch?v=r5iXzDCRMsE",
+"label": "Free Science Lessons video: Acceleration (distance-time graphs: DkCw2C-DkT0)",
+"kind": "video"
+},
+"sp-newton": {
+"url": "https://www.youtube.com/watch?v=SqdCCxv9YzI",
+"label": "Free Science Lessons video: Newton's second law of motion",
+"kind": "video"
+},
+"sp-stopping": {
+"url": "https://www.youtube.com/watch?v=drMKdcMq3o0",
+"label": "Free Science Lessons video: Vehicle stopping distance",
+"kind": "video"
+},
+"sp-momentum": {
+"url": "https://www.youtube.com/watch?v=ZtQhlwPxE28",
+"label": "Free Science Lessons video: Momentum",
+"kind": "video"
+},
+"sp-waves": {
+"url": "https://www.youtube.com/watch?v=Aucu7YshyQ0",
+"label": "Free Science Lessons video: The wave equation",
+"kind": "video"
+},
+"sp-em": {
+"url": "https://www.youtube.com/watch?v=u5vkYjV1V1A",
+"label": "Free Science Lessons video: Electromagnetic waves",
+"kind": "video"
+},
+"sp-magnetism": {
+"url": "https://www.youtube.com/watch?v=GNLhSKZh-jM",
+"label": "Free Science Lessons video: The motor effect",
+"kind": "video"
+},
+"m-rat-ratio": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-5-5-1-writing-a-ratio-as-a-fraction-or-linear-function",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Writing a ratio as a fraction or linear function",
+"kind": "video"
+},
+"m-rat-proportion": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-7-7-3-direct-and-inverse-proportion",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Direct and inverse proportion (grade 7, algebraic)",
+"kind": "video"
+},
+"m-rat-compound": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-5-5-5-speed-and-density",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Speed and density",
+"kind": "video"
+},
+"m-rat-growth": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-6-6-4-repeated-percentage-change",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Repeated percentage change",
+"kind": "video"
+},
+"m-geo-angles": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-4-4-11-angles-in-polygons",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Angles in polygons",
+"kind": "video"
+},
+"m-geo-circle": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-6-6-10-circle-theorems",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Circle theorems",
+"kind": "video"
+},
+"m-geo-similar": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-6-6-8-similar-shapes-area-and-volume",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Similar shapes (area and volume)",
+"kind": "video"
+},
+"m-geo-pythag": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-7-7-15-3d-pythagoras-and-trigonometry",
+"label": "Maths Genie Edexcel topic page (video + exam questions): 3D Pythagoras and trigonometry",
+"kind": "video"
+},
+"m-geo-trigrules": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-7-7-12-the-sine-rule",
+"label": "Maths Genie Edexcel topic page (video + exam questions): The sine rule (cosine rule and area pages are grade 7-13 and 7-11)",
+"kind": "video"
+},
+"m-geo-arcs": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-5-5-17-sector-areas-and-arc-lengths",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Sector areas and arc lengths",
+"kind": "video"
+},
+"m-geo-volume": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-5-5-16-spheres-and-cones",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Spheres and cones",
+"kind": "video"
+},
+"m-geo-loci": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-4-4-15-loci-and-construction",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Loci and construction",
+"kind": "video"
+},
+"m-geo-transform": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-3-3-17-transformations",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Transformations (enlarging with negative scale factors is grade-6-6-9)",
+"kind": "video"
+},
+"m-geo-vectors": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-8-9-8-10-vectors-proof-questions",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Vectors proof questions",
+"kind": "video"
+},
+"m-prob-basic": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-4-4-19-probability",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Probability",
+"kind": "video"
+},
+"m-prob-trees": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-5-5-22-probability-trees",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Probability trees",
+"kind": "video"
+},
+"m-prob-venn": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-5-5-23-venn-diagrams",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Venn diagrams",
+"kind": "video"
+},
+"m-prob-conditional": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-7-7-17-conditional-probability",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Conditional probability",
+"kind": "video"
+},
+"m-stat-averages": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-4-4-18-averages-from-frequency-tables",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Averages from frequency tables",
+"kind": "video"
+},
+"m-stat-cumfreq": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-6-6-11-cumulative-frequency",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Cumulative frequency (box plots: grade-6-6-12)",
+"kind": "video"
+},
+"m-stat-histograms": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-7-7-16-histograms",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Histograms",
+"kind": "video"
+},
+"m-stat-scatter": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-4-4-20-scatter-graphs",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Scatter graphs",
+"kind": "video"
+},
+"m-stat-sampling": {
+"url": "https://mrbartonmaths.com/topics/averages-and-range/sampling/videos.html",
+"label": "Mr Barton Maths sampling videos page: Corbettmaths stratified and random sampling videos plus capture-recapture",
+"kind": "video"
+},
+"g-tect": {
+"url": "https://cognito.org/courses/gcse/geography/aqa/notes/c3lwWlBkbHQ/2.2-volcanic-eruptions-earthquakes",
+"label": "Cognito AQA Geography notes 2.2: volcanic eruptions and earthquakes (2.3 covers management)",
+"kind": "notes"
+},
+"g-weather": {
+"url": "https://cognito.org/courses/gcse/geography/aqa/notes/cmNxT3lFYVQ/3.2-tropical-storms",
+"label": "Cognito AQA Geography notes 3.2: tropical storms",
+"kind": "notes"
+},
+"g-ukwx": {
+"url": "https://cognito.org/courses/gcse/geography/aqa/notes/bnZZUGF2a1c/3.4-uk-extreme-weather",
+"label": "Cognito AQA Geography notes 3.4: UK extreme weather",
+"kind": "notes"
+},
+"g-climate": {
+"url": "https://cognito.org/courses/gcse/geography/aqa/notes/S3dKWk53S1I/4.2-causes-of-climate-change",
+"label": "Cognito AQA Geography notes 4.2: causes of climate change (4.3 impacts, 4.4 management)",
+"kind": "notes"
+},
+"g-eco": {
+"url": "https://cognito.org/courses/gcse/geography/aqa/notes/THVSYU5TenQ/5.2-global-scale-ecosystems",
+"label": "Cognito AQA Geography notes 5.2: global-scale ecosystems",
+"kind": "notes"
+},
+"g-trf": {
+"url": "https://cognito.org/courses/gcse/geography/aqa/notes/Z05nTndvek4/6.2-adaptations-to-tropical-rainforests",
+"label": "Cognito AQA Geography notes 6.2: tropical rainforests (6.3 management)",
+"kind": "notes"
+},
+"g-desert": {
+"url": "https://cognito.org/courses/gcse/geography/aqa/notes/ekJka0p5R24/7.2-adaptations-to-hot-deserts",
+"label": "Cognito AQA Geography notes 7.2: hot deserts (7.3 desertification)",
+"kind": "notes"
+},
+"g-coast": {
+"url": "https://www.youtube.com/playlist?list=PLJsSs7_dadnZfTO7Rrc4_fmKfM2L6mWv0",
+"label": "Geography Juice playlist: Coastal Landscapes, AQA GCSE Geography Paper 1",
+"kind": "video"
+},
+"g-glacial": {
+"url": "https://cognito.org/courses/gcse/geography/aqa/notes/cEhQaVhXVFQ/12.2-glacial-landforms",
+"label": "Cognito AQA Geography notes 12.2: glacial landforms (12.4 uses of glacial landscapes)",
+"kind": "notes"
+},
+"g-urb-global": {
+"url": "https://www.youtube.com/playlist?list=PLJsSs7_dadnZrcsvEKFr3GZS9WfZFnYhg",
+"label": "Geography Juice playlist: Urban Issues and Challenges, AQA GCSE Geography Paper 2",
+"kind": "video"
+},
+"g-urb-rio": {
+"url": "https://www.youtube.com/watch?v=4UFwk7NcxDc",
+"label": "YouTube: Rio de Janeiro Case Study, AQA GCSE Geography, Urban Issues and Challenges (search-confirmed)",
+"kind": "video"
+},
+"g-urb-london": {
+"url": "https://www.internetgeography.net/geotopics/urban-issues-and-challenges-london-case-study/",
+"label": "Internet Geography London case study hub (Docklands, Crossrail, Shoreditch, deprivation, sprawl)",
+"kind": "notes"
+},
+"g-urb-sust": {
+"url": "https://cognito.org/courses/gcse/geography/aqa/notes/a0FTcEpiQ2I/13.2-urban-sustainability",
+"label": "Cognito AQA Geography notes 13.2: urban sustainability",
+"kind": "notes"
+},
+"g-eco-dev": {
+"url": "https://cognito.org/courses/gcse/geography/aqa/notes/aElLcktlTnM/14.2-the-demographic-transition-model",
+"label": "Cognito AQA Geography notes 14.2: the demographic transition model",
+"kind": "notes"
+},
+"g-eco-gap": {
+"url": "https://cognito.org/courses/gcse/geography/aqa/notes/bnRISWZUdkE/14.4-how-to-reduce-the-global-development-gap",
+"label": "Cognito AQA Geography notes 14.4: reducing the development gap (14.3 causes)",
+"kind": "notes"
+},
+"g-eco-brazil": {
+"url": "https://simplestudy.com/gb/gcse/aqa/geography/revision-notes/the-changing-economic-world/51-the-changing-economic-world/515-rapid-economic-development-in-licsnees-brazil-case-study",
+"label": "SimpleStudy AQA notes: Brazil NEE case study (free preview covers TNCs, trade, aid, quality of life; full note needs free sign-up)",
+"kind": "notes"
+},
+"g-eco-uk": {
+"url": "https://www.youtube.com/watch?v=uylaI8ZN-so",
+"label": "YouTube: GCSE Changing Economic World 28, The UK's Post-Industrial Economy (search-confirmed)",
+"kind": "video"
+},
+"g-res-uk": {
+"url": "https://cognito.org/courses/gcse/geography/aqa/notes/WFlxV2lwVEg/15.2-resources-in-the-uk-food",
+"label": "Cognito AQA Geography notes 15.2: UK food (15.3 water, 15.4 energy)",
+"kind": "notes"
+},
+"g-res-food": {
+"url": "https://cognito.org/courses/gcse/geography/aqa/notes/eGF1Y0xPbXY/16.2-insecurity-in-food-supply",
+"label": "Cognito AQA Geography notes 16.2: food insecurity (16.3 increasing supply, 16.4 sustainability)",
+"kind": "notes"
+},
+"g-p3-issue": {
+"url": "https://www.youtube.com/playlist?list=PLJsSs7_dadnb5X3U6cBb4cAJOKbWdm7km",
+"label": "Geography Juice playlist: AQA GCSE Geography Paper 3 (issue evaluation and fieldwork)",
+"kind": "video"
+},
+"g-p3-field": {
+"url": "https://www.internetgeography.net/fieldwork/",
+"label": "Internet Geography fieldwork hub (river and coastal fieldwork enquiry guides)",
+"kind": "notes"
+},
+"g-skills": {
+"url": "https://www.internetgeography.net/geographical-skills/cartographic-skills-os-maps/",
+"label": "Internet Geography: cartographic skills, OS maps (grid refs, scale, contours)",
+"kind": "notes"
+},
+"el-p1q1": {
+"url": "https://www.youtube.com/watch?v=OlIwGb7bSOI",
+"label": "Mr Bruff: 2026 AQA English Language Paper 1 Question 1, Your Guide (new multiple-choice format)",
+"kind": "video"
+},
+"el-p1q2": {
+"url": "https://www.youtube.com/watch?v=L_dE68iUg-k",
+"label": "Mr Bruff: AQA English Language Paper 1 Question 2 (2026 Onwards)",
+"kind": "video"
+},
+"el-p1q3": {
+"url": "https://www.youtube.com/watch?v=TLzCqpYfK1k",
+"label": "Comics and Lit: AQA Language Paper 1 Question 3 (New for 2026, single-effect structure question)",
+"kind": "video"
+},
+"el-p1q4": {
+"url": "https://www.youtube.com/watch?v=y22Ciur-Ryo",
+"label": "Mr Bruff: 2026 AQA English Language Paper 1 Question 4, Your Guide",
+"kind": "video"
+},
+"el-p1q5": {
+"url": "https://www.youtube.com/watch?v=OalIJCsUMvY",
+"label": "Mr Bruff: 2026 AQA English Paper 1 Question 5, Writing a Story Opening",
+"kind": "video"
+},
+"el-p2q1": {
+"url": "https://www.youtube.com/watch?v=yKZ_Tr2Y-CE",
+"label": "Mr Bruff: AQA English Language Paper 2 Question 1 (2026 Onwards)",
+"kind": "video"
+},
+"el-p2q2": {
+"url": "https://www.youtube.com/watch?v=pFGLjE7fRGw",
+"label": "English with Watson: How to Answer AQA English Language Paper 2, Question 2",
+"kind": "video"
+},
+"el-p2q3": {
+"url": "https://www.youtube.com/watch?v=RUWxpg_EmeM",
+"label": "Mr Bruff: AQA English Language Paper 2 Question 3 (2026 Onwards)",
+"kind": "video"
+},
+"el-p2q4": {
+"url": "https://www.youtube.com/watch?v=_piPekdmz9Q",
+"label": "MrsE: AQA GCSE English Language Paper 2 Question 4 (2026 change is only a reworded methods bullet)",
+"kind": "video"
+},
+"el-p2q5": {
+"url": "https://www.youtube.com/watch?v=v0aAitntCvo",
+"label": "Mr Bruff: AQA English Language Paper 2 Question 5 (2026 Onwards)",
+"kind": "video"
+},
+"el-spag": {
+"url": "https://www.youtube.com/watch?v=lT7lvU6AhX8",
+"label": "YouTube: GCSE English Language 9-1, Paper 1 Question 5, Technical Accuracy (search-confirmed)",
+"kind": "video"
+},
+"el-term": {
+"url": "https://www.youtube.com/watch?v=rpG-Yocr5S0",
+"label": "YouTube: Techniques and Devices in GCSE English Language (search-confirmed)",
+"kind": "video"
+},
+"lt-mac-pc": {
+"url": "https://www.youtube.com/watch?v=NmMAO82R8Cg",
+"label": "Mr Bruff: Character Analysis, Macbeth",
+"kind": "video"
+},
+"lt-mac-tc": {
+"url": "https://www.youtube.com/watch?v=r2Tpt_P_zvA",
+"label": "Mr Salles: Macbeth, Top Grades Made Easy",
+"kind": "video"
+},
+"lt-acc": {
+"url": "https://www.youtube.com/watch?v=de5NRZRZohE",
+"label": "Mr Bruff: A Christmas Carol plot summary",
+"kind": "video"
+},
+"lt-aic-pc": {
+"url": "https://www.youtube.com/watch?v=M75yUsyNySY",
+"label": "Mr Bruff: An Inspector Calls, Top Set Analysis",
+"kind": "video"
+},
+"lt-aic-tc": {
+"url": "https://www.youtube.com/watch?v=p8ArmOAvGNc",
+"label": "Mr Salles: Top Grade Context, An Inspector Calls",
+"kind": "video"
+},
+"lt-pc-poems": {
+"url": "https://www.youtube.com/watch?v=zreLmzXklaE",
+"label": "Mr Bruff: Power and Conflict Poetry, Animated Summary of All 15 Poems",
+"kind": "video"
+},
+"lt-pc-comp": {
+"url": "https://www.youtube.com/watch?v=5mQGQhcaptM",
+"label": "Mr Bruff: Which Power and Conflict Poems Compare Best? (2024 update)",
+"kind": "video"
+},
+"lt-unseen": {
+"url": "https://www.youtube.com/watch?v=iIWmthgysSM",
+"label": "Mr Bruff: 2026 Ultimate Guide to AQA English Literature Paper 2 Section C, Unseen Poetry",
+"kind": "video"
+},
+"lt-essay": {
+"url": "https://www.youtube.com/watch?v=__PRX71gDGA",
+"label": "Mr Bruff: 2026 Ultimate Guide to AQA English Literature Paper 1 Section B (essay method and AOs)",
+"kind": "video"
+},
+"m-num-fdp": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-2-2-5-fractions-decimals-and-percentages",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Fractions, decimals and percentages",
+"kind": "video"
+},
+"m-num-growth": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-4-4-1-compound-interest-and-depreciation",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Compound interest and depreciation (repeated percentage change: grade-6-6-4)",
+"kind": "video"
+},
+"m-num-sf": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-5-5-4-standard-form",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Standard form",
+"kind": "video"
+},
+"m-num-ind": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-6-6-2-fractional-and-negative-indices",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Fractional and negative indices (basic indices: grade-4-4-2)",
+"kind": "video"
+},
+"m-num-surd": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-7-7-1-surds",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Surds",
+"kind": "video"
+},
+"m-num-bounds": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-7-7-2-bounds",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Bounds (error intervals: grade-3-3-1)",
+"kind": "video"
+},
+"m-num-rec": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-6-6-1-recurring-decimals-to-fractions",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Recurring decimals to fractions",
+"kind": "video"
+},
+"m-num-prime": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-4-4-3-prime-factors-hcf-and-lcm",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Prime factors, HCF and LCM",
+"kind": "video"
+},
+"m-num-count": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-6-6-3-the-product-rule-for-counting",
+"label": "Maths Genie Edexcel topic page (video + exam questions): The product rule for counting",
+"kind": "video"
+},
+"m-alg-expand": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-4-4-8-expanding-and-factorising",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Expanding and factorising (quadratics: grade-5-5-7, triple brackets: grade-6-6-5)",
+"kind": "video"
+},
+"m-alg-frac": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-7-7-6-algebraic-fractions",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Algebraic fractions",
+"kind": "video"
+},
+"m-alg-quad": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-5-5-8-solving-quadratics",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Solving quadratics (formula: grade-7-7-4, completing the square: grade-8-9-8-4)",
+"kind": "video"
+},
+"m-alg-sim": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-5-5-11-simultaneous-equations",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Simultaneous equations (quadratic type: grade-8-9-8-1)",
+"kind": "video"
+},
+"m-alg-ineq": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-4-4-5-inequalities",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Inequalities (regions: grade-6-6-7 inequalities on graphs)",
+"kind": "video"
+},
+"m-alg-rearr": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-5-5-6-changing-the-subject-of-a-formula",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Changing the subject of a formula (harder: grade-7-7-7)",
+"kind": "video"
+},
+"m-alg-seq": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-4-4-7-sequences-nth-term",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Sequences (nth term) (quadratic sequences: grade-8-9-8-5)",
+"kind": "video"
+},
+"m-alg-func": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-7-7-9-inverse-and-composite-functions",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Inverse and composite functions",
+"kind": "video"
+},
+"m-alg-proof": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-8-9-8-3-proof",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Proof",
+"kind": "video"
+},
+"m-alg-iter": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-7-7-10-iteration",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Iteration",
+"kind": "video"
+},
+"m-alg-lines": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-5-5-15-equation-of-a-line",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Equation of a line (gradient: grade-5-5-14, parallel/perpendicular: grade-6-6-6)",
+"kind": "video"
+},
+"m-alg-quadgraph": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-5-5-9-drawing-quadratic-graphs",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Drawing quadratic graphs",
+"kind": "video"
+},
+"m-alg-transf": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-8-9-8-2-transforming-graphs-y-f-x",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Transforming graphs y=f(x)",
+"kind": "video"
+},
+"m-alg-circle": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-8-9-8-9-perpendicular-lines-and-the-equation-of-a-tangent",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Perpendicular lines and the equation of a tangent (Maths Genie has no separate circle-equation page)",
+"kind": "video"
+},
+"m-alg-rates": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-8-9-8-7-velocity-time-graphs",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Velocity time graphs (distance-time/real-life graphs: grade-4-4-4)",
+"kind": "video"
+},
+"m-alg-graphs": {
+"url": "https://mathsgenie.co.uk/gcse/maths/edexcel/grade-5-5-10-drawing-other-graphs-cubic-reciprocal",
+"label": "Maths Genie Edexcel topic page (video + exam questions): Drawing other graphs: cubic/reciprocal (exponential and trig graphs: grade-7-7-8)",
+"kind": "video"
+}
+}

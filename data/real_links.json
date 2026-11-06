@@ -1,0 +1,804 @@
+{
+"sb-cells": {
+"url": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/1-Cell-Biology/Set-C/1.1%20Cell%20Structure%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Biology topic questions, 2022-24 papers, Higher: 1.1 Cell Structure QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/1-Cell-Biology/Set-C/1.1%20Cell%20Structure%20%28H%29%20MS.pdf"
+},
+"sb-transport": {
+"url": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/1-Cell-Biology/Set-C/1.3%20Transport%20in%20Cells%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Biology topic questions, 2022-24 papers, Higher: 1.3 Transport in Cells QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/1-Cell-Biology/Set-C/1.3%20Transport%20in%20Cells%20%28H%29%20MS.pdf"
+},
+"sb-division": {
+"url": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/1-Cell-Biology/Set-C/1.2%20Cell%20Division%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Biology topic questions, 2022-24 papers, Higher: 1.2 Cell Division QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/1-Cell-Biology/Set-C/1.2%20Cell%20Division%20%28H%29%20MS.pdf"
+},
+"sb-digestion": {
+"url": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/2-Organisation/Set-C/2.2%20Animal%20Tissues,%20Organs%20&%20Systems%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Biology topic questions, 2022-24 papers, Higher: 2.2 Animal Tissues, Organs & Systems QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked) (food tests, digestion, enzymes)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/2-Organisation/Set-C/2.2%20Animal%20Tissues,%20Organs%20&%20Systems%20%28H%29%20MS.pdf"
+},
+"sb-circulation": {
+"url": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/2-Organisation/Set-B/2.2%20Animal%20Tissues,%20Organs%20&%20Systems%20QP.pdf",
+"label": "PMT AQA GCSE Biology topic questions, 2018-21 papers (untiered, combined+separate; separate-only parts marked): 2.2 Animal Tissues, Organs & Systems QP (MS: same URL with MS.pdf) (heart, blood vessels, blood, lungs)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/2-Organisation/Set-B/2.2%20Animal%20Tissues,%20Organs%20&%20Systems%20MS.pdf"
+},
+"sb-noncomm": {
+"url": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/2-Organisation/Set-B/2.2%20Animal%20Tissues,%20Organs%20&%20Systems%20QP.pdf",
+"label": "PMT AQA GCSE Biology topic questions, 2018-21 papers (untiered, combined+separate; separate-only parts marked): 2.2 Animal Tissues, Organs & Systems QP (MS: same URL with MS.pdf) (coronary heart disease, risk factors, cancer)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/2-Organisation/Set-B/2.2%20Animal%20Tissues,%20Organs%20&%20Systems%20MS.pdf"
+},
+"sb-plants": {
+"url": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/2-Organisation/Set-C/2.3%20Plant%20Tissues,%20Organs%20&%20Systems%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Biology topic questions, 2022-24 papers, Higher: 2.3 Plant Tissues, Organs & Systems QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/2-Organisation/Set-C/2.3%20Plant%20Tissues,%20Organs%20&%20Systems%20%28H%29%20MS.pdf"
+},
+"sb-infection": {
+"url": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/3-Infection-and-Response/Set-C/3.1%20Communicable%20Diseases%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Biology topic questions, 2022-24 papers, Higher: 3.1 Communicable Diseases QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/3-Infection-and-Response/Set-C/3.1%20Communicable%20Diseases%20%28H%29%20MS.pdf"
+},
+"sb-photo": {
+"url": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/4-Bioenergetics/Set-C/4.1%20Photosynthesis%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Biology topic questions, 2022-24 papers, Higher: 4.1 Photosynthesis QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/4-Bioenergetics/Set-C/4.1%20Photosynthesis%20%28H%29%20MS.pdf"
+},
+"sb-resp": {
+"url": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/4-Bioenergetics/Set-C/4.2%20Respiration%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Biology topic questions, 2022-24 papers, Higher: 4.2 Respiration QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/4-Bioenergetics/Set-C/4.2%20Respiration%20%28H%29%20MS.pdf"
+},
+"sb-nervous": {
+"url": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/5-Homeostasis-and-Response/Set-B/5.2%20Human%20Nervous%20System%20QP.pdf",
+"label": "PMT AQA GCSE Biology topic questions, 2018-21 papers (untiered, combined+separate; separate-only parts marked): 5.2 Human Nervous System QP (MS: same URL with MS.pdf) (reflex arc, neurones, reaction time)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/5-Homeostasis-and-Response/Set-B/5.2%20Human%20Nervous%20System%20MS.pdf"
+},
+"sb-hormones": {
+"url": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/5-Homeostasis-and-Response/Set-B/5.3%20Hormonal%20Coordination%20in%20Humans%20QP.pdf",
+"label": "PMT AQA GCSE Biology topic questions, 2018-21 papers (untiered, combined+separate; separate-only parts marked): 5.3 Hormonal Coordination in Humans QP (MS: same URL with MS.pdf) (blood glucose, insulin, diabetes; the 2022-24 Higher set omits glucose)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/5-Homeostasis-and-Response/Set-B/5.3%20Hormonal%20Coordination%20in%20Humans%20MS.pdf"
+},
+"sb-repro": {
+"url": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/5-Homeostasis-and-Response/Set-C/5.3%20Hormonal%20Coordination%20in%20Humans%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Biology topic questions, 2022-24 papers, Higher: 5.3 Hormonal Coordination in Humans QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked) (menstrual cycle, contraception, infertility)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/5-Homeostasis-and-Response/Set-C/5.3%20Hormonal%20Coordination%20in%20Humans%20%28H%29%20MS.pdf"
+},
+"sb-genetics": {
+"url": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/6-Inheritance-Variation-and-Evolution/Set-C/6.1%20Reproduction%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Biology topic questions, 2022-24 papers, Higher: 6.1 Reproduction QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked) (meiosis, DNA, inheritance)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/6-Inheritance-Variation-and-Evolution/Set-C/6.1%20Reproduction%20%28H%29%20MS.pdf"
+},
+"sb-evolution": {
+"url": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/6-Inheritance-Variation-and-Evolution/Set-C/6.3%20Understanding%20of%20Genetics%20&%20Evolution%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Biology topic questions, 2022-24 papers, Higher: 6.3 Understanding of Genetics & Evolution QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked) (natural selection, fossils; 6.2 Variation & Evolution on same page)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/6-Inheritance-Variation-and-Evolution/Set-C/6.3%20Understanding%20of%20Genetics%20&%20Evolution%20%28H%29%20MS.pdf"
+},
+"sb-ecosystems": {
+"url": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/7-Ecology/Set-B/7.1%20Adaptation,%20Interdependence%20and%20Competition%20QP.pdf",
+"label": "PMT AQA GCSE Biology topic questions, 2018-21 papers (untiered, combined+separate; separate-only parts marked): 7.1 Adaptation, Interdependence and Competition QP (MS: same URL with MS.pdf) (includes quadrat sampling)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/7-Ecology/Set-B/7.1%20Adaptation,%20Interdependence%20and%20Competition%20MS.pdf"
+},
+"sb-biodiversity": {
+"url": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/7-Ecology/Set-C/7.3%20Biodiversity%20&%20Effect%20of%20Humans%20on%20Ecosystems%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Biology topic questions, 2022-24 papers, Higher: 7.3 Biodiversity & Effect of Humans on Ecosystems QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Biology/GCSE/Topic-Qs/AQA/7-Ecology/Set-C/7.3%20Biodiversity%20&%20Effect%20of%20Humans%20on%20Ecosystems%20%28H%29%20MS.pdf"
+},
+"sc-c-atom": {
+"url": "https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Topic-Qs/AQA/1-Atomic-Structure-and-the-Periodic-Table/Set-C/1.2%20The%20Periodic%20Table%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Chemistry topic questions, 2022-24 papers, Higher: 1.2 The Periodic Table QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked) (1.1 Simple Atomic Model is Foundation-only in this set)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Topic-Qs/AQA/1-Atomic-Structure-and-the-Periodic-Table/Set-C/1.2%20The%20Periodic%20Table%20%28H%29%20MS.pdf"
+},
+"sc-c-bond": {
+"url": "https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Topic-Qs/AQA/2-Bonding-Structure-and-the-Properties-of-Matter/Set-C/2.2%20Bonding%20and%20Structure%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Chemistry topic questions, 2022-24 papers, Higher: 2.2 Bonding and Structure QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked) (2.1 Chemical Bonds on same page)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Topic-Qs/AQA/2-Bonding-Structure-and-the-Properties-of-Matter/Set-C/2.2%20Bonding%20and%20Structure%20%28H%29%20MS.pdf"
+},
+"sc-c-quant": {
+"url": "https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Topic-Qs/AQA/3-Quantitative-Chemistry/Set-C/3.2%20Use%20of%20Amount%20of%20Substance%20on%20Pure%20Substances%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Chemistry topic questions, 2022-24 papers, Higher: 3.2 Use of Amount of Substance (moles) QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Topic-Qs/AQA/3-Quantitative-Chemistry/Set-C/3.2%20Use%20of%20Amount%20of%20Substance%20on%20Pure%20Substances%20%28H%29%20MS.pdf"
+},
+"sc-c-change": {
+"url": "https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Topic-Qs/AQA/4-Chemical-Changes/Set-C/4.2%20Reactions%20of%20Acids%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Chemistry topic questions, 2022-24 papers, Higher: 4.2 Reactions of Acids QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked) (4.1 Reactivity of Metals on same page)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Topic-Qs/AQA/4-Chemical-Changes/Set-C/4.2%20Reactions%20of%20Acids%20%28H%29%20MS.pdf"
+},
+"sc-c-elec": {
+"url": "https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Topic-Qs/AQA/4-Chemical-Changes/Set-C/4.3%20Electrolysis%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Chemistry topic questions, 2022-24 papers, Higher: 4.3 Electrolysis QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Topic-Qs/AQA/4-Chemical-Changes/Set-C/4.3%20Electrolysis%20%28H%29%20MS.pdf"
+},
+"sc-c-energy": {
+"url": "https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Topic-Qs/AQA/5-Energy-Changes/Set-C/5.1%20Exothermic%20&%20Endothermic%20Reactions%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Chemistry topic questions, 2022-24 papers, Higher: 5.1 Exothermic & Endothermic Reactions QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Topic-Qs/AQA/5-Energy-Changes/Set-C/5.1%20Exothermic%20&%20Endothermic%20Reactions%20%28H%29%20MS.pdf"
+},
+"sc-c-rates": {
+"url": "https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Topic-Qs/AQA/6-The-Rate-and-Extent-of-Chemical-Change/Set-C/6.1%20Rate%20of%20Reaction%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Chemistry topic questions, 2022-24 papers, Higher: 6.1 Rate of Reaction QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Topic-Qs/AQA/6-The-Rate-and-Extent-of-Chemical-Change/Set-C/6.1%20Rate%20of%20Reaction%20%28H%29%20MS.pdf"
+},
+"sc-c-equil": {
+"url": "https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Topic-Qs/AQA/6-The-Rate-and-Extent-of-Chemical-Change/Set-C/6.2%20Reversible%20Reactions%20&%20Dynamic%20Equilibrium%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Chemistry topic questions, 2022-24 papers, Higher: 6.2 Reversible Reactions & Dynamic Equilibrium QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Topic-Qs/AQA/6-The-Rate-and-Extent-of-Chemical-Change/Set-C/6.2%20Reversible%20Reactions%20&%20Dynamic%20Equilibrium%20%28H%29%20MS.pdf"
+},
+"sc-c-organic": {
+"url": "https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Topic-Qs/AQA/7-Organic-Chemistry/Set-C/7.1%20Carbon%20Compounds%20as%20Fuels%20&%20Feedstock%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Chemistry topic questions, 2022-24 papers, Higher: 7.1 Carbon Compounds as Fuels & Feedstock QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Topic-Qs/AQA/7-Organic-Chemistry/Set-C/7.1%20Carbon%20Compounds%20as%20Fuels%20&%20Feedstock%20%28H%29%20MS.pdf"
+},
+"sc-c-analysis": {
+"url": "https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Topic-Qs/AQA/8-Chemical-Analysis/Set-C/8.1%20Purity,%20Formulations%20&%20Chromatography%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Chemistry topic questions, 2022-24 papers, Higher: 8.1 Purity, Formulations & Chromatography QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Topic-Qs/AQA/8-Chemical-Analysis/Set-C/8.1%20Purity,%20Formulations%20&%20Chromatography%20%28H%29%20MS.pdf"
+},
+"sc-c-atmos": {
+"url": "https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Topic-Qs/AQA/9-Chemistry-of-the-Atmosphere/Set-C/9.1%20Composition%20&%20Evolution%20of%20the%20Earth%E2%80%99s%20Atmosphere%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Chemistry topic questions, 2022-24 papers, Higher: 9.1 Composition & Evolution of the Atmosphere QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked) (9.2 greenhouse, 9.3 pollutants on same page)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Topic-Qs/AQA/9-Chemistry-of-the-Atmosphere/Set-C/9.1%20Composition%20&%20Evolution%20of%20the%20Earth%E2%80%99s%20Atmosphere%20%28H%29%20MS.pdf"
+},
+"sc-c-resources": {
+"url": "https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Topic-Qs/AQA/10-Using-Resources/Set-C/10.1%20Using%20the%20Earth%27s%20Resources%20and%20Potable%20Water%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Chemistry topic questions, 2022-24 papers, Higher: 10.1 Using the Earth's Resources and Potable Water QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Topic-Qs/AQA/10-Using-Resources/Set-C/10.1%20Using%20the%20Earth%27s%20Resources%20and%20Potable%20Water%20%28H%29%20MS.pdf"
+},
+"sp-energy-stores": {
+"url": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/1-Energy/Set-C/Energy%20Change%20in%20a%20System%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Physics topic questions, 2022-24 papers, Higher: Energy Change in a System QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/1-Energy/Set-C/Energy%20Change%20in%20a%20System%20%28H%29%20MS.pdf"
+},
+"sp-energy-shc": {
+"url": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/1-Energy/Set-C/Energy%20Change%20in%20a%20System%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Physics topic questions, 2022-24 papers, Higher: Energy Change in a System QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked) (includes specific heat capacity)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/1-Energy/Set-C/Energy%20Change%20in%20a%20System%20%28H%29%20MS.pdf"
+},
+"sp-energy-power": {
+"url": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/1-Energy/Set-C/Conservation%20and%20Dissipation%20of%20Energy%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Physics topic questions, 2022-24 papers, Higher: Conservation and Dissipation of Energy QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/1-Energy/Set-C/Conservation%20and%20Dissipation%20of%20Energy%20%28H%29%20MS.pdf"
+},
+"sp-energy-resources": {
+"url": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/1-Energy/Set-C/National%20and%20Global%20Energy%20Resources%20%28F%29%20QP.pdf",
+"label": "PMT AQA GCSE Physics topic questions, 2022-24 papers: National and Global Energy Resources QP - FOUNDATION set (no Higher set exists for this subtopic; MS: same URL with MS.pdf)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/1-Energy/Set-C/National%20and%20Global%20Energy%20Resources%20%28F%29%20MS.pdf"
+},
+"sp-elec-circuits": {
+"url": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/2-Electricity/Set-C/Series%20and%20Parallel%20Circuits%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Physics topic questions, 2022-24 papers, Higher: Series and Parallel Circuits QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked) (Current, PD and Resistance on same page)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/2-Electricity/Set-C/Series%20and%20Parallel%20Circuits%20%28H%29%20MS.pdf"
+},
+"sp-elec-components": {
+"url": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/2-Electricity/Set-C/Current,%20Potential%20Difference%20and%20Resistance%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Physics topic questions, 2022-24 papers, Higher: Current, Potential Difference and Resistance QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked) (includes component characteristics)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/2-Electricity/Set-C/Current,%20Potential%20Difference%20and%20Resistance%20%28H%29%20MS.pdf"
+},
+"sp-elec-mains": {
+"url": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/2-Electricity/Set-C/Domestic%20Uses%20and%20Safety%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Physics topic questions, 2022-24 papers, Higher: Domestic Uses and Safety QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked) (mains, plugs, fuses; Energy Transfers (H) for power on same page)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/2-Electricity/Set-C/Domestic%20Uses%20and%20Safety%20%28H%29%20MS.pdf"
+},
+"sp-particle": {
+"url": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/3-Particle-Model-of-Matter/Set-C/Internal%20Energy%20and%20Energy%20Transfers%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Physics topic questions, 2022-24 papers, Higher: Internal Energy and Energy Transfers QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked) (SHC, latent heat, gas pressure; density in Changes of State set on same page)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/3-Particle-Model-of-Matter/Set-C/Internal%20Energy%20and%20Energy%20Transfers%20%28H%29%20MS.pdf"
+},
+"sp-atomic": {
+"url": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/4-Atomic-Structure/Set-C/Atoms%20and%20Isotopes%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Physics topic questions, 2022-24 papers, Higher: Atoms and Isotopes QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/4-Atomic-Structure/Set-C/Atoms%20and%20Isotopes%20%28H%29%20MS.pdf"
+},
+"sp-radio": {
+"url": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/4-Atomic-Structure/Set-C/Atoms%20and%20Nuclear%20Radiation%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Physics topic questions, 2022-24 papers, Higher: Atoms and Nuclear Radiation QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/4-Atomic-Structure/Set-C/Atoms%20and%20Nuclear%20Radiation%20%28H%29%20MS.pdf"
+},
+"sp-forces": {
+"url": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/5-Forces/Set-C/Forces%20and%20Their%20Interactions%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Physics topic questions, 2022-24 papers, Higher: Forces and Their Interactions QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked) (weight, resultant forces; Work Done and Energy Transfer (H) on same page)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/5-Forces/Set-C/Forces%20and%20Their%20Interactions%20%28H%29%20MS.pdf"
+},
+"sp-elastic": {
+"url": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/5-Forces/Set-C/Forces%20and%20Elasticity%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Physics topic questions, 2022-24 papers, Higher: Forces and Elasticity QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/5-Forces/Set-C/Forces%20and%20Elasticity%20%28H%29%20MS.pdf"
+},
+"sp-motion": {
+"url": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/5-Forces/Set-C/Forces%20and%20Motion%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Physics topic questions, 2022-24 papers, Higher: Forces and Motion QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/5-Forces/Set-C/Forces%20and%20Motion%20%28H%29%20MS.pdf"
+},
+"sp-newton": {
+"url": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/5-Forces/Set-C/Forces%20and%20Their%20Interactions%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Physics topic questions, 2022-24 papers, Higher: Forces and Their Interactions QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked) (Newton's 2nd law trolley practical)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/5-Forces/Set-C/Forces%20and%20Their%20Interactions%20%28H%29%20MS.pdf"
+},
+"sp-stopping": {
+"url": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/5-Forces/Set-C/Forces%20and%20Motion%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Physics topic questions, 2022-24 papers, Higher: Forces and Motion QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked) (includes stopping distances)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/5-Forces/Set-C/Forces%20and%20Motion%20%28H%29%20MS.pdf"
+},
+"sp-momentum": {
+"url": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/5-Forces/Set-C/Momentum%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Physics topic questions, 2022-24 papers, Higher: Momentum QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/5-Forces/Set-C/Momentum%20%28H%29%20MS.pdf"
+},
+"sp-waves": {
+"url": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/6-Waves/Set-C/Waves%20in%20Air,%20Fluids%20and%20Solids%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Physics topic questions, 2022-24 papers, Higher: Waves in Air, Fluids and Solids QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/6-Waves/Set-C/Waves%20in%20Air,%20Fluids%20and%20Solids%20%28H%29%20MS.pdf"
+},
+"sp-em": {
+"url": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/6-Waves/Set-C/Electromagnetic%20Waves%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Physics topic questions, 2022-24 papers, Higher: Electromagnetic Waves QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/6-Waves/Set-C/Electromagnetic%20Waves%20%28H%29%20MS.pdf"
+},
+"sp-magnetism": {
+"url": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/7-Magnetism-and-Electromagnetism/Set-C/Permanent%20and%20Induced%20Magnetism,%20Magnetic%20Forces%20and%20Fields%20%28H%29%20QP.pdf",
+"label": "PMT AQA GCSE Physics topic questions, 2022-24 papers, Higher: Permanent and Induced Magnetism, Magnetic Forces and Fields QP (MS: same URL with MS.pdf; combined+separate, separate-only parts marked) (The Motor Effect on same page)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Topic-Qs/AQA/7-Magnetism-and-Electromagnetism/Set-C/Permanent%20and%20Induced%20Magnetism,%20Magnetic%20Forces%20and%20Fields%20%28H%29%20MS.pdf"
+},
+"m-rat-ratio": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Ratio-Proportion-and-Rates-of-Change/Higher/QP/Ratio%20Problems%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Ratio Problems QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf')",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Ratio-Proportion-and-Rates-of-Change/Higher/QP/Ratio%20Problems%20%28H%29%20MS.pdf"
+},
+"m-rat-proportion": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Ratio-Proportion-and-Rates-of-Change/Higher/QP/Direct%20and%20Inverse%20Proportion%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Direct and Inverse Proportion QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf')",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Ratio-Proportion-and-Rates-of-Change/Higher/QP/Direct%20and%20Inverse%20Proportion%20%28H%29%20MS.pdf"
+},
+"m-rat-compound": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Ratio-Proportion-and-Rates-of-Change/Higher/QP/Compound%20Measures%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Compound Measures QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf')",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Ratio-Proportion-and-Rates-of-Change/Higher/QP/Compound%20Measures%20%28H%29%20MS.pdf"
+},
+"m-rat-growth": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Ratio-Proportion-and-Rates-of-Change/Higher/QP/Compound%20Interest%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Compound Interest QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf')",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Ratio-Proportion-and-Rates-of-Change/Higher/QP/Compound%20Interest%20%28H%29%20MS.pdf"
+},
+"m-geo-angles": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-1/Geometry-and-Measures/Higher/Properties-and-Constructions/Exterior%20and%20Interior%20Angles%20%28H%29.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 1 (past paper questions), Higher: Exterior and Interior Angles (mark scheme and examiner comments in same PDF)",
+"level": "topic"
+},
+"m-geo-circle": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-1/Geometry-and-Measures/Higher/Properties-and-Constructions/Circle%20Theorems%20%28H%29.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 1 (past paper questions), Higher: Circle Theorems (mark scheme and examiner comments in same PDF)",
+"level": "topic"
+},
+"m-geo-similar": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-1/Geometry-and-Measures/Higher/Properties-and-Constructions/Similar%20Shapes%20%28H%29.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 1 (past paper questions), Higher: Similar Shapes (mark scheme and examiner comments in same PDF); congruence is in the separate Congruency (H) set",
+"level": "topic"
+},
+"m-geo-pythag": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Geometry-and-Measures/Higher/Mensuration-and-Calculation/QP/Pythagoras%20and%20trig%20%283D%29%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Pythagoras and trig (3D) QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf'); Pythagoras' Theorem and Trig Ratios and Exact Values sets on same page",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Geometry-and-Measures/Higher/Mensuration-and-Calculation/QP/Pythagoras%20and%20trig%20%283D%29%20%28H%29%20MS.pdf"
+},
+"m-geo-trigrules": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Geometry-and-Measures/Higher/Mensuration-and-Calculation/QP/Sine%20Rule,%20Cosine%20Rule%20and%20Area%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Sine Rule, Cosine Rule and Area QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf')",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Geometry-and-Measures/Higher/Mensuration-and-Calculation/QP/Sine%20Rule,%20Cosine%20Rule%20and%20Area%20%28H%29%20MS.pdf"
+},
+"m-geo-arcs": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/QP/Sector%20Areas%20and%20Arc%20Lengths%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths questions by topic and grade (Grade 5): Sector Areas and Arc Lengths QP (answers: /MA/ ... MA.pdf)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/QP/Sector%20Areas%20and%20Arc%20Lengths%20MS.pdf"
+},
+"m-geo-volume": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Geometry-and-Measures/Higher/Mensuration-and-Calculation/QP/Volume%20and%20Surface%20Area%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Volume and Surface Area QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf')",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Geometry-and-Measures/Higher/Mensuration-and-Calculation/QP/Volume%20and%20Surface%20Area%20%28H%29%20MS.pdf"
+},
+"m-geo-loci": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-2/Geometry-and-Measures/Higher/Properties-and-Constructions/Loci%20%28H%29.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 2 (past paper questions), Higher: Loci (mark scheme and examiner comments in same PDF)",
+"level": "topic"
+},
+"m-geo-transform": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-3/QP/Transformations%20-%20Mixed%20Transformations%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths questions by topic and grade (Grade 3): Mixed Transformations QP (answers: /MA/ ... MA.pdf)",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-3/QP/Transformations%20-%20Mixed%20Transformations%20MS.pdf"
+},
+"m-geo-vectors": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-1/Geometry-and-Measures/Higher/Vectors/Vectors%20%28H%29.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 1 (past paper questions), Higher: Vectors (mark scheme and examiner comments in same PDF)",
+"level": "topic"
+},
+"m-prob-basic": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Probability/Higher/QP/Probability%20of%20Events%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Probability of Events QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf')",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Probability/Higher/QP/Probability%20of%20Events%20%28H%29%20MS.pdf"
+},
+"m-prob-trees": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Probability/Higher/QP/Tree%20Diagrams%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Tree Diagrams QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf')",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Probability/Higher/QP/Tree%20Diagrams%20%28H%29%20MS.pdf"
+},
+"m-prob-venn": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Probability/Higher/QP/Venn%20Diagrams%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Venn Diagrams QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf')",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Probability/Higher/QP/Venn%20Diagrams%20%28H%29%20MS.pdf"
+},
+"m-prob-conditional": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Probability/Higher/QP/Conditional%20Probability%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Conditional Probability QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf'); Two-Way Tables (H) set on same page",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Probability/Higher/QP/Conditional%20Probability%20%28H%29%20MS.pdf"
+},
+"m-stat-averages": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Statistics/Higher/QP/Frequency%20Averages%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Frequency Averages QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf')",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Statistics/Higher/QP/Frequency%20Averages%20%28H%29%20MS.pdf"
+},
+"m-stat-cumfreq": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Statistics/Higher/QP/Cumulative%20Frequency%20Graphs%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Cumulative Frequency Graphs QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf'); Box Plots (H) set on same page",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Statistics/Higher/QP/Cumulative%20Frequency%20Graphs%20%28H%29%20MS.pdf"
+},
+"m-stat-histograms": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Statistics/Higher/QP/Histograms%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Histograms QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf')",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Statistics/Higher/QP/Histograms%20%28H%29%20MS.pdf"
+},
+"m-stat-sampling": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-2/Statistics/Higher/Sampling%20%28H%29.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 2 (past paper questions), Higher: Sampling (mark scheme and examiner comments in same PDF)",
+"level": "topic"
+},
+"m-stat-scatter": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Statistics/Higher/QP/Scatter%20Graphs%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Scatter Graphs QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf')",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Statistics/Higher/QP/Scatter%20Graphs%20%28H%29%20MS.pdf"
+},
+"g-urb-global": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-geography/aqa-paper-2/",
+"label": "PMT AQA GCSE Geography Paper 2 past papers + mark schemes 2018-2025 (no free per-topic question collection found)",
+"level": "parent"
+},
+"g-urb-rio": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-geography/aqa-paper-2/",
+"label": "PMT AQA GCSE Geography Paper 2 past papers + mark schemes 2018-2025 (no free per-topic question collection found)",
+"level": "parent"
+},
+"g-urb-london": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-geography/aqa-paper-2/",
+"label": "PMT AQA GCSE Geography Paper 2 past papers + mark schemes 2018-2025 (no free per-topic question collection found)",
+"level": "parent"
+},
+"g-urb-sust": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-geography/aqa-paper-2/",
+"label": "PMT AQA GCSE Geography Paper 2 past papers + mark schemes 2018-2025 (no free per-topic question collection found)",
+"level": "parent"
+},
+"g-eco-dev": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-geography/aqa-paper-2/",
+"label": "PMT AQA GCSE Geography Paper 2 past papers + mark schemes 2018-2025 (no free per-topic question collection found)",
+"level": "parent"
+},
+"g-eco-gap": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-geography/aqa-paper-2/",
+"label": "PMT AQA GCSE Geography Paper 2 past papers + mark schemes 2018-2025 (no free per-topic question collection found)",
+"level": "parent"
+},
+"g-eco-brazil": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-geography/aqa-paper-2/",
+"label": "PMT AQA GCSE Geography Paper 2 past papers + mark schemes 2018-2025 (no free per-topic question collection found)",
+"level": "parent"
+},
+"g-eco-uk": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-geography/aqa-paper-2/",
+"label": "PMT AQA GCSE Geography Paper 2 past papers + mark schemes 2018-2025 (no free per-topic question collection found)",
+"level": "parent"
+},
+"g-res-uk": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-geography/aqa-paper-2/",
+"label": "PMT AQA GCSE Geography Paper 2 past papers + mark schemes 2018-2025 (no free per-topic question collection found)",
+"level": "parent"
+},
+"g-res-food": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-geography/aqa-paper-2/",
+"label": "PMT AQA GCSE Geography Paper 2 past papers + mark schemes 2018-2025 (no free per-topic question collection found)",
+"level": "parent"
+},
+"g-p3-issue": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-geography/aqa-paper-3/",
+"label": "PMT AQA GCSE Geography Paper 3 past papers, pre-release and mark schemes 2018-2025 (no free per-topic question collection found)",
+"level": "parent"
+},
+"g-p3-field": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-geography/aqa-paper-3/",
+"label": "PMT AQA GCSE Geography Paper 3 past papers, pre-release and mark schemes 2018-2025 (no free per-topic question collection found)",
+"level": "parent"
+},
+"m-num-fdp": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Number/Higher/Fractions-Decimals-and-Percentages/QP/Fractions%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Fractions QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf'); url2 = Set 5 Percentages",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Number/Higher/Fractions-Decimals-and-Percentages/MS/Fractions%20%28H%29%20MS.pdf",
+"url2": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Number/Higher/Fractions-Decimals-and-Percentages/QP/Percentages%20%28H%29%20QP.pdf",
+"ms2": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Number/Higher/Fractions-Decimals-and-Percentages/MS/Percentages%20%28H%29%20MS.pdf"
+},
+"m-num-growth": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Ratio-Proportion-and-Rates-of-Change/Higher/QP/Compound%20Interest%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Compound Interest QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf'); url2 = Set 1 Compound Interest",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Ratio-Proportion-and-Rates-of-Change/Higher/MS/Compound%20Interest%20%28H%29%20MS.pdf",
+"url2": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-1/Number/Higher/Fractions-Decimals-and-Percentages/Compound%20Interest%20%28H%29.pdf"
+},
+"m-num-sf": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Number/Higher/Structure-and-Calculation/QP/Standard%20Form%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Standard Form QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf'); url2 = Set 1 Standard Form",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Number/Higher/Structure-and-Calculation/MS/Standard%20Form%20%28H%29%20MS.pdf",
+"url2": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-1/Number/Higher/Structure-and-Calculation/Standard%20Form%20%28H%29.pdf"
+},
+"m-num-ind": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Number/Higher/Structure-and-Calculation/QP/Indices%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Indices QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf'); url2 = Set 5 Roots and Powers",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Number/Higher/Structure-and-Calculation/MS/Indices%20%28H%29%20MS.pdf",
+"url2": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Number/Higher/Structure-and-Calculation/QP/Roots%20and%20Powers%20%28H%29%20QP.pdf",
+"ms2": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Number/Higher/Structure-and-Calculation/MS/Roots%20and%20Powers%20%28H%29%20MS.pdf"
+},
+"m-num-surd": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Number/Higher/Structure-and-Calculation/QP/Surds%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 4 (past papers with video solutions), Higher: Surds QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf'); url2 = Set 1 Surds",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Number/Higher/Structure-and-Calculation/MS/Surds%20%28H%29%20MS.pdf",
+"url2": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-1/Number/Higher/Structure-and-Calculation/Surds%20%28H%29.pdf"
+},
+"m-num-bounds": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Number/Higher/Measures-and-Accuracy/QP/Bounds%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Bounds QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf')",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Number/Higher/Measures-and-Accuracy/MS/Bounds%20%28H%29%20MS.pdf"
+},
+"m-num-rec": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Number/Higher/Fractions-Decimals-and-Percentages/QP/Recurring%20Decimals%20into%20Fractions%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Recurring Decimals into Fractions QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf')",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Number/Higher/Fractions-Decimals-and-Percentages/MS/Recurring%20Decimals%20into%20Fractions%20%28H%29%20MS.pdf"
+},
+"m-num-prime": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Number/Higher/Structure-and-Calculation/QP/Primes,%20Factors%20and%20Multiples%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Primes, Factors and Multiples QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf')",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Number/Higher/Structure-and-Calculation/MS/Primes,%20Factors%20and%20Multiples%20%28H%29%20MS.pdf"
+},
+"m-num-count": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Number/Higher/Structure-and-Calculation/QP/Product%20Rule%20for%20Counting%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 4 (past papers with video solutions), Higher: Product Rule for Counting QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf')",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Number/Higher/Structure-and-Calculation/MS/Product%20Rule%20for%20Counting%20%28H%29%20MS.pdf"
+},
+"m-alg-expand": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Notation-Vocabulary-and-Manipulation/QP/Expanding%20Equations%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Expanding Equations QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf'); url2 = Set 5 Factorising Equations",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Notation-Vocabulary-and-Manipulation/MS/Expanding%20Equations%20%28H%29%20MS.pdf",
+"url2": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Notation-Vocabulary-and-Manipulation/QP/Factorising%20Equations%20%28H%29%20QP.pdf",
+"ms2": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Notation-Vocabulary-and-Manipulation/MS/Factorising%20Equations%20%28H%29%20MS.pdf"
+},
+"m-alg-frac": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Notation-Vocabulary-and-Manipulation/QP/Algebraic%20Fractions%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Algebraic Fractions QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf')",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Notation-Vocabulary-and-Manipulation/MS/Algebraic%20Fractions%20%28H%29%20MS.pdf"
+},
+"m-alg-quad": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Solving-Equations-and-Inequalities/QP/Solving%20Quadratic%20Equations%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Solving Quadratic Equations QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf')",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Solving-Equations-and-Inequalities/MS/Solving%20Quadratic%20Equations%20%28H%29%20MS.pdf"
+},
+"m-alg-sim": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Solving-Equations-and-Inequalities/QP/Simultaneous%20Equations%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Simultaneous Equations QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf')",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Solving-Equations-and-Inequalities/MS/Simultaneous%20Equations%20%28H%29%20MS.pdf"
+},
+"m-alg-ineq": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Solving-Equations-and-Inequalities/QP/Inequalities%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Inequalities QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf'); url2 = Set 5 Inequalities on Graphs",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Solving-Equations-and-Inequalities/MS/Inequalities%20%28H%29%20MS.pdf",
+"url2": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Solving-Equations-and-Inequalities/QP/Inequalities%20on%20Graphs%20%28H%29%20QP.pdf",
+"ms2": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Solving-Equations-and-Inequalities/MS/Inequalities%20on%20Graphs%20%28H%29%20MS.pdf"
+},
+"m-alg-rearr": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Notation-Vocabulary-and-Manipulation/QP/Manipulation%20of%20Formulae%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Manipulation of Formulae QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf')",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Notation-Vocabulary-and-Manipulation/MS/Manipulation%20of%20Formulae%20%28H%29%20MS.pdf"
+},
+"m-alg-seq": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Sequences/QP/Sequences%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Sequences QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf')",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Sequences/MS/Sequences%20%28H%29%20MS.pdf"
+},
+"m-alg-func": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Notation-Vocabulary-and-Manipulation/QP/Functions%20%28Composite%20or%20Inverse%29%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Functions (Composite or Inverse) QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf')",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Notation-Vocabulary-and-Manipulation/MS/Functions%20%28Composite%20or%20Inverse%29%20%28H%29%20MS.pdf"
+},
+"m-alg-proof": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Notation-Vocabulary-and-Manipulation/QP/Algebraic%20Proof%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Algebraic Proof QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf')",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Notation-Vocabulary-and-Manipulation/MS/Algebraic%20Proof%20%28H%29%20MS.pdf"
+},
+"m-alg-iter": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Algebra/Higher/Solving-Equations-and-Inequalities/QP/Iteration%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 4 (past papers with video solutions), Higher: Iteration QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf'); url2 = Set 5 Iteration",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Algebra/Higher/Solving-Equations-and-Inequalities/MS/Iteration%20%28H%29%20MS.pdf",
+"url2": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Solving-Equations-and-Inequalities/QP/Iteration%20%28H%29%20QP.pdf",
+"ms2": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Solving-Equations-and-Inequalities/MS/Iteration%20%28H%29%20MS.pdf"
+},
+"m-alg-lines": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Graphs/QP/Equations%20of%20Straight%20Lines%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Equations of Straight Lines QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf')",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Graphs/MS/Equations%20of%20Straight%20Lines%20%28H%29%20MS.pdf"
+},
+"m-alg-quadgraph": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Graphs/QP/Graphs%20of%20Quadratic%20Equations%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Graphs of Quadratic Equations QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf')",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Graphs/MS/Graphs%20of%20Quadratic%20Equations%20%28H%29%20MS.pdf"
+},
+"m-alg-transf": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Graphs/QP/Translations%20and%20Reflections%20of%20Functions%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Translations and Reflections of Functions QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf')",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Graphs/MS/Translations%20and%20Reflections%20of%20Functions%20%28H%29%20MS.pdf"
+},
+"m-alg-circle": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Graphs/QP/Circle%20Equations%20and%20Tangents%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Circle Equations and Tangents QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf')",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Graphs/MS/Circle%20Equations%20and%20Tangents%20%28H%29%20MS.pdf"
+},
+"m-alg-rates": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Graphs/QP/Interpreting%20Gradients%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 5 (2021-24 past papers), Higher: Interpreting Gradients QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf'); url2 = Set 4 Velocity-time graphs",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Graphs/MS/Interpreting%20Gradients%20%28H%29%20MS.pdf",
+"url2": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Algebra/Higher/Graphs/QP/Velocity-time%20graphs%20%28H%29%20QP.pdf",
+"ms2": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Algebra/Higher/Graphs/MS/Velocity-time%20graphs%20%28H%29%20MS.pdf"
+},
+"m-alg-graphs": {
+"url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Algebra/Higher/Graphs/QP/Cubic%20and%20Reciprocal%20Graphs%20%28H%29%20QP.pdf",
+"label": "PMT Edexcel GCSE Maths topic questions, Set 4 (past papers with video solutions), Higher: Cubic and Reciprocal Graphs QP (MS: swap /QP/ and 'QP.pdf' for /MS/ and 'MS.pdf'); url2 = Set 5 Exponential and Trigonometric Graphs",
+"level": "topic",
+"ms": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Algebra/Higher/Graphs/MS/Cubic%20and%20Reciprocal%20Graphs%20%28H%29%20MS.pdf",
+"url2": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Graphs/QP/Exponential%20and%20Trigonometric%20Graphs%20%28H%29%20QP.pdf",
+"ms2": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-5/Algebra/Higher/Graphs/MS/Exponential%20and%20Trigonometric%20Graphs%20%28H%29%20MS.pdf"
+},
+"el-p1q1": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-english-language/aqa-paper-1/",
+"label": "Real AQA Paper 1 past papers + mark schemes (PMT)",
+"level": "paper"
+},
+"el-p1q2": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-english-language/aqa-paper-1/",
+"label": "Real AQA Paper 1 past papers + mark schemes (PMT)",
+"level": "paper"
+},
+"el-p1q3": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-english-language/aqa-paper-1/",
+"label": "Real AQA Paper 1 past papers + mark schemes (PMT)",
+"level": "paper"
+},
+"el-p1q4": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-english-language/aqa-paper-1/",
+"label": "Real AQA Paper 1 past papers + mark schemes (PMT)",
+"level": "paper"
+},
+"el-p1q5": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-english-language/aqa-paper-1/",
+"label": "Real AQA Paper 1 past papers + mark schemes (PMT)",
+"level": "paper"
+},
+"el-p2q1": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-english-language/aqa-paper-2/",
+"label": "Real AQA Paper 2 past papers + mark schemes (PMT)",
+"level": "paper"
+},
+"el-p2q2": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-english-language/aqa-paper-2/",
+"label": "Real AQA Paper 2 past papers + mark schemes (PMT)",
+"level": "paper"
+},
+"el-p2q3": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-english-language/aqa-paper-2/",
+"label": "Real AQA Paper 2 past papers + mark schemes (PMT)",
+"level": "paper"
+},
+"el-p2q4": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-english-language/aqa-paper-2/",
+"label": "Real AQA Paper 2 past papers + mark schemes (PMT)",
+"level": "paper"
+},
+"el-p2q5": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-english-language/aqa-paper-2/",
+"label": "Real AQA Paper 2 past papers + mark schemes (PMT)",
+"level": "paper"
+},
+"el-spag": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-english-language/aqa-paper-2/",
+"label": "Real AQA Paper 2 past papers + mark schemes (PMT)",
+"level": "paper"
+},
+"el-term": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-english-language/aqa-paper-2/",
+"label": "Real AQA Paper 2 past papers + mark schemes (PMT)",
+"level": "paper"
+},
+"lt-mac-pc": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-english-literature/aqa-paper-1/",
+"label": "Real AQA Paper 1 past papers + mark schemes (PMT)",
+"level": "paper"
+},
+"lt-mac-tc": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-english-literature/aqa-paper-1/",
+"label": "Real AQA Paper 1 past papers + mark schemes (PMT)",
+"level": "paper"
+},
+"lt-acc": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-english-literature/aqa-paper-1/",
+"label": "Real AQA Paper 1 past papers + mark schemes (PMT)",
+"level": "paper"
+},
+"lt-aic-pc": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-english-literature/aqa-paper-2/",
+"label": "Real AQA Paper 2 past papers + mark schemes (PMT)",
+"level": "paper"
+},
+"lt-aic-tc": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-english-literature/aqa-paper-2/",
+"label": "Real AQA Paper 2 past papers + mark schemes (PMT)",
+"level": "paper"
+},
+"lt-pc-poems": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-english-literature/aqa-paper-2/",
+"label": "Real AQA Paper 2 past papers + mark schemes (PMT)",
+"level": "paper"
+},
+"lt-pc-comp": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-english-literature/aqa-paper-2/",
+"label": "Real AQA Paper 2 past papers + mark schemes (PMT)",
+"level": "paper"
+},
+"lt-unseen": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-english-literature/aqa-paper-2/",
+"label": "Real AQA Paper 2 past papers + mark schemes (PMT)",
+"level": "paper"
+},
+"lt-essay": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-english-literature/aqa-paper-1/",
+"label": "Real AQA Paper 1 past papers + mark schemes (PMT)",
+"level": "paper"
+},
+"g-tect": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-geography/aqa-paper-1/",
+"label": "Real AQA Paper 1 past papers + mark schemes (PMT)",
+"level": "paper"
+},
+"g-weather": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-geography/aqa-paper-1/",
+"label": "Real AQA Paper 1 past papers + mark schemes (PMT)",
+"level": "paper"
+},
+"g-ukwx": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-geography/aqa-paper-1/",
+"label": "Real AQA Paper 1 past papers + mark schemes (PMT)",
+"level": "paper"
+},
+"g-climate": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-geography/aqa-paper-1/",
+"label": "Real AQA Paper 1 past papers + mark schemes (PMT)",
+"level": "paper"
+},
+"g-eco": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-geography/aqa-paper-1/",
+"label": "Real AQA Paper 1 past papers + mark schemes (PMT)",
+"level": "paper"
+},
+"g-trf": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-geography/aqa-paper-1/",
+"label": "Real AQA Paper 1 past papers + mark schemes (PMT)",
+"level": "paper"
+},
+"g-desert": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-geography/aqa-paper-1/",
+"label": "Real AQA Paper 1 past papers + mark schemes (PMT)",
+"level": "paper"
+},
+"g-coast": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-geography/aqa-paper-1/",
+"label": "Real AQA Paper 1 past papers + mark schemes (PMT)",
+"level": "paper"
+},
+"g-glacial": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-geography/aqa-paper-1/",
+"label": "Real AQA Paper 1 past papers + mark schemes (PMT)",
+"level": "paper"
+},
+"g-skills": {
+"url": "https://www.physicsandmathstutor.com/past-papers/gcse-geography/aqa-paper-1/",
+"label": "Real AQA Paper 1 past papers + mark schemes (PMT)",
+"level": "paper"
+}
+}
