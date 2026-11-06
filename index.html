@@ -238,7 +238,7 @@ function goLocal(msg){Store.mode="local";Store.note=msg;render()}
 const SB={url:"https://tdouksowkvykwgzoeckt.supabase.co",key:"sb_publishable_ZOBBIk9k9uq4ocAVZqRU1w_BaEIXFcX"};
 function sbOn(){return /^https:\/\/[a-z0-9-]+\.supabase\.co$/.test(SB.url)}
 function sbCode(){return lsGet("code")}
-async function sbReq(path,opt={}){const r=await fetch(SB.url+"/rest/v1/"+path,{...opt,headers:{apikey:SB.key,"Content-Type":"application/json",...(opt.headers||{})}});if(!r.ok){const e=new Error("sb "+r.status);e.code=r.status===401||r.status===403?"not_granted":"unavailable";throw e}return r.status===204?null:r.json().catch(()=>null)}
+async function sbReq(path,opt={}){const r=await fetch(SB.url+"/rest/v1/"+path,{...opt,headers:{apikey:SB.key,"Content-Type":"application/json",...(opt.headers||{})}});if(!r.ok){let t="";try{t=(await r.text()).slice(0,160)}catch(x){}const e=new Error("sb "+r.status);e.msg=r.status+" "+t;e.code=r.status===401||r.status===403?"not_granted":"unavailable";throw e}return r.status===204?null:r.json().catch(()=>null)}
 function sbDb(code){const pre=code+"/";
   const put=(id,doc)=>sbReq("prog",{method:"POST",headers:{Prefer:"resolution=merge-duplicates,return=minimal"},body:JSON.stringify({id:pre+id,doc,updated_at:new Date().toISOString()})});
   const list=(coll,lim)=>sbReq(`prog?select=id,doc,updated_at&id=like.${encodeURIComponent(pre+coll+"/")}%25&order=updated_at.desc${lim?"&limit="+lim:""}`);
@@ -267,7 +267,7 @@ async function initStore(){
       if(Store.note.startsWith("Can't reach"))Store.note="";
       changed=true}
     if(changed&&!View.busy)render();
-  },e=>{clearTimeout(timer);goLocal("Progress is saving on this device only right now.")});
+  },e=>{clearTimeout(timer);goLocal("Progress is saving on this device only right now."+(Store.sb?" Sync error: "+((e&&e.msg)||(e&&e.message)||"no connection"):""))});
   db.collection("ans").orderBy("t","desc").limit(40).onSnapshot(s=>{Store.ansRemote=Object.fromEntries(s.docs.map(d=>{const v=d.data();return [v.qid||d.id,v]}));if(!View.busy&&View.tab==="tracker")render()},()=>{});
   db.collection("reports").orderBy("t","desc").limit(50).onSnapshot(s=>{Store.reports=s.docs.map(d=>({...d.data(),_id:d.id}));if(!View.busy&&View.tab==="tracker")render()},()=>{});
 }
@@ -798,7 +798,7 @@ function badges(){const xp=xpTotal(),b=D("baseline"),pl=D("papers").list||[];let
  const st=streak();
  return [["First steps","Earn your first XP",xp>0],["Baselined","Finish all 5 baselines",SUBJ.every(s=>b[s.id])],["Warm-up","3-day streak",st>=3],["Unstoppable","7-day streak",st>=7],["Card shark","See 100 flashcards",seen>=100],["Locked in","Get a topic to Secure",k3>=1],["Master","Get a topic to Mastered",k4>=1],["Paper warrior","Log a real paper",pl.length>=1],["Top marks","Score 80%+ on a real paper",pl.some(p=>pct(p.score,p.max)>=80)],["Boss level","Get a subject to 50%",sub50>=1],["Grind","Reach 1000 XP",xp>=1000]]}
 function renderMe(){const xp=xpTotal(),X=lvlFor(xp),bg=badges();const earned=bg.filter(x=>x[2]).length;
- return `<div class="stack"><header class="top"><div><div class="eyebrow">Your character</div><h1>${lname(X.L)}</h1><p class="muted">Level ${X.L} · ${xp.toLocaleString("en-GB")} XP · 🔥 ${streak()}-day streak (one rest day a week is free)</p></div></header>${noteHtml()}
+ return `<div class="stack"><header class="top"><div><div class="eyebrow">Your character</div><h1>${lname(X.L)}</h1><p class="muted">Level ${X.L} · ${xp.toLocaleString("en-GB")} XP · 🔥 ${streak()}-day streak (one rest day a week is free)</p></div></header>${noteHtml()}${Store.sb?`<div class="row small muted" style="justify-content:space-between">Passcode: <b>${esc(sbCode()||"")}</b><button class="chip" data-switchcode>Switch passcode</button></div>`:""}
  <section class="sheet stack" style="align-items:center;text-align:center"><div>${avatar(X.L,150)}</div><div style="width:100%"><div class="progress" style="height:12px"><i style="width:${X.p}%;background:var(--hl)"></i></div><p class="small muted">${X.next-xp} XP to level ${X.L+1}. ${nextUnlock(X.L)}.</p></div></section>
  <section class="sheet stack"><button class="btn ghost" data-mapopen="lvl" style="display:flex;justify-content:space-between;padding:0;border:0"><h2 style="margin:0">Level guide</h2><span class="small muted">${View.mapOpen.lvl?"Hide ▲":"What each level means ▼"}</span></button><p class="small muted">XP only comes from real work: 2 per mark you earn, 1 per flashcard, 100 plus your score per real paper, 50 when a topic hits Secure, 150 when it hits Mastered. A normal 25-mark set is about 40 XP.</p>${View.mapOpen.lvl?`<div class="stack" style="gap:6px">${LVLNAME.map((n,i)=>{const L=i+1,need=60*(L-1)**2,un={3:"Cape",5:"Golden headband",8:"Cool shades",12:"Crown",15:"Legend aura"}[L];const feel=["Just started. Do your baselines.","First 30 marks of real work.","Getting into the habit.","Topics starting to stick.","Regular grinder.","A few topics Secure.","Noticeably sharper.","Lots of topics Secure.","Half the course is solid.","Mastered topics piling up.","Top-set level knowledge.","Nearly everything strong.","Exam-ready territory.","Papers at 85%+.","Grade 9 Legend. Ready."][i];
  return `<div class="row" style="justify-content:space-between;gap:8px;padding:6px 8px;border-radius:8px;${L===X.L?"background:var(--good-bg);font-weight:700":""}"><span class="small"><b>Lv ${L} ${n}</b>${un?` · unlocks ${un}`:""}<br><span class="muted" style="font-weight:400">${feel}</span></span><span class="small mono muted">${need.toLocaleString("en-GB")} XP</span></div>`}).join("")}</div>`:""}</section>
@@ -839,6 +839,7 @@ function renderPlan(){
 
 /* ===== events ===== */
 document.addEventListener("click",e=>{const t=e.target.closest("button");if(!t)return;const ds=t.dataset;
+  if(ds.switchcode!==undefined){lsSet("code","");location.reload();return}
   if(ds.pcode!==undefined){const v=($("#pcode").value||"").trim().toLowerCase().replace(/[^a-z0-9-]/g,"");if(v.length<4){Store.note="At least 4 letters or numbers.";render();return}lsSet("code",v);View.needCode=false;Store.note="";render();initStore();return}
   if(ds.tab)return go(ds.tab);
   if(ds.task)return startTask(+ds.task);
